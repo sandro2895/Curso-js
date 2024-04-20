@@ -1,0 +1,25 @@
+
+
+No plano cartesiano
+
+Eixo y representa altura e Eixo x representa largura
+
+no pygame Eixo y fica representando para baixo, para selecionar figurar use o sistema cartesiano
+
+Y_pos e X_pos
+
+no python as cores podem ficar numa tupla como : (R, G, B) ex: (255, 0, 0) 255 é a maior intensidade de uma cor.
+
+
+desenhando no pygame.
+
+pygame.draw.rect(tela, (255, 0, 0), (200, 300, 40, 50))  <-- primeiro bote a tela, e em seguida as cores, e o comprimento x e y, altura e largura do pixel.
+            rect se refere a uma forma retângular
+
+Desenhando circulo:
+    pygame.draw.circle(tela, (0, 0, 255), (200, 45), 40)  <-- no terceiro coloque o centro do x e y e o raio por ultimo fora do parenteses.
+
+Desenhando linha:
+pygame.draw.line(tela, (255, 255, 0), (390, 0), (390, 400), 5) no terceiro  e quarto parametro é a posição inicial e a posição final, e por ultimo a espessura.
+
+não esqueça do pygame.display.update()

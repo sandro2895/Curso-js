@@ -1,0 +1,16 @@
+CHECAR[desafio12.py]
+
+frutas = ['Maça', 'Banana', 'Manga', 'Uva']
+
+frutas[1:3] = ['Abacate', 'Sapoti']  <--substitui mais do indice 1 ate o 2.
+print(frutas)
+
+É até o número 3 mas não incluindo ele.
+
+frutas[1:2] = ['Abacate', 'Sapoti']  <-- se for feito só assim de 1 até 2, Vai aidcionar o segundo, no caso 'Sapoti'.
+print(frutas)
+
+frutas.inser()   <--Inseri , Não somento no final.
+ex:
+frutas.insert(2, 'Laranja')  <--Assim é adicionado após o indice 1.
+print(frutas)

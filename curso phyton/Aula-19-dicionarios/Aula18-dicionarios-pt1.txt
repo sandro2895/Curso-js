@@ -1,0 +1,31 @@
+
+DICIONARIOS
+Não usa .append()
+
+Pode mostrar dados var[''] como string. pode personalizar os indices.
+
+são indentificados por {} chaves.
+
+exemplo:
+
+lista = {}  ou lista = dict()
+
+dados = {'nome': 'Doca', 'idade': '28'}    <--Assim o indice de 'Doca' é 'nome'.
+
+print(dados['nome'])     <--assim vai mostrar doca.
+print(dados['idade'])
+
+
+para fazer um .append no dicionaros:
+
+ex:
+dados['sexo'] = 'M'   <-- assim dados recebe o indice 'sexo' que é 'M'
+
+
+dados = {'nome': 'Doca', 'idade': '28', 'sexo': 'M'}
+
+para deletar no dicionario use del
+
+ex
+
+del dados['idade']

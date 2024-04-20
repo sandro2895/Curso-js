@@ -1,0 +1,22 @@
+import functools
+
+user = {"username": 'jose', "access_level": "admin"}
+
+def make_secure(acess_level):  <--Adicione um terceiro nivel de função.Isso é considerado uma fabrica, oque é feito pra fazer o decorator
+    def decorator(func):  <--Isso é o novo decorator.
+        @functools.wraps(func)
+        def secure_function(*args, **kwargs):
+            if user["access_level"] == "admin":
+                return func(*args, **kwargs)
+            else:
+                print(f'No admin access. for {user["username"]}')
+        return secure_function
+    return decorator
+
+@make_secure('admin')  <--Agora é necessario colocar o parenteses.
+def get_admin_password():
+    return '123'
+
+@make_secure('guest')  <--Também é necessario colocar o  argumento agora.
+def get_dashboard_password():
+    return 'user: user_password'

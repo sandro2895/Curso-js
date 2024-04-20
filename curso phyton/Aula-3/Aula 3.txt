@@ -1,0 +1,21 @@
+Como fuciona phyton.
+
+È um interpretador pyton para falar com o pc
+
+baixe o phyton para windows no phyton.org
+
+no instalador do phyton marque a caixa Add phyton.exe to PATH para fucionar no terminal.
+
+e clique em  disable path length limit.
+
+digite phyton no cmd para iniciar a versão do phyton apos instalar.
+
+Use o comando print('') para digitar alguma string em phyton
+
+exemplo: print('Ola mundo')
+
+Use o comando import this para mostrar o zen of phyton.
+
+clique no IDLE python para ir direto no prompt de comando do phyton
+
+nas consigurações de IDLE python pode ser mudado o tamanho da letra

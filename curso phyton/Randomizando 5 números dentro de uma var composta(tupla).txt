@@ -1,0 +1,4 @@
+import random
+n = (random.randint(1, 10), random.randint(1, 10), random.randint(1, 10),
+     random.randint(1, 10), random.randint(1, 10))   <-- cada random.randint() é um valor a mais na variavel composta.
+print(n)

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idade</title>
+</head>
+<body>
+  <h1>Verificando sua idade</h1>
+  Idade: <input type="number" name="txtidade" id="txtidade">
+  <input type="button" value="verificar" onclick="calcular()">
+  <div id="res">
+
+  </div>
+
+  <script>
+    let txd = window.document.getElementById("txtidade")
+    let res = window.document.querySelector("div#res")
+
+    function calcular() {
+      
+      let idade = Number(txtidade.value)
+      res.innerHTML = `<p>Sua idade é <Strong>${idade}</Strong></p>`
+      if (idade >= 18){
+      res.innerHTML += `<p>Você <Strong>Sim</Strong> está apto a dirigir.</p>`
+      } else {
+        res.innerHTML += `<p>Você <Strong>Não</Strong> está apto a dirigir.</p>`
+      }
+    }
+
+  </script>
+  
+</body>
+</html>

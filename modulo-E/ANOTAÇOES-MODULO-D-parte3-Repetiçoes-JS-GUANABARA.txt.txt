@@ -1,0 +1,21 @@
+ANOTAÇOES-MODULO-D-parte3-Repetiçoes-JS-GUANABARA.txt
+
+Estrutura de repetição com teste logico no final.
+
+-Se representa com o 'do'
+-Primeiro executa o bloco.
+-Depois executa o teste logico.
+
+exemplo desenhado :
+     do { <-- bloco
+                
+
+}while(condiçao)
+
+exemplo:
+
+let c = 7
+do {
+  console.log(`numero ${c}`)
+  c--
+} while(c >=1) <-- O teste vai sendo feito aqui no final e repete ate a condição ser falsa.

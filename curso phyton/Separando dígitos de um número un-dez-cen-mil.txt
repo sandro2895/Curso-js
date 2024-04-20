@@ -1,0 +1,17 @@
+Separando dígitos de um número:
+
+-Na maneira matematica
+
+com o exemplo:
+
+
+num = int(input('Informe um número: '))
+un = num // 1 % 10   <-- Assim o número vai dividir por 1 e pegar o resto da divisão por 10 e sucessivamente para as outras unidades
+dz = num // 10 % 10  <-- Dividido por 10 e resto da divisão 10
+ct = num // 100 % 10 <-- Dividido por 100 e resto da divisão 10
+ml = num // 1000 % 10  <-- Dividido por 1000 e resto da divisão 10
+print('Analisando o número {}'.format(num))
+print('Unidade: {}'.format(un))
+print('Dezena: {}'.format(dz))
+print('Centena: {}'.format(ct))
+print('Milhar: {}'.format(ml))

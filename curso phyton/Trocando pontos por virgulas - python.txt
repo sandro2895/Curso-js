@@ -1,0 +1,11 @@
+def moeda(m):
+    m = float(m)    <--Antes converta para float.
+
+    return f'R${str(m).replace(".", ",")}'    <--Converta para string e em seguida use o .replace para trocar .(ponto) por ,(virgula)
+
+
+
+def moeda(m):
+    m = float(m)
+
+    return f'R${m:.2f}'.replace('.', ',')  <-- sem converter para string

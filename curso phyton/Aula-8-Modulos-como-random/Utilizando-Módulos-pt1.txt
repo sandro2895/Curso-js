@@ -1,0 +1,33 @@
+Trabalhando com Modulos
+
+
+Todo progama em phyton vem com o basico. e você pode colocar novos modulos. ou blibliotecas.
+O modulo 'math' já está importado no phyton.Que tem fucionalidades como ceil(Arredonda pra cima) e flor(Arredonda pra baixo)
+trunc, pow, sqrt, factorial
+
+Usando o comando import modul
+exemplo import math
+
+para importar somente um em vez de varios modulos de um tipo
+
+-Use from()import(),
+
+exemplo:
+from math import sqrt
+
+depois de importar pode ser atribuido a uma variavel algum modulo especifico
+
+exemplo:
+import math -- também pode ser feito from math import sqrt,floor 
+raiz = math.sqrt(num) <-- assim a variavel 'raiz' recebe a raiz quadrada da variavel 'num' e ja vem como número float.
+print('A raiz de {} é igual a {}'.format(num, raiz))
+
+para arredondar no import coloque como: .format(num, math.ceil(raiz)))
+
+Arredondar para baixor seria .format(num, math.floor(variavel)))
+
+exemplo:
+from math import sqrt, floor
+num = float(input('Digite um número: '))
+raiz = sqrt(num)
+print('A raiz de {} é igual a {:.2f}'.format(num, floor(raiz))) <-- assim vai arredondar para o número mais baixo.

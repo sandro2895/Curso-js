@@ -1,0 +1,8 @@
+pode ser mudado a orden de procedencia das variaveis nas strings
+
+exemplo?
+
+print('primeiro numero {2} segundo numero {1}'.format(a, b)
+
+assim 'b' vai vir primeiro e depois virá 'a'
+

@@ -1,0 +1,17 @@
+
+
+depois de criar venvs e arquivo vs code
+
+crie um arquivo python
+
+digite o comando : 
+from flask import Flask
+
+criando um app flask:
+
+coloque a variavel com o mesmo nome do arquivo python criado -->  app = Flask(__name__)
+
+e disponibilizara dados quando executa o app 
+
+e em seguida digite: flask run no terminal:
+

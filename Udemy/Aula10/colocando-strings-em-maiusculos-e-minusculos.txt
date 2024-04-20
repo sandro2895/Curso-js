@@ -1,0 +1,19 @@
+
+
+Use .ToUpperCase() ao lado da variavel para por a string em letrar MAIUSCULAS.
+
+Exemplo:
+
+console.log(texto.toUpperCase())
+
+Resultado terminal = O RATO ROEU A ROUPA DO REI DE ROMA
+
+
+
+Use .ToLowerCase() ao lado da variavel para por a string em letrar minusculas.
+
+Exemplo:
+
+console.log(texto.toLowerCase(''));
+
+Resultado terminal = o rato roeu a roupa do rei de roma

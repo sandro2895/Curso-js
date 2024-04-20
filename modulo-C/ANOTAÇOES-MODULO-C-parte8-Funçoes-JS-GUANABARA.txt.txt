@@ -1,0 +1,31 @@
+ANOTAÇOES-MODULO-C-parte8-Funçoes-JS-GUANABARA.txt
+
+A tag <input> é um formulario usado para receber dados do usuario.
+exemplos de tag <input>.
+
+<input type="number" name="" id="". <-- type="number" pode somente acomodar numeros.
+
+<input type="text" name="" id="". <-- type="test" pode acomodar numeros e letras.
+
+<input type="color" name="" id=""> <-- type="color" pode acomodar cores.
+
+Exemplo:
+  <h1>Somando valores</h1>
+
+  <input type="number" name="text1" id="text1"><br>
+  <input type="number" name="text2" id="text2">
+  <input type="button" value="somar" onclick="somar()"> <-- coloque a função onclick="somar()" para somar os numeros.
+  <div class="res">Resultado :</div>
+
+  <script>
+    function somar() {
+      let tn1 = window.document.getElementById("text1")
+      let tn2 = window.document.querySelector("input#text2")
+      let res = window.document.getElementsByClassName("res")[0]
+      let n1 = Number(tn1.value) <-- Use Number para mudar o valor de string para number.
+      let n2 = Number(tn2.value) <-- também é necessario colocar o .value após a variavel.
+      s = n1 + n2
+      res.innerHTML = `O resultado entre a soma de ${n1} + ${n2} é : ${s}`
+
+    }
+

@@ -1,0 +1,8 @@
+
+pego o número negativo e  multiplique  por x -1
+
+exemplo:
+
+-10 * -1
+
+Resultado : 10

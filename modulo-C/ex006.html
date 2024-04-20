@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercicio 06</title>
+</head>
+<style>
+  div#area {
+    background-color: aqua;
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+  }
+
+</style>
+<body>
+  <div id="area">
+    interaja...
+  </div>
+  <script>
+     let a = window.document.querySelector('div#area')
+
+     a.addEventListener('click', clicar)
+     a.addEventListener('mouseenter', entrou)
+     a.addEventListener('mouseout', saiu)
+     a.addEventListener('mousemove', mover)
+
+    function clicar() { 
+      a.innerHTML = 'clicou'
+      a.style.background = 'red'
+      
+    }
+    function entrou() {
+      a.innerHTML = 'entrou'
+      
+    }
+    function saiu() { 
+      a.innerHTML = 'saiu'
+      a.style.background = 'aqua'
+
+    }
+    function mover() {
+      a.style.background = 'chartreuse'
+      
+
+    }
+    style.background = 'chartreuse'
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,38 @@
+ANOTAÇOES-MODULO-D-parte3-Condições-JS-GUANABARA.txt
+atribua uma variavel = (.value) para atribuir o valor da variavel a ela
+exemplo : let a = (txt.value)
+Colocando IF em Sites.
+
+Exemplo com input:
+
+<h1>Verificando sua idade</h1>
+  Idade: <input type="number" name="txtidade" id="txtidade">
+  <input type="button" value="verificar" onclick="calcular()">
+  <div id="res">
+
+  </div>
+
+  <script>
+    let txd = window.document.getElementById("txtidade")
+    let res = window.document.querySelector("div#res")
+
+    function calcular() {
+      
+      let idade = Number(txtidade.value) <-- não esquecer de mudar para value.
+      res.innerHTML = `<p>Sua idade é <Strong>${idade}</Strong></p>` <-- não esquecer que pode ser usado html dentro do script
+      res.innerHTML += `<p>Você pode dirigir</p>` <-- pode ser concatenado(adicionado) elementos com =+. 
+    
+
+    }
+
+coloque o IF e ELSE dentro da function.
+exemplo:
+ let idade = Number(txtidade.value)
+      res.innerHTML = `<p>Sua idade é <Strong>${idade}</Strong></p>`
+      if (idade >= 18){
+      res.innerHTML += `<p>Você pode dirigir.</p>` <-- caso seja verdadeiro. esse elemento será concatenado(adicionado)
+      } else {
+        res.innerHTML += `<p>Você não está apto a dirigir.</p>` caso seja falso. esse elemento será concatenado(adicionado)
+      }
+    }
+

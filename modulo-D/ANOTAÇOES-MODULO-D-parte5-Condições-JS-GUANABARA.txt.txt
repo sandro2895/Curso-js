@@ -1,0 +1,46 @@
+ANOTAÇOES-MODULO-D-parte5-Condições-JS-GUANABARA.txt
+
+Condição Múltipla
+-Tem a possibilidade de outros valores. valores fixos
+-Não é somente sim ou não
+-De uma expressão se testa varios valores abaixo e depois volta ao
+fluxo normal do progama.
+-Muito util em situações pontuais e especificas.
+
+Exemplo desenhado:
+
+                       (expressão)
+            
+            
+            (1)       (2)         (3)          (4)        <-- valores para teste.
+
+
+ 
+                           (res)        <-- resultado  da expressão com o valor.   
+
+
+            -E assim a progamação segue em frente.                      
+
+
+
+Exemplo no js:
+
+
+  switch (expressão) { <-- essa expressão será testada.
+     
+     case valor 1: <-- cada case em um bloco {}
+     
+     break  <-- para cada bloco é necessario colocar um comando break.
+     case valor 2:
+
+     break <-- isso faz o progama se desviar para baixo e continuar apos executar o bloco.
+     case valor 3:
+
+     break <-- se o break não existir o progama vai ficar executando ate achar um break.
+     case valor 4:
+
+     break
+     default: <-- Isso serve como o else do switch caso nenhum dos valores acima seja
+                  verdadeiro. o progama vai executar o default.
+     break <--no default break é opcional mas é bom colocar sempre.	
+ }      

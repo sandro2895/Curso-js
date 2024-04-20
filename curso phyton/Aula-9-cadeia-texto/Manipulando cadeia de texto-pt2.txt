@@ -1,0 +1,34 @@
+ 
+o comando 'in' no mei pode dizer se é true ou false que uma cadeia de caracteres está na string.
+
+exemplo:
+
+frase = 'Curso em Vídeo Python'
+'curso' in frase
+
+Resultado = true
+
+-O comando replace('') pode trocar uma string por outra.
+-Tamben pode trocar um espaço por nada frase.replace(' ','')
+  Assim o resultado fica : CursoemVídeoPython
+exemplo:
+
+frase.replace('Python', 'Android') 
+
+Assim vai ficar 'Curso em Vídeo Android'
+
+-O comando .upper() deixa strings e maiusculo.
+exemplo: 
+frase.upper()	
+'CURSO EM VIDEO PYTHON'
+
+-O comando.lower() deixa strings em minusculos.
+
+frase.capitalize()  <-- deixa somente a primeira letra do indice maiuscula.
+
+frase.tittle()  <-- deixa a primeira letra de cada palavra em maiuscula pulada em espaços.
+
+frase.strip()  <-- tira todos os espaços desnecessario do começo e do final da string e tambén os indices desnecessarios são removidos.
+
+frase.rstrip()  <-- remove somente os espaços desnecessarios do lado direito da string.
+frase.lstrip()  <-- remove somente os espaços desnecessarios do lado esquerdo da string.

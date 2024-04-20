@@ -1,0 +1,26 @@
+Verificar Aula12
+
+
+retornando um Number temporariamente como uma String
+
+Use .toString() ao lado da variavel.
+
+Exemplo:
+
+let num1 = 2
+let num2 = 3
+
+console.log(num1.toString() + num2) <--Aqui o número é convertido para string.
+console.log(typeof num1)
+
+Resultado terminal:
+23
+number
+
+Para um number em string para sempre coloque :
+
+num1 = num1.toString()
+
+para ver a representação binaria de um numero coloque:
+
+console.log(num1.toString(2))

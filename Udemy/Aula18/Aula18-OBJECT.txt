@@ -1,0 +1,130 @@
+Aula18-OBJECT
+
+-para criar um objeto use chaves após a variavel declarada.
+
+exemplo:
+
+let pessoal = {
+ nome: 'luiz',         <-- Isso são atributos que podem ser colados dentro do object
+ sobrenome: 'Miranda',
+ idade: 25
+
+};
+
+console.log(pessoal.nome); <-- Assim o atributo nome é mostrado no console
+
+Resultado terminal = luiz
+
+-Pode ser criado varios objetos tendo os mesmo atributos
+
+exemplo:
+
+let pessoal = {
+ nome: 'luiz',
+ sobrenome: 'Miranda',
+ idade: 25
+
+};
+let pessoa2 = {
+ nome: 'Maria',
+ sobrenome: 'Cavalcante',
+ idade: 25
+
+};
+
+console.log(pessoal.nome);
+console.log(pessoal.sobrenome);
+console.log(pessoa2.nome);
+console.log(pessoa2.idade);
+
+
+-Fazendo uma função que cria um objeto.
+
+Exemplo:
+
+function criaPessoa (nome, sobrenome, idade) { <-- os parametros 
+   return {       <-- o object é colocado no return
+    
+    nome: nome, <-- no lado direito estão o parametro e no lado esquerdo o object
+    sobrenome: sobrenome,    pode ser colocado só um valor se o valor do object e do parametro forem o mesmo.
+    idade: idade
+   }
+}
+
+let pessoa1 = criaPessoa('Luiz', 'Otavio', 25) <-- esses argumentos(valores) são colocados nos parametros 
+let pessoa2 = criaPessoa('Maria', 'Cavalcante', 19)
+console.log(pessoa1)
+console.log(pessoa2.nome, pessoa2.idade) <-- assim só o nome e idade são mostrados
+
+Resultado terminal =
+
+{ nome: 'Luiz', sobrenome: 'Otavio', idade: 25 }
+Maria 19
+
+A função com objeto pode ser usado em varias variaveis.
+
+-Pode ser colocado só um valor se o valor do object e do parametro forem o mesmo.
+
+exemplo:
+
+function criaPessoa (nome, sobrenome, idade){
+return {nome, sobrenome, idade}
+
+}
+
+Função dentro de um object é chamado de metodo
+
+Exemplo de metodo1:
+
+let pessoal = {
+  nome:'Luiz',
+  sobrenome: 'Miranda',
+  idade: 25,
+
+  fala () {       <-- essa função  de fala faz a pessao1 mostrar 'Olá mundo!
+    console.log ('Olá mundo!'); 
+  }
+};
+
+pessoal.fala();
+
+
+Exemplo de metodo2:
+
+let pessoal = {
+  nome:'Luiz',
+  sobrenome: 'Miranda',
+  idade: 25,
+
+  fala () {
+    console.log (`${this.nome} ${this.sobrenome} está falando oi...`); <-- this se refere a variavel atual do metodo que é pessoa1. 
+  },
+
+};
+
+pessoal.fala();
+
+exemplo de metodo3:
+
+let pessoal = {
+  nome:'Luiz',
+  sobrenome: 'Miranda',
+  idade: 25,
+
+  fala () {
+    console.log (`Minha idade é ${this.idade}`); 
+  },
+  incrementaIdade() { <-- Isso incrementa +1 na  função idade.
+    this.idade++; 
+ }
+};
+
+pessoal.fala();
+pessoal.incrementaIdade(); Aqui o object idade é incrementado +1
+pessoal.fala();
+
+Resultado terminal =
+
+Minha idade é 25
+Minha idade é 26
+

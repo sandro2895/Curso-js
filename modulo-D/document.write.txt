@@ -1,0 +1,1 @@
+document.write faz aparecer  o codigo no navegador.

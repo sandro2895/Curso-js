@@ -1,0 +1,14 @@
+ANOTAÇOES-MODULO-C-parte4-JS-GUANABARA.txt
+
+Selecionando elemento por Seletor
+
+Usando os comando querySelector() ou querySelectorAll().
+
+exemplo:
+
+let d = window.document.querySelector('div#msg')
+
+let d = window.document.querySelector('div#msg') <-- Use div. para selecionar uma CLASSE ou use div# para selecionar um ID
+   window.document.write(d.innerHTML)
+
+  d.style.background = 'blue'

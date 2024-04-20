@@ -1,0 +1,24 @@
+Aula2-udemy-part1
+
+pode ser colocado a varial no console.log sem ${}^
+-colocando o nome da variavel fora das aspas.
+
+exemplo
+
+let nome = 'joao'
+
+console.log('meu nome é', nome)
+
+
+-Se não for colocado nenhum valor na variavel, a variavel fica com o valor undefined
+
+-pode ser colocado o valor da variável depois.
+-e pode ser modificado o valor mais de uma vez.
+
+exemplo:
+
+let name;
+name= 'rod'
+name= 'pizza'
+                  <--- se tentar declarar a variavel dessa forma: let name; um erro será mostrado.
+

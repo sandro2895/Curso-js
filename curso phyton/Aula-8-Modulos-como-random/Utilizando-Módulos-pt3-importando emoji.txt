@@ -1,0 +1,23 @@
+Checando o index de pacotes extras do python -- va no site python.org na aba PyP [checar Aula08c.py]
+
+Pode ser instalados os packages em settings > Project: > Python Interpreter e clique em +
+pode ser instalados package(pacotes extras) no pycharm no lado esquerdo embaixo com o botao do console.
+
+exemplo - pacote emoji:
+procure emoji no python packages e instale
+
+import emoji
+e use o metodo emoji.emojize('')  <-- insira aqui dentro o codigo do emoji
+
+exemplo:
+clique em emoji cheat cheets e marque shortcode para copiar os codigo dos emoji
+exemplo:
+
+import emoji
+emoji1 = emoji.emojize(':slightly_smiling_face:', language='alias')
+emoji2 = emoji.emojize(':upside_down_face:', language='alias')
+print('{}{}'.format(emoji1, emoji2))
+
+
+
+

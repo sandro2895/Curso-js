@@ -1,0 +1,24 @@
+[CHECAR ex91.py]
+
+
+
+from time import sleep
+from random import randint
+from operator import itemgetter   <--- importe da bliblioteca operator a função itemgetter
+
+jogs = {'jogador1': randint(1, 6), 'jogador2': randint(1, 6), 'jogador3': randint(1, 6), 'jogador4': randint(1, 6)}
+print('Dados sorteados:')
+sleep(0.8)
+for k, v in jogs.items():
+    print(f'{k} tirou {v} no dado.')
+    sleep(0.8)
+ranking = ()       <---crie uma lista.
+ranking = sorted(jogs.items(), key=itemgetter(1))  <---na lista atribua um sorted(var.item(), keys=itemgetter(1)). 
+print(ranking)
+
+Para fazer uma ordem em reverso:
+
+ranking = sorted(jogs.items(), key=itemgetter(1), reverse=True)   <--Coloque uma virgula e depois coloque reverse=True.
+
+for k, v in enumerate(ranking):  <-- para mostrar a lista.
+    print(f' em {k+1}º lugar ficou {v[0]} com o valor: {v[1]}')    <--v representa cada elemento por vez. 

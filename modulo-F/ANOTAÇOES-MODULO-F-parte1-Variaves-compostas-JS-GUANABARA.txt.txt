@@ -1,0 +1,23 @@
+ANOTAÇOES-MODULO-F-parte1-Variaves-compostas-JS-GUANABARA.txt
+
+Variaveis compostas ou chamadas de array(vetor).
+
+-São capazes de guarda mais de um valor.
+
+-O elemento no vetor é um par que agrupa o espaço da memoria, valor colocado nele e o indice.
+-e dentro dele fica o valor e do lado de fora fica o indice(chave)identificador.
+
+-Para cada valor dentro da variavel composto se coloca uma chave (indice) para identificar.
+
+Declarando váriavel composta no javascript.
+exemplo:
+
+let a = [] <-- aqui dentro das chaves ficam os valores.
+              -cada valor recebe um indice(chave) que seria um numero como 0, 1, 2 e assim por diante.
+              -dependendo da linguagem de progamação o indice pode começar em 0 ou em 1.
+
+
+exemplo: 
+
+let num = [2 ,4, 6]
+-indices: (0, 1, 2)   

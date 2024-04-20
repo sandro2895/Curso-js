@@ -1,0 +1,50 @@
+user = {"username": 'jose', "access_level": "admin"}
+
+
+def get_admin_password():
+    return "1234"
+
+
+def secure_function(func):  <--Aqui vai pode usar uma função como parametro para fazer o if
+    if user["access_level"] == "admin":   <--Aqui só vai fazer o retorno da função get_admin_password() ou de qualquer outra função caso o if esteja certo.
+
+        return func
+
+
+get = secure_function(get_admin_password())
+
+print(get)
+
+
+Assim pode asegurar a função.
+
+-E checa o que tem dentro da chave "acess _level" só quando chama a função.
+
+
+Continua o exemplo:
+
+user = {"username": 'jose', "access_level": "a"}
+
+
+def get_admin_password():
+    return '123'
+
+
+def make_secure(func):
+    def secure_function():   <--Botando mais de uma função deixa mais seguro ainda;
+        if user["access_level"] == "admin":
+            return func
+    return secure_function()  <--coloque return a função dentro secure_function() para rodar de novo.
+
+
+get = make_secure(get_admin_password())
+
+print(get)  <--Use o print
+
+Pode ser colocado um else também.
+
+   if user["access_level"] == "admin":
+            return func
+        else:
+            print('No admin access.')
+    return secure_function()

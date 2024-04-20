@@ -1,0 +1,6 @@
+dist1 = float(input('Qual a distancia da viagem? '))
+
+preco = dist1 * 0.50 if dist1 <= 200 else dist1 * 0.45 <-- assim a variavel dist1 vai ser multiplicado por 0.50 se 
+                                                                                            for menor ou igual a 200.
+
+print('A sua viagem foi de {}Km então o preço vai ser de: {}R$'.format(dist1, preco))

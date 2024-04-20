@@ -1,0 +1,12 @@
+Usando javascript externo no html
+
+
+Use a tag <script src=""></script>
+
+Pode ser criado o nome do arquivo no src="" e tamben clicando com ctrl + curso esquerdo do mouse
+para criar um novo arquivo javascript com o nome.
+
+exemplo:
+<script src="script.js"></script>,
+
+-é bom fazer em todo modelo de documento de site.

@@ -1,0 +1,8 @@
+checar [ex53]
+
+Use: var[::-1]
+
+exemplo:
+
+print(fras2[::-1])
+print(fras2)

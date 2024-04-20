@@ -1,0 +1,49 @@
+Tipos primitivos e saidas de dados [Checar test001.py]
+int() -Números inteiros. (1 ,2 ,3)
+float() -Número reais ou de ponto flutuante. (1,0 , 20,5 , 30,0060)
+bool() -Valores logicos ou booleanos. (True, False)  <--Sempre coloque a primeira letra maiuscula.
+str() -Valores caracteres ou strings. ('Textos')   <--também pode existir strings vazias ''.
+
+Tipo primitivo int()
+Tudo que está dentro de parenteses de int será convertido para numero inteiro
+exemplo:
+num1 = int(input('Digite um número '))
+num2 = int(input('Digite outro número '))
+soma = num1 + num2
+print('A soma de', num1, 'e', num2, 'é igual a :', soma)
+
+Sabendo o tipo de um dado:
+-Use print(type(variavel))
+exemplo:
+nome1 = int(input('digite um valor '))  <--class 'int'
+print(type(nome1))
+nome2 = (input('digite um valor '))  <--class'str'
+print(type(nome2))
+num1 = bool(2) class <--class 'bool'
+print(type(num1))
+
+
+
+Fazendo uma string com variaveis.
+exemplo:
+print('A soma entre {} e {} é igual a: {}'.format(num1, num2, soma)) coloque no format() as variaveis da esquerda para a direita respectivamente
+
+
+
+
+num1 = bool(2 < 1)
+print(num1)
+Resultado = false
+
+
+-Para dizer se o comando é numero use .isnumeric() dentro do parentes
+exemplo:
+
+num1 = input('Digite algo ')
+print(num1.isnumeric())
+
+tambem existe o isalpha() para saber se é uma letra: print(num1.isalpha())
+e o isalnum() para saber se é alfanumerico: print(num1.isalnum())
+e muitas outras is
+
+Use pontos no float ex: 1.5

@@ -1,0 +1,12 @@
+Tipos primitivos de javascript
+
+-number <-- tipo numero
+  -Infinity
+  -NaN
+-string <-- tipo cadeia de caracteres
+- true, false <-- tipo boolean ou boleano
+- null <-- tipo Nulo
+- undefined <-- tipo indefinido
+- object <-- tipo objeto
+ -Array
+-function <-- tipo função

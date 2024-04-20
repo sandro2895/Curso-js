@@ -1,0 +1,37 @@
+
+
+-Existem erros sintaticos que é quando se muda a letra de um comando.
+
+-Existem erros de significados, semanticos quando não foi declarada a variavel ainda ou o valor 
+e você tenta mostrar -NameError (Erro de Nome)  -exceção
+
+-Existem os ValueError: erro de valor. quando a variável recebe um valor inexperado. -È chamado de uma exceção.
+
+-ZeroDivisionError: quando se tenta dividir por 0.
+
+-TyperError: É quando se digita algo com o valor invalido como : 2/'2'
+
+-IndexError: É quando se tenta mostrar uma valor em um indice que não existe em uma lista ou tupla. (KeyError) <-- nos dicionarios.
+
+-ModuleNotFoundError: Quando se tenta importar um modulo que não existe.-exceção
+
+Outros exemplos:
+
+EOFError, Keyboardinterrupt, OSError, MemoryError, ConnectionError, RuntimeError.
+
+Tudo vem de uma Exception(Exceção)
+
+
+comando:
+
+try:
+  Operação
+
+except:
+  Falha
+
+else:
+  Deu certo
+
+finally:
+  Aparece se der erro ou se der certo.

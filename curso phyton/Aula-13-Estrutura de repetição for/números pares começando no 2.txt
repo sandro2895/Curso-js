@@ -1,0 +1,5 @@
+
+
+for count in range(2, 50+1, 2): <-- coleque o 2 primeiro para contar os número de pares começando logo no 2.
+    print('{}'.format(count), end=' ')
+print('Fim de contagem de número pares.')

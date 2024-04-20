@@ -1,0 +1,13 @@
+Coloque no else.
+
+let img = document.createElement('img'
+    img.setAttribute('id', 'foto') <--- isso atribui o id = foto. para a tag <img> e tambem cria a tag pelo javascript.
+   <tag>            [id] [nome do id]
+
+E em seguida coloque res.appendChild(img)  para fazer a imagen aparecer onde a a variavel res. está.
+
+para coloquer o texto acima da imagem. crie outra div com outro id="" pra fazer get no javascript.
+
+
+exemplo:
+ 

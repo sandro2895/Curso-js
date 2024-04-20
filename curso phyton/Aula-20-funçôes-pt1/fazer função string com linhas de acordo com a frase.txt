@@ -1,0 +1,25 @@
+
+
+
+
+
+
+def escreva(m):
+    l = '~' * len(m)      <-- multiplique o sinal usado como linha com o len da string
+    print(f'~~{l}~~')     <-- Adicione sinais do lado se quiser aumenta..
+    print(f'  {m}')
+    print(f'~~{l}~~')
+
+
+ou
+
+def escreva(m):
+     tam = len(m) + 4
+     print('~' * tam)
+     print(f  '{m}')
+     print('~' * tam)
+
+
+
+
+Pode ser importante ter um comando escreva assim.

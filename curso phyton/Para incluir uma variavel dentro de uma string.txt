@@ -1,0 +1,8 @@
+Para incluir uma variavel dentro de uma string use'{}' e no final da linha .format{variavel})
+
+exemplo
+nome1 = input('Digite seu nome ')
+
+print('É um prazer te conhecer {}!'.format(nome1))
+
+no final se coloca a variavel que vai ficar dentro da chaves.

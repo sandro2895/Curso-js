@@ -1,0 +1,25 @@
+[CHECAR AULA Aula-17.py]
+
+
+Fazendo uma lista com range
+
+exemplo:1
+valores = list()
+for cont in range(0, 4): <-- coloque aqui quantas vezes vai aparecer imput
+    valores.append(int(input('Digite um valor: ')))
+
+
+exemplo2:
+a = [1, 2, 3, 7]
+b = a    <--No momento que você atribui uma lista a outra o python faz uma ligação entre elas. Assim compartilham a mesma mudança.
+b[2] = 8
+print(f'Lista a: {a}')
+print(f'Lista b: {b}')
+Resultado terminal:
+
+Lista a: [1, 2, 8, 7]
+Lista b: [1, 2, 8, 7]
+
+
+se você colocar:
+b = a[:]  <--Ai sim o python vai criar uma copia e não uma ligação.

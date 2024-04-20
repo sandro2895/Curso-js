@@ -1,0 +1,38 @@
+ANOTAÇOES-MODULO-D-parte2-Condições-JS-GUANABARA.txt
+
+crie um documento javascript no vscode
+usando .js apos o nome do documento.
+exemplo : exemplo.js
+
+para escrever no documento js use o console.log() <-- escreva algo dentro do parenteses.
+
+Use a tecla F8 ou F9 para executar o codigo em javascript no terminal vscode.
+
+criando uma condição if. quando uma condição tem somente o if e nada de else, ela é chamada de condição simples.
+Use if e em seguida a condição em parenteses ()
+exemplo:
+let a = 1.80
+console.log(`a sua altura é ${a}0`)
+if (a > 1.79){ <-- coloque oque vai aparecer caso a condição seja verdadeira dentro das chaves(bloco)do if.
+  console.log('Você é bem alto')
+}
+____________________________________________________________________________________________________________________
+
+Condição composta possui if e else.
+exemplo:
+let pais = 'EUA'
+if (pais =='Brasil') {
+  console.log('Brasileiro ')
+} else { coloque oque vai aparecer caso a condição seja falso dentro das chaves(bloco) do else.
+  console.log('Estrangeiro')
+} 
+
+outro exemplo:
+
+let pais = 'Brasil'
+console.log(`Eu vivo no ${pais}`)
+if (pais != 'Brasil') {
+  console.log('Então eu sou Estrangeiro ')
+} else {
+  console.log('Então eu sou Brasileiro')
+} 

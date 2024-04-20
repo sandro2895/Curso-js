@@ -1,0 +1,44 @@
+Operadores aritmeticos , de atribuiçao e incremento part2 --ver Aula7pt2.js
+
+incremento concatenado. pode ser decrementado também
+
+exemplo:
+
+let num1 = 1
+
+num1 = num1 + 2 <-- ísso imcrementa com outro number
+Resultado variavel = 3
+
+ou
+
+
+let num1 = 1
+let num2 = 4
+num1 = num1 + num2 <-- incrementa com outra variavel
+
+O resultado da variavel fica 5. pois o valor 4 de num2 é imcrementado ao 1 do num1.
+-pode ser feito um contador dessa forma repetindo.
+
+Outro tipo de incremento de variavel
+Operadores de atribuição:
+/=
+*=
++=
+-=
+
+exemplo :
+
+let nume1 = 1
+
+let passo = 1 
+
+nume1 += passo; <-- Isso incrementa com outra variavel
+nume1 += passo;
+nume1 += 3; <-- Isso incrementa com outro number
+
+pode ser usado com qualquer outro operador aritmetico
+exemplo: 
+
+nume1 *= 3; <-- coloque o sinal aritmetico antes do sinal de atribuição
+
+resultado da variavel = 3

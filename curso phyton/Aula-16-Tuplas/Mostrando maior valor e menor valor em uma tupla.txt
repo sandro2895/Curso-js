@@ -1,0 +1,11 @@
+
+
+exemplo:
+
+import random
+n = (random.randint(1, 10), random.randint(1, 10), random.randint(1, 10),
+     random.randint(1, 10), random.randint(1, 10)
+
+print(f'O maior valor foi {max(n)}')  <--O comando max() Vai mostrar o maior valor na tupla.
+
+print(f'O menor valor foi {min(n)}')  <--O comando min() Vai mostrar o menor valor na tupla.

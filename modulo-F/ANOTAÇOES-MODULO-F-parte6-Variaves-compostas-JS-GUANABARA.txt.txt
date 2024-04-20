@@ -1,0 +1,31 @@
+ANOTAÇOES-MODULO-F-parte6-Variaves-compostas-JS-GUANABARA.txt
+
+Buscando valores dentro de um vetor para mostrar qual o número do indice.
+
+Use o index.of() após a variavel e dentro do parenteses coloque o número que será procurado para achar o index.
+
+Se não houver valor no momento da busca o javascript retorna -1
+
+exemplo:
+
+let numb = [1, 2, 3, 4]
+
+let pos = numb.indexOf(4) <-- Isso faz a variavel 'pos receber o indice onde está o valor 4.
+
+console.log(pos)
+
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\ambient03.js"
+3
+
+exemplo pratico:
+
+let numb = [1, 2, 3, 4]
+
+let pos = numb.indexOf(8)
+
+if (pos ==-1) { <-- o if pode fazer uma string ser mostrada em vez do valor -1 caso o valor buscado não seja achado.
+
+  console.log(" o valor não foi encontrado")
+}else {
+  console.log(pos)
+}

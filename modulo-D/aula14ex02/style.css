@@ -1,0 +1,51 @@
+body {
+  background-color: dodgerblue;
+  font: normal 10pt arial;
+  text-align: center;
+}
+
+header {
+  color: black;
+  text-align: center;
+  font-weight: 900;
+  text-decoration: underline;
+  
+}
+
+.texto {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 1.5em; 
+}
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: auto;
+  width: 500px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.39);
+}
+div{
+ margin: auto;
+ padding: 10px;
+ 
+}
+#foto{ 
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+ 
+  }
+
+
+
+.id {
+  margin: auto;
+}
+#res {
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+}

@@ -1,0 +1,29 @@
+[CHECAR ex48b]
+
+
+
+if n % 3 == 0:
+
+
+
+
+
+for cont in range(1, 500+1, 2):
+    if cont % 3 == 0:
+        print(cont)
+
+
+Para somar números use um acumulador
+
+
+exemplo:
+colocando soma = 0 no começo
+
+exemplo:
+soma = 0   <-- somador
+conta = 0  <-- contador
+for cont in range(1, 500+1, 2):
+    if cont % 3 == 0:
+        conta = conta + 1    <-- o somador recebe +1 sempre que achar um número % 3 == 0
+        soma = soma + cont
+        print(cont, end=' ')

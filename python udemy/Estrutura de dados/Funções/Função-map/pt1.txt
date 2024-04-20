@@ -1,0 +1,33 @@
+
+pesquise build in function para achar documentação sobre várias funções do python.
+
+Função map:
+-Muito utilizado em listas
+-Aplica uma função em iterable(item) ex:(list, tuple, dic, etc.)
+
+ex:
+lista1 = [1, 2, 3, 4]
+
+
+def multi(x):   <--Crie uma função para mapear
+    return x * 2
+
+
+lista2 = map(multi, lista1)  <--atribua a uma variável e em seguida use a função map() <-- dentro da map coloque a função e em seguida o item.
+
+print(list(lista2))  <--Não esquecer de-- colocar dentro de uma list() para converter para uma lista. pode ser convertido para outros.
+
+
+Função map com lambda:
+
+lista2 = map(lambda x: x * 2, lista1)  <--Pode ser colocado a lambda no lugar onde seria a função.
+
+pode ser colocado tudo em um print:
+
+print(list(map(lambda x: x * 2, lista1))) <--Porém fica sem variavel. Converte para uma lista
+
+
+pode ser diminuido ainda mais desse jeito:
+print(list(map(lambda y: y + 50, [10, 30, 50, 70, 90]))) <--coloque uma lista onde seria o item.
+
+resultado terminal: [60, 80, 100, 120, 140]

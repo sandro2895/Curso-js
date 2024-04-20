@@ -1,0 +1,6 @@
+
+-Use ó metódo math.trunc()
+
+exemplo:
+num1 = float(input('Diga um número: '))
+numint4 = math.trunc(num1)

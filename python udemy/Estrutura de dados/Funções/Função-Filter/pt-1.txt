@@ -1,0 +1,35 @@
+
+Filter function
+
+-Muito utilizado em listas
+-Aplica uma função a um iterable, filtrando itens. (list, tuple, dic etc.)
+
+exemplo1:
+
+valores = [10, 12, 34, 44, 57]
+ 
+
+def remover20(x):
+    return x > 20    <--Faz retorna somente valores acima de 20.
+
+mapear = list(map(remover20, valores))  <--Por causa da função só vai retornar como true oque for acima de 20.
+
+print(mapear)
+Resultado terminal: [False, False, True, True, True]
+
+exemplo2:
+
+valores = [10, 12, 34, 44, 57]
+
+filtrar = list(filter(remover20, valores)) <--Com o filter ao invez de mapa, vai retornar somente os valores acima de 20.
+
+print(filtrar)
+Resultado terminal: [34, 44, 57]
+
+
+exemplo3:
+
+print(list(filter(lambda y: y <= 20, [10, 20, 30, 40, 50])))  <--com função lambda.
+
+Resultado terminal:
+[10, 20]

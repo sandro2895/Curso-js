@@ -1,0 +1,8 @@
+N = str(input('Nome de jogador(a): '))
+G = str(input('Número de gols: '))
+if G.isnumeric():    <--Aqui vai checar se é a string é numerica.
+    G = int(G)    <-- Se for númerica vai transformar em int.
+else:    <--Se não for númerica transforma  o imput no valor 0.
+    G = 0
+
+ficha(N, G)

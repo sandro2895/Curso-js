@@ -1,0 +1,37 @@
+Instalando o PyCharm e o QPython3
+
+como instalar e configur ar a IDE (Integrated Development Environment)
+
+baixe a versâo comunity do pycharm no site da jetbrains
+
+não esqueça de ter instalado o phyton 3 para fucionar.
+
+no celular android pode ser instalado o QPython3.
+
+para criar arquivos clique em editor
+
+crie os arquivo com .py para não dar problemas
+
+crie em + para criar uma pasta de projeto no pycharm
+
+pode ser escrito
+
+print_hi('texto')
+
+para criar um novo arquivo no pycharm clique em new e em seguida python file
+
+selecione o arquivo que você quer executar primeiro para dar o play
+
+Pode ser mudado a aparencia em setting apparence.
+
+-e pode ser editado a font.
+
+-em tools pode ser aberto o console do python.
+
+digite oque o imput pedir embaixo no terminal.
+
+pode ser bom configurar os shortcuts
+
+pode ser selecionado o arquivo para executar emcima do progama.
+
+AS vezes pode ser possivel reformatar autoamticamente o codigo clicando na lampada no progama.

@@ -1,0 +1,36 @@
+
+Pode ter varios except para varios tipos de erros:
+
+exemplo1:
+
+except TypeError:  <-- assim vai mostrar algo ou fazer algo para esse tipo especifico de error ou exceção.
+
+except ValueError:
+
+except OSError:
+
+
+exemplo2:
+
+except (ValueError, TypeError, ZeroDivisionError):   <--Assim caso aconteça os erros que estão dentro do parenteses. vai mostrar a mensagem. 
+    print('Deu erro!')
+
+
+exemplo3:
+
+except(ValueError, TypeError):
+    print('ERRO! Valor digitado incorreto!')
+
+except ZeroDivisionError:  <--Vai mostrar essa mensagem diferente caso apareça este erro.
+    print('ERRO! Não pode ser dividido por 0')
+
+
+except KeyboardInterrupt:  <--Esse erro acontece quando o progama é interrompido na hora de digitar os dados.
+    print('ERRO! Usuário interrompeu a digitação dos valores.')
+
+
+except Exception as error:
+    print(f'A causa do erro foi! {error.__cause__}')    <-- var.__cause__  Mostra a causa do erro.
+
+
+

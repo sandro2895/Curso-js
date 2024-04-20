@@ -1,0 +1,8 @@
+Importa time
+
+time.sleep() faz o progama esperar ou dormir por alguns segundos. coloque os segundos dentro do parenteses.
+
+exemplo:
+
+print('PROCESSANDO...')
+time.sleep(2)  <-- assim o progama vai esperar 2 segundos antes de executar o resto do codigo.

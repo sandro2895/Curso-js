@@ -1,0 +1,16 @@
+Aula3-udemy-part1 <-- Ver Aula3 pasta udemy.
+
+-Dentro de aspas sempre é considerado string e fora de aspas sempre é considerado number ou outras coisas.
+-O comando console.log(typeof ()) pode ser usado para saber o tipo da variavel. pode ser com ou sem parenteses dentro.
+-Se um dos valores dentro do console.log for stringe o outro concatenado ja é considerado string também
+-se as variavel for string e number poden ser concatenadas
+exemplo de concatenação:                   Typeoffs também podem ser concatenados.
+console.log(nome + multiTripilica);
+           [string]   [number]
+
+
+Const é uma variavel que não muda seu valor.
+
+A maioria das regras dadas as var e let se aplicam a constante(const).
+
+-Não pode ser declarado uma constante e ser posto o valor nela depois.

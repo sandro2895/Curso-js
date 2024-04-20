@@ -1,0 +1,13 @@
+def leaInt(n):
+    cores = {'branco': '\33[m',
+             'red': '\033[31m'}
+    n = str(input('Digite um número: '))      <-- converta o parametro para string antes.
+    while not n.isnumeric():
+        print(f'{cores["red"]}ERRO! Digite um número inteiro válido.{cores["branco"]}')
+        n = str(input('Digite um número: '))
+    return n
+
+
+# Programa principal:
+num = leaInt('Digite um número: ')  <-- pode ser colocado uma string se a função for um input.
+print(f'Você acabou de digitar o número {num}')

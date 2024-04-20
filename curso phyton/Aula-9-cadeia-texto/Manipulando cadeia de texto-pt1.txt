@@ -1,0 +1,38 @@
+Manipulando Texto  cadeia de texto = string
+
+Quando o computador recebe uma string ele coloca em pequeno espaços com indices de 0 pra cima.
+
+-Para fazer um fatiamento  use var[] <-- dentro coloque o número do indice.
+
+exemplo:
+frase = Curso em Vídeo Python
+frase[9] Resulta em: V
+frase[9:13] <--  para cortar da esquerda para a direita dos indice
+Resulta em: Víde. <--  o python pega oque está entre 9 ate antes de 13.
+
+frase[9:21] Resulta em: Vídeo Python <-- pois o python pega ate depois do final.
+
+frase[9:21:2] <-- isso faz o python pular em 2 e 2.
+
+frase[:5] <-- isso faz o python fatiar do indice 5 ate o indice 0 da direita para a esquerda.
+
+frase[5:] <-- faz o python pegar do indice 5 ate o ultimo indice da esquerda pra a direita.
+
+frase[9::3] <-- como não tem nenhum número apos os 2 pontos depois do 9 ele vai ate o final pulando em 3 e 3
+
+
+-Use o comando len() para saber o comprimento de indicios da frase.
+exemplo:
+len(frase)
+
+-Use o comando frase.count('') para saber quantos dos caracteres colocados no parenteses tem na string.
+
+exemplo:
+frase.count('o')  <-- isso vai mostrar quantos 'o' tem na string.
+frase.count('o', 0, 13) <-- assim vai mostrar quantos 'o' tem do indice 0 ate antes do indice 13.
+
+-Use o comando find('') para mostrar em que indice o python vai axar a string.
+exemplo:
+frase.find('deo')  <-- assim o python vai mostrar onde começa e termina os indice da string dentro do parentes.
+
+Se nao existir a string ele retorna -1.

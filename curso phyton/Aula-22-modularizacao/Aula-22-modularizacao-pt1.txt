@@ -1,0 +1,38 @@
+[CHECAR Aula21 - Modulos]
+
+MODULARIZAÇÃO E PACOTES
+
+CONSTRUIR MODULOS - Surgiu no inicio da decada de 60.sistemas ficaram maiores. 
+Dividir o progama, melhorar a legibilidade, facilita a manutenção.
+comparação entre a progamação classica sem modulos.
+Separar as funções do progama principal.
+Organiza melhor o código. oculta codigo detalhado. Reutilização em outros projetos.
+
+clique com o botao direito para criar uma função que não existe onde está vermelho
+
+Crie a função-def em outra pasta.
+
+Assim pode ser importado de outro arquivo py as funções para o arquivo do progama principal.
+
+exemplo:
+
+import funcoes    <-- aqui importa todas as funções que estão dentro do arquivo.
+num = int(input('Digite um número: '))
+fato = funcoes.fat(num)    <-- coloque antes do nome da função. o nome do arquivo que está no import. 
+print(fato)
+
+outro exemplo:
+
+from funcoes import fat   <-- caso use o from pode ser importado somente a função. <-- pode ser usado virgula, para chamar mais funções. 
+num = int(input('Digite um número: '))
+fato = fat(num)      <-- Assim não precisa do nome do arquivo antes.
+print(fato)
+
+
+math e time são modulos.
+
+pode ser importado dessa forma: from ex110.utilidades import moeda   <-- o ponto. importa uma pasta dentro de outro
+
+
+
+

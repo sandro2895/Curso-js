@@ -1,0 +1,49 @@
+ANOTAÇOES-MODULO-C-parte5-JS-GUANABARA.txt
+
+Use a propriedade line-height: ; para escolher onde colocar o texto dentro do elemento block-level.
+
+Eventos são coisas que se podem fazer com determinado elemento.
+
+Exemplo de eventos DOM:
+
+-Ao mover o mouse para dentro de uma <div> vai ativar o evento 'mouseenter.
+
+-Ao mover o mouse varias vezes já dentro da <div> vai ativar o evento 'mousemove.
+
+-Ao clicar e segurar com o botão do mouse na <div> vai ativar o evento 'mousedown.
+
+-Ao soltar e deixar de segurar o botão do mouse na <div> vai ativar o evento 'mouseup.
+
+-Ao aperta o botão do mouse e soltar rapidamente na <div> vai ativar o evento 'click.
+
+-Ao  mover o mouse para fora de uma <div> vai ativar o evento 'mouseout.
+
+-Existe outros eventos que poden acontecer somento com o mouse em javascript
+->https://developer.mozilla.org/pt-BR/docs/Web/Events.
+
+______________________________________________________________________________________________________________
+
+Funções
+
+Funções são conjunto de códigos e linhas que são executados somente quando determinado evento ocorrer.
+podem ser feitos na parte HTML  ou na parte  JAVASCRIPT do documento.
+
+Exemplo de função dentro do html:
+onclick= "()" faz o evento ocorrer ao clicar.
+
+<div id="area" onclick="clicar()">
+    interaja...
+
+// Coloque o nome  da função onclick do lado de function.
+nesse caso seria "clicar()".
+<script>
+    function clicar(){
+      let a = window.document.querySelector('div#area')
+      a.innerHTML = 'clicou'.
+    }
+  </script>
+
+´´Oque aconteceu foi que:
+quando eu cliquei na <div> o objeto "a foi criado. e nele foi feito uma ligação do objeto "a com o
+elemento de id="area". e em seguida esse objeto vai mudar o elemento dele para "clicou"
+

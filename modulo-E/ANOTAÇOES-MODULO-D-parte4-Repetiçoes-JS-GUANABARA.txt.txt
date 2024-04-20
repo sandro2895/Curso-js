@@ -1,0 +1,28 @@
+ANOTAÇOES-MODULO-D-parte4-Repetiçoes-JS-GUANABARA.txt
+
+Estrutura de repetição com variável de controle.
+
+logo no inicio são feitas 3 coisas :
+
+inicialização, teste logico e incremento.
+
+-Se o teste logico for verdadeiro a estrutura executa o bloco e em seguida volta pro teste logico
+e tambem faz o incremento em uma das 3 partes.
+sendo o teste verdadeiro novamente  o looping vai ser executado.
+quando o teste logico for falso a estrutura segue em frente. 
+
+exemplo desenhado:
+
+     for (inicio;teste;incr){
+		     
+                            <-- aqui é onde fica o bloco. pode ser colocado while,do while,if, else e switch.									
+  
+}
+
+exemplo:
+
+for(let c=1;       c<=10;    c++){
+    inicialização  teste     incremento
+                   lógico 
+
+}<-- bloco

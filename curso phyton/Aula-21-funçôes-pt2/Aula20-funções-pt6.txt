@@ -1,0 +1,35 @@
+
+
+
+def testa(b):
+    global a   <-- assim o a global vai dexar de ser 6 e virar 2. pois usa a variavel global em vez de local.
+    b += 2  <-- para adicionar o 'a con o 'b no parametro.
+    a = 2
+    print(b)
+    print(a)
+
+a = 6
+testa(a)
+
+outro exemplo:
+
+def testa(b):
+    global a
+    b += 2   <-- aqui está aumentando o a'global'.
+    a = 9
+    print(b)
+    print(a)   <-- aqui está usando o  a'local',
+
+
+a = 6
+testa(a)
+
+def somar(a=0, b=0, c=0):
+    s = a + b + c
+    return s    <--Use o retorne para pode atribuir variaveis a funções
+
+
+r1 = somar(2, 3, 6)    <--Aqui a variavel 'r1 recebe a soma()
+r2 = somar(5, 7)
+r3 = somar(9)
+print(f'somas: {r1}, {r2} e {r3}')

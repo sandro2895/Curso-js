@@ -1,0 +1,37 @@
+
+Listas - Outro tipo de variável composta.
+Listas sáo mutaveis . podem ser substituidos valores
+
+Ficam em cochetes []
+
+lista = []
+
+exemplo: 
+lanche = [Hambuguer, suco, pizza]
+lanche[2] = sorvete
+lanche - [hambuguer, suco, soverte]  <-- o valor pizza foi substituido por sorvete. 
+
+.append() adiciona um elemento no final da lista
+
+exemplo:
+lanche.append(cookie)	
+assim fica:  lanche = [hambuguer, suco, sorvete, cookie]
+
+.insert() insere um elemento em determinada posição
+exemplo:
+lanche.insert(0,hotdog)  <-- esse elemento vai ser inserido antes de hamburguer ficando:
+lanche = [hotdog, hambuguer, suco, sorvete, cookie]
+
+Use o del para tirar um elemento
+ex: del lanche[3]  <-- assim tirar o suco de lanche
+
+Tambem tem o .pop() que normalmente tira o ultimo elemento mas pode ser usado como lanche.pop(3)
+
+-E o .remove para tirar exatamente o valor. remove o primeiro valor da direita pra esquerda
+
+exemplo: lanche.remove('suco') 
+
+pode ser usado com if:
+
+if suco in lanche:
+    lanche.remove('suco')

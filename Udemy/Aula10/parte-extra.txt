@@ -1,0 +1,16 @@
+Verificar Aula11-Exercicio-strings
+
+use .slice{} para cortar as string
+
+exemplo:
+
+Coloque ${nome.slice(-3)} dentro document.body.inner html para já pegar as 3 ultimas letras
+
+
+Use .split('') para pegar somente as letras do seu nome 
+
+exemplo:
+
+document.body.innerHTML += `As letras do seu nome são: ${nome.split('')}<br />`;
+
+coloque tudo dentro do ${} quando for mostrar as string das variaveis de certa maneira.

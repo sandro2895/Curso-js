@@ -1,0 +1,10 @@
+exemplo:
+
+acertou = False
+
+while not acertou:  <-- assim o progama so vai parar quando a variável 'acertou' for true.
+if:
+true
+
+else:
+false

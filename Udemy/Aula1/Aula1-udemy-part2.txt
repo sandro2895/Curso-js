@@ -1,0 +1,16 @@
+Aula1-udemy-part2
+
+-Pode ser colocado A tag <script> dentro de <header> ou <body>
+-Dentro da tag <script> pode ser colocado codigos JS.
+
+Use <script src="">
+    
+  </script>
+
+Para selecionar um arquivo js para ficar dentro do Html
+
+Pode ser colocado no inspecionar alert('ola mundo!')
+
+fazendo aperecer um alerta na pagina.
+
+Não existe alert ('') no nodeJS. não aparecendo no terminal.

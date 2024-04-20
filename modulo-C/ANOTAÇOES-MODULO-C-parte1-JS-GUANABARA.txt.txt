@@ -1,0 +1,49 @@
+ANOTAÇOES-MODULO-C-parte1-JS-GUANABARA.txt
+
+DOM(Document Object Model)(Modelo de objeto para documento).
+Conjunto de objetos dentro do seu navegador que vai dar acesso aos componentes do 
+seu website.
+
+é a vertente web do javascript para o qual a linguagem foi criada.
+Árvore DOM e Manipulando DOM. Não fuciona no Nodejs.
+Está presente quando você está usando javascript no seu navegador.
+
+Instale a extensão Whatch in Chrome ou Live Server.
+Use Ctrl + Shift + P para usar o Whatch im Chrome
+
+Instale a extensão Node.js Exec.
+
+um exemplo de estrutura normal de documento é :
+
+-CSS
+ 
+-HTML
+
+-JAVASCRIPT
+
+Arvore DOM começa da raiz. 
+a raiz dentro do navegador é o comando window.
+tudo do javascript está dentro do objeto window(objeto DOM).
+Dentro do window existe varios objetos.
+Exemplo:
+-location <-- Localização do site, url, pagina anterior, pagina atual.
+
+-document <-- Documento atual
+--Dento de document existe o objeto html
+---dentro do objeto html existe os objeto head e body
+
+-history <--Guarda de onde você veio e pra onde você vai.
+
+Existem muito outros objetos.
+
+Objetos abaixo e dentro de outros são considerados child.
+Objetos acima com parentesco com os de baixo são comsiderado parent.
+
+Exemplo: 
+html é parent de head.   
+html é child de document.
+head é parent de meta e tittle.
+h1, p, div são child de body.
+p é parent de strong.
+
+

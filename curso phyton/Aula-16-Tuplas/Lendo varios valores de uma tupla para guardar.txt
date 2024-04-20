@@ -1,0 +1,6 @@
+
+
+numbers = (int(input('Digite o primeiro número: ')), int(input('Digite o segundo número: ')),
+           int(input('Digite o terceiro número: ')), int(input('Digite o quarto número: ')))
+
+	 | cada int(input()) é um valor dentro da variavel composta numbers.

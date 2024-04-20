@@ -1,0 +1,38 @@
+checar ex044:
+
+O JUROS É A PORCENTAGEM TA PARCELA + A PROPRIA PARCELA.
+E ADICIONE O VALOR TOTAL AO PRODUTO NO FINAL.
+
+EXEMPLO:
+
+ juro20 = compr * 20 / 100
+    mesesja = compr / meses
+    jurosb = mesesja * 20 / 100
+    jurostot = mesesja + jurosb
+    mesestotj = compr + juro20
+
+
+Divida o produtor por x valor e guarde
+
+tira uma porcentagem x do valor guardado divido
+
+e assim some o valor que foi antes divido pela  porcentagem tirada do valor dividido
+
+ex:
+
+4000/10
+= 400
+
+400 x 20 /100
+= 80
+
+400 + 80 = 480  <-- esse é o valor de 20% juros da parcela.
+
+4000 x 20 / 100
+= 800
+
+4000 + 800 = 4800 <-- esse é o total do valor do produto em  20% juros.
+
+
+
+33,33 6,6

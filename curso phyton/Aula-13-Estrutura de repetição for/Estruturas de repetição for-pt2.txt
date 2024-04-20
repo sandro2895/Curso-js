@@ -1,0 +1,32 @@
+exemplo1:
+
+saud = 'oi'
+for saud in range(0, 3):   <--- o python sempre mostra ate o valor anterior ao número do final. que nesse caso seria 3.por isso sempre comece no 0
+    print('oi')    <-- o oi será mostrado 3 vezes
+
+exemplo2:
+
+for saud in range(0, 3):
+    print('oi')        <--Assim o python escreveria 'oi' 'fim' 3 vezes.
+    print('fim')
+
+
+exemplo3:
+for saud in range(0, 3): <-- Assim o python ia escrever de 0 ate 2.
+    print(saud)
+
+exemplo4:
+for cont in range(6, 0, -1): <-- Assim ele vai contar de 6 ate 1. por causa da interação -1 que vai removendo.
+    print(cont)
+print('fim')
+
+exemplo5:
+for cont in range(0, 7, 2): <-- Assim o python vai contar de 0 ate 6 passando de 2 em 2. por causa da interação do 2 no final
+    print(cont)
+print('fim')
+
+exemplo6:
+n = int(input('Digite um número: '))
+for cont in range(0, n): <-- assim o python coloca a variavel com input para contar.
+    print(cont)
+print('fim')

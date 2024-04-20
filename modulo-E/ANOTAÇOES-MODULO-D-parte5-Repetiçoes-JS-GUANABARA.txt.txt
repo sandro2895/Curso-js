@@ -1,0 +1,34 @@
+ANOTAÇOES-MODULO-D-parte5-Repetiçoes-JS-GUANABARA.txt
+
+
+exemplo estrutura for:
+
+for(let c=1;c<=10;c++){
+ console.log(`numero ${c}`) <--coloque aqui no bloco oque vai ser repetido.
+
+}
+
+fazendo depuração.
+
+No VScode abra a aba Run e clique em start debug.
+
+clique no codigo e deixe uma bolinha vermelha para marcar
+onde  a depuração vai começar.
+clique em Run and Debug.
+clique em step over (F10) para fazer o codigo avançar aos poucos.
+clique em watch e digite o nome da expressão que você quer assistir a mudança.
+
+Ordem:
+
+incializaçao > teste logico > bloco > incremento > teste logico > bloco > incremento.
+
+ate o teste logico ser falso.
+
+erro de logica na progamação não aparecem e podem impedir progamas de executar.
+
+O sinal += representa concatenção. não adição.
+ 
+for(let c = i; c <= f; c += p) <-- Isso faz a variável c receber ela mesmo + variável P concatenada. 
+quando for fazer um for em um if ou else atribua o inicio da contagem a uma nova variavel
+
+length as vezes pode causar travadas no progama.

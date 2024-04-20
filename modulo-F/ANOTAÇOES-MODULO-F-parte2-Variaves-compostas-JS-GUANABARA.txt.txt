@@ -1,0 +1,33 @@
+ANOTAÇOES-MODULO-F-parte2-Variaves-compostas-JS-GUANABARA.txt
+Mostrando Vetores(array) no VScode.
+
+Se for colocado somente a váriavel o terminal acrecenta cochetes e colocas os valores dentro. 
+
+console.log(num)
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\ambient.js"
+[ 2, 4, 6, 8 ]
+___________________________________________________________________________________________________________________
+
+let num = [2, 4, 6, 8]
+
+console.log(`Mostrando vetor ${num}`)
+
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\ambient.js"
+Mostrando vetor 2,4,6,8
+
+Acrecentando elemento e valor no vetor.
+
+coloque a variavel e cochete [] com indice dentro atribuido ele a um valor.
+
+exemplo:
+num[4] = 10
+
+console.log(`Mostrando vetor novamente ${num}`)
+
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\ambient.js"
+Mostrando vetor 2,4,6,8
+Mostrando vetor novamente 2,4,6,8,10
+
+Se o indice na váriavel não existir o javascript cria ele e acrecenta o valor atribuido.
+
+

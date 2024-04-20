@@ -1,0 +1,37 @@
+
+E uma estrutura de repetição com teste logico
+
+exemplo teorico:
+
+enquanto não true:
+	passo
+pega                 <-- o comando 'pega' fica fora da estrutura. o comando só chega no pega quando o true se tornar falso.
+
+
+exemplo1 no python:
+while not true:
+    passo
+pega
+
+
+exemplo teorico:
+enquanto não true:
+   se chao:         <--O comando while vai ficar fazendo todos esses testes para cada ciclo sempre.
+    passo
+   se buraco:
+   pule
+   se moeda:
+   pega moeda
+pega
+
+
+exemplo2 no python:
+while not true:
+   if chao:
+    passo
+   if buraco:
+    pule
+   if moeda:
+   pega
+pega
+  

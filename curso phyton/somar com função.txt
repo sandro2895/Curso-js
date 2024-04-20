@@ -1,0 +1,5 @@
+
+
+exemplo:
+
+sum(partidas)  <-- soma tudo que está dentro da lista partidas.

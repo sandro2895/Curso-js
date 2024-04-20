@@ -1,0 +1,7 @@
+Converta para split para separar em lista em espaços
+
+nome1 = str(input('Diga seu nome completo: '))
+nome2 = nome1.split()
+
+
+print(nome4[-1])  <-- isso vai mostrar a ultima palavra da frase.

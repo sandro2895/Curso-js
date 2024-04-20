@@ -1,0 +1,6 @@
+atribua a variavél a imagen:
+
+exemplo:
+
+img.src = 'fotomanha.png' <-- não esquecer as aspas
+

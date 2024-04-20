@@ -1,0 +1,9 @@
+
+Para ler a ultima posição onde uma letra aparece em uma string
+
+Use var.rfind('')  <-- coloque a string dentro do parenteses
+
+exemplo:
+
+conta3 = frase3.rfind('A')  <-- esse comando vai mostrar em que posição está o ultimo 'A' da frase(string).
+

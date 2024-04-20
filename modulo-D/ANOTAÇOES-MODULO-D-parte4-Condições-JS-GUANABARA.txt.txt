@@ -1,0 +1,36 @@
+ANOTAÇOES-MODULO-D-parte4-Condições-JS-GUANABARA.txt
+
+Condiçoes aninhadas possui um IF dentro do outro representado como else if
+exemplo:
+
+Bloco01 if(condição01) {
+           Verdadeiro
+Bloco02 }else if(condição02){ <-- O bloco02 é executado caso a condição01 for falsa.
+                Verdadeiro
+Bloco03 }Else { <-- Caso as condições 01 e 02 sejam falsas o bloco03 é executado.
+        Falso
+       }
+
+Deixar de colocar else e if pode dar erro de logica.
+Varios outros niveis de blocos else if podem ser adicionados.
+
+Exemplo de condição aninhada:
+
+let idade = 27
+console.log(`Você tem ${idade} anos`)
+if (idade < 16){
+  console.log('Não vota')
+} else if(idade < 18 || idade > 65){
+  console.log('Voto opcional')
+} else{
+  console.log('Voto obrigatorio')
+} 
+Verifique exercicios ex011.js e ex12.js no VScode.
+
+Pegando a hora no sistema e etc para usar nas variavel
+De exemplo atribua new Date() a variavel.
+exemplo :
+let agora = new Date()
+let = hora = agora.getHours() <--.getHours() pega a hora do sistema
+
+-Use os parenteses para não dar erro de sintaxe.

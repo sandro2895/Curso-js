@@ -1,0 +1,11 @@
+
+ler somente o indice das letras sem espaços.
+
+
+-Use len(var.replace(' ','')
+
+exemplo: 
+nome1 = input('Diga o seu nome completo: ')
+
+nome2 = len(nome1.replace(' ', ''))  <--Assim o Python vai substituir os espaços vazios pelo valor da direita que seria nada.
+                espaço vazio] [espaço de nada

@@ -1,0 +1,37 @@
+
+Classes
+OOP (Object-Oriented Progaming)
+
+-Utilizadas para criar objetos (instancia)
+-Objetos são partes dentro de uma Class (instancias)
+-Classes são utilizados para agrupar dados e funções, podendo reutilizar:
+-O melhor jeito de se utilizar classes é colocando funções dentro.
+ex:
+Classes: Frutas
+Objects: Abacate, Banana...
+
+
+Pode colocar varias funções dentro de uma classe. também pode ser colocado dados.
+
+String é um tipo de classe.
+
+.lower()  <--O ponto é um exemplo de metodo.
+
+objetos são tipo subcategorias das classes.
+
+Toda classe tem que ser com a primeira letra maiuscula.
+
+Colocando pass dentro de uma class deixa ela vazia.
+
+ex:
+
+class Funcionarios:
+    nome = 'Elena'
+    sobrenome = 'Cabral'
+
+usuario1 = Funcionarios()  <--Assim é criado um objeto.  Pois a variavel recebe uma classe
+
+usuario1.nome  <--Assim se pode ter acesso aos dados nome e sobrenome dentro da classe com o ponto.
+
+print(usuario1.nome)  <--Pode ser dado o print.
+

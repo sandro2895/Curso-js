@@ -1,0 +1,7 @@
+
+Instale a extensão Node.Exec no VScode
+
+Aperte F8 para executar um codigo em javascript no  VScode paro Node.Exec
+
+Se você selecionar algo o vscode só vai executar o codigo selecionado
+-Para executar tudo. Não selecione nada.

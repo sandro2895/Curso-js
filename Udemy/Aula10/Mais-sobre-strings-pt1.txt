@@ -1,0 +1,29 @@
+
+String são indexadas no javascript de acordo com numero de letras.    ex : 01234567 
+                                                                          'Um Texto'  
+
+Pode ser usado aspas duplas dentro de uma string com aspas normais.
+
+Use duas barras invertidas se quiser bota uma barra invertida no texto
+
+let texto = 'um \\texto';
+
+Pegando só um elemento de um indice de string:
+
+let texto = 'um texto';
+
+console.log(texto[3],  texto[7]) <-- o indice 3 corresponde a T . -qualquer coisa fora do indice fica undefined.
+
+Resultado terminal =
+
+t o
+
+Pode ser utilizado também .charAt().
+
+Exemplo:
+
+console.log(texto.charAt(6) <-- caso pegue um valor fora do indice vai aparecer um valor vazio.
+
+Resultado terminal = t
+
+ 

@@ -1,0 +1,56 @@
+ANOTAÇOES-MODULO-B-parte3-JS-GUANABARA.txt
+
+
+No VScode
+pode ser copiado todo o codigo de um arquivo nas pastas de editores a esquerda
+para criar outro rapidamente usando ctrl + c e  crtl + v .
+
+ARMAZENANDDO DADOS NAS VARIAVEIS
+
+Dentro do <script>
+Exemplo:
+let nome = window.prompt('qual é seu nome?')
+
+fazendo assim a variável 'nome' receber o resultador que sair no 
+prompt (janela de texto)
+
+o + no javascript tem  o significado de concatenação
+
+para juntar string ou number e outros no javascript use o sinal de + (concatenação)
+exemplo
+window.alert('meu nome é ' + name)
+
+se for colados juntos
+let name = window.prompt('qual é seu nome?') <-- armazena os dados na variavel 'name'
+window.alert('meu nome é ' + name) mostra os dados armazenado da variável 'name' em um alert)
+
+pode ser declarados variáveis no <script>
+pode ser somado variáves no script e colocado no alert
+exemplo:
+
+var n1 = 5
+let n2 = 8
+soma = n1 + n2
+window.alert(soma)
+
+Forçando um sinal de + (contatenação) a fucionar como adição.
+(number + number ) o valor de + faz uma adição.
+(string + string ) faz uma concatenação.
+
+O comando window.prompt('') sempre retorna uma string.
+
+Fazendo uma conversão de String para Number.
+
+O comando Number.parselnt(n) faz a conversão de um número para um número inteiro.
+O comando Number.parseFloat(n) faz a conversão de um número para um número real com virgula.
+( o Flaot vem de ponto flutuante que seria o . no meio dos números.)
+
+selecione uma linha toda e digite ( para fazer o parenteses ficar todo em uma linha
+convertendo os numero dentro de window.prompt('') 
+coloque o Number.parselnt ou Number.parseFloat(n)antes do window.prompt('') isso pode ser feito em outros comandos.
+exemplo:
+var n1 = Number.parseInt(window.prompt('digite um número: '))
+Assim  o dado da váriavel é convertido em number.
+colocando somente Number(n) fuciona para inteiro e real.
+exemplo:
+var n2 = Number(window.prompt('digite outro número: '))

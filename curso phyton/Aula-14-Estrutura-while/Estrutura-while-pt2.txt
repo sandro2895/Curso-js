@@ -1,0 +1,31 @@
+[checar Aula14.py] não esquecer de usar o sinal !=  de diferença.
+
+ex1:
+c = 0 <-- declare a variável antes;
+while c < 10:    <-- aqui é enquanto 'c' for menor que 10.
+    c = c + 1     <-- o 'c' vai receber c + 1.
+    print(c)
+
+ex2:
+c = 11
+#while c > 0:
+   # c = c -1    <-- a estrutura vai ficar tirando -1 de c enquanto ele for maior que 0.
+    #print(c)
+
+ex3:
+num = 1      
+while num != 0:   <--Aqui é enquanto 'num' for diferente de 0 o progama vai continuar.
+    num = int(input('Digite um número: '))   <-- A estrutura vai pedindo um número e somente quando o número for 0 vai parar.
+print('Fim')
+
+
+
+ex4:
+num = 1    
+resp2 = 'Sim'   <-- não esquecer de declarar a variável antes.
+while resp2 == 'Sim':           <--Aqui enquanto a resp2 for 'Sim' o progama vai continuar.
+    num = int(input('Digite um número: '))
+    resp1 = input('Quer continuar? Sim/Nao: ')
+    resp2 = resp1.title()
+
+print('Fim')

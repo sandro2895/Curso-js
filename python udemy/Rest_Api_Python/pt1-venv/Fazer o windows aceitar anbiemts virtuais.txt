@@ -1,0 +1,7 @@
+
+
+Abra o PowerShell como administrador:
+
+E digite a linha de comando:
+
+Set-ExecutionPolicy Unrestricted -Force

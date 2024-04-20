@@ -1,0 +1,11 @@
+CALCULAR PAREDE
+
+Multiplique a altura e a Largura em metros
+
+larg * alt
+
+e depois divida por 2 metros
+
+(larg * alt)/2
+
+a cada 2 metro quadrado precisar de 1 litro de tinta é igual a 1/2

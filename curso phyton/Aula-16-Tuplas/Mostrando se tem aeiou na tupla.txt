@@ -1,0 +1,11 @@
+
+
+exemplo: 
+Words = ('aprender', 'programar', 'linguagem', 'python',
+         'curso', 'gratis', 'estudar', 'praticar', 'trabalhar',
+         'mercado', 'programador', 'futuro')
+for cont in Words:
+    print(f'\nNa palavra {cont} temos: ', end=' ')
+    for letra in cont:   <-- crie outro  for var in cont:
+        if letra.lower() in 'aeiou':   <-- aqui se a variavel letra minuscula estiver com 'aeiou' vai dar print somento nas vogais.
+            print(letra, end=' ')

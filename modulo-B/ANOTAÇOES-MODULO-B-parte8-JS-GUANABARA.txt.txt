@@ -1,0 +1,41 @@
+ANOTAÇOES-MODULO-B-parte8-JS-GUANABARA.txt
+
+Operadores logicos
+
+! <-- Negação(únario)não
+
+&& <--conjunção(e)binario- Só resulta true se as duas junçao forem true
+
+|| <-- disjunção(ou)pipes- basta que uma das junçoes sera true para resultar em true
+
+exemplos:
+> a
+5
+> b
+8
+> a > b &&  a < b
+false
+> a < b &&  b > a
+true
+___________________________________________________________________________________________
+
+> a
+5
+> b
+8
+> a > b || b < a
+false
+> a < b || b < a
+true
+
+Orden de procedencia operadores logico
+Negação(não) > e(conjunção) > ou(disjunção). 
+
+Orden de procedencia
+-Operadores aritméticos (parenteses > potência > multiplicação > divisão > 
+divisão inteira > adição > subtração)
+
+> Operados relacionais ( maior > menor > maior igual > menor igual) 
+
+> Operadores logicos (Negação(não) > e(conjunção) > ou(disjunção)
+

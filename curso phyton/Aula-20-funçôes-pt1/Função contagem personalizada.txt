@@ -1,0 +1,30 @@
+
+é melhor o while para fazer as contagem
+import time
+def contador(i, f, p):
+    print(f'contagem de {i} ate {f} de {p} em {p}')
+     if p < 0:      <--não esquecer de transformar o passo em positive caso ele seja número negativo com * -1
+        p *= -1
+    elif p == 0:    <--Aqui caso o p seja 0 atribua o 1 a ele.
+        p = 1
+    if i < f:    <--Final aqui
+        cont1 = i    <--inicio aqui
+        while cont1 <= f:    
+            print(cont1, end=' ', flush=True)  <-- o comando flush=True é necessario para o sleep funcionar.
+            cont1 += p    <--Passo aqui
+            time.sleep(0.5)
+    else:
+        cont2 = i
+        while cont2 >= f:
+            print(cont2, end=' ', flush=True)
+            cont2 -= p
+            time.sleep (0.5)
+
+contador(1, 10, 1)
+print('Fim!')
+contador(10, 0, 2)
+print('Fim!')
+ini = int(input('Inicio: '))
+fim = int(input('Fim: '))
+pas = int(input('Passo: '))
+contador(ini, fim, pas)

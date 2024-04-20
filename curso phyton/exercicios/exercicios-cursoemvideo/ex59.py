@@ -1,0 +1,38 @@
+num1 = int(input('Digite o primeiro número: '))
+num2 = int(input('Digite o segundo número: '))
+soma = 0
+multi = 0
+maior = 0
+menor = 0
+fim = False
+while not fim:
+    Menu = (input("""
+        MENU
+    [1] Somar Números
+    [2] Multiplicar números
+    [3] Número maior e menor
+    [4] Digitar novos números
+    [5] Sair do programa
+    """)).strip()
+    if Menu == '1':
+        soma = num1 + num2
+        print('A soma de {} e {} resulta em: {}'.format(num1, num2, soma))
+    elif Menu == '2':
+        multi = num1 * num2
+        print('A multiplicação de {} com {} resulta em: {}'.format(num1, num2, multi))
+    elif Menu == '3':
+        if num1 > num2:
+            maior = num1
+            menor = num2
+        if num2 > num1:
+            maior = num2
+            menor = num1
+        print('O maior número é: {}. e o menor número é: {}'.format(maior, menor))
+    elif Menu == '4':
+        num1 = int(input('Digite O primeiro número: '))
+        num2 = int(input('Digite O segundo número: '))
+    elif Menu == '5':
+        fim = True
+    else:
+        print('Opção invalida tente novamente!')
+print('Fim')

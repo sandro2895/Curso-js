@@ -1,0 +1,32 @@
+
+Erros
+-Exelentes para testes
+-Impedi o 'stop' do progama
+-Pode ser feito mensagens customizadas
+
+ex:
+
+try:
+    letras = ['a', 'b', 'c']
+    print(letras[3])
+except IndexError:   <--coloque o erro especifico e assim o progama continua a rodar .
+    print('Index fora de alcance')
+
+
+integer = inteiro
+
+
+else e finnaly:
+
+try:
+    valor = int(input('Digite um valor: '))
+    print(f'valor digitado {valor}')
+except ValueError:
+    print('Valor digitado incorreto!')
+else:		<--Só vai aparecer o else caso o try estiver certo. É bom para ser usado quando você quer mostrar algo quando estiver positivo!
+    soma = lambda x: x * 2
+    print(f'Valor multiplicado por 2: {soma(valor)}')
+
+
+finally:  <--O finnaly Retorna algo, Independente de o try estiver certo ou não
+    print('codigo ok!')

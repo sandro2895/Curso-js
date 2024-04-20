@@ -1,0 +1,6 @@
+Aula1-udemy
+
+Executando um comando a mão no terminal.
+
+aperta setinha para baixo para ver a pasta atual
+e em seguida ao lado do texto da pasta atual coloque cd e o nome da pasta para onde você quer ir.

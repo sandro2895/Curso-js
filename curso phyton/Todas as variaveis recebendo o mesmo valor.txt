@@ -1,0 +1,6 @@
+Exemplo:
+
+num = soma = cont = 0
+
+Assim todas as variáveis estão recebendo 0
+

@@ -1,0 +1,66 @@
+ANOTAÇOES-MODULO-B-parte2-JS-GUANABARA.txt
+fazendo comentarios.
+// <-- uma unica linha. 
+coloque // no inicio de qualquer comando para deixar já deixar ele 
+comentado.
+
+
+/* <-- mais de uma linha do código. <--esse tipo de comentario tambén pode ser feito no css
+*/
+Use /* no começo da linha para já comentar todo o resto do codigo. e use */ para 
+fexar ate onde
+vai ser comentado.
+Armazenando os dados
+
+null dexa a variavel sem receber nada.
+
+identificadores variaveis:
+
+-Podem começar com letra, $ ou _
+-não podem começar com números
+-É possível usar letras ou números
+-é possível usar acentos e símbolos
+-Não podem conter espaços
+-Não podem ser palavras reservadas.
+-Váriaveis maiusculas e minusculas acabam sendo variaveis diferentes.
+-Use nomes coerentes.
+
+.exit fexa o nodeJS
+Criando variáveis
+
+use o let ou var e em seguida o identificador da variavel e  sinal de atribuição
+exemplo:
+
+let nome = 'doca'
+
+pode ser mudado o dado da variavél novamente so digitando o identificador e atribuição
+
+exemplo :
+
+nome = 'sandro'
+
+abrindo um terminal no VScode : ctrl+ sifht + crase , exit fexa o terminal.
+cuidado para não abrir varios terminais.
+
+Para usar o node no VScode digite node no terminal digite node. 
+os mesmos comandos do nodeJS fucionam aqui. 
+Ctrl + l <-- limpa a tela do terminal.
+
+somando variáveis =
+pode ser colocado duas variáveis com o  sinal de +
+exemplo:
+n1 + n2
+pode ser subtraido e multiplicado e outros,
+
+Use [] para fazer um object.
+Use function(){} para função.
+
+Use o comando typeof e em seguida o identificador da variavel para 
+saber o seu tipo primitivo. pode ser colado so o numero ou string para identificar também
+exemplo:
+typeof name
+    ou
+typeof 5
+
+NaN(not a number) e Infinity também é considerado um number.
+

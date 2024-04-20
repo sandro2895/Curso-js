@@ -1,0 +1,37 @@
+CHECAR [Aula16.py]
+
+lanche = 'Hamburger', 'Suco', 'Pizza', 'Pudim' <-- as tuplas podem ser feitas sem parenteses agora.
+
+exemplo2:
+lanche = ('Hamburger', 'Suco', 'Pizza', 'Pudim')
+print('{} {}'.format(lanche[1], lanche[2]))   <-- assim vai mostrar Suco Pizza
+
+
+print('{}'.format(lanche[::-1])) <-- O comando ::-1 mostra a tupla ao contrario.
+
+
+exemplo3:
+
+lanche = 'Hamburger', 'Suco', 'Pizza', 'Pudim'
+for com in lanche:
+    print(com)   <-- Assim a variavel com vai mostrar do começo ao fim Hamburger a Pudim.
+
+
+exemplo4:
+lanche = 'Hamburger', 'Suco', 'Pizza', 'Pudim'
+for com in lanche:
+    print('Vou comer {}'.format(com))
+Resultado terminal:
+
+Vou comer Hamburger        <-- vai fazer 4 vezes pois é o número de valores.
+Vou comer Suco
+Vou comer Pizza
+Vou comer Pudim
+
+
+exemplo5:
+
+lanche = ('Hamburger', 'Suco', 'Pizza', 'Pudim')
+for cont in range(0, len(lanche)):
+    print(lanche[cont])     <-- assim vai mostrar do mesmo jeito  onde esta lanche no cont.
+    print('Eu vou comer {}'.format(lanche[cont]))

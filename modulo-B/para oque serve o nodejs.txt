@@ -1,0 +1,5 @@
+Em resumo, você deve usar o Node. js em situações em que há muitas requisições, já que, 
+usando um loop de eventos, o Node. js interpreta, em uma única thread, as 
+requisições de forma assíncrona em vez de sequenciais, 
+e não permitindo bloqueios.
+fazendo assim os dados serem enviando de maneira mei que automaticas.

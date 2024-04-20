@@ -1,0 +1,9 @@
+
+
+
+
+
+if 3 in numbers:   <-- Aqui está verificando se existe o valor 3 dentro da tupla numbers
+    print(f'O número 3 apareceu pela primeira vez na posição: {numbers.index(3)+1}')
+else:
+    print(f'O número 3 Nunca apareceu')

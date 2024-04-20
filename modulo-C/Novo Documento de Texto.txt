@@ -1,0 +1,15 @@
+
+
+O comando no <script> window.document.write("") faz aparecer um texto na pagina.
+
+é possivel buscar configurações da sua pagina puxando comandos com DOM.
+exemplo :
+
+window.document.write(window.document.title)
+
+indow.document.write(window.navigator.appName) mostra que o google chrome está
+se comportando como navegador netscape.
+
+window.document.write(window.document.URL) Mostra a url da sua pagina.
+
+tudo que está dentro da Àrvore DOM são chamados de elementos.

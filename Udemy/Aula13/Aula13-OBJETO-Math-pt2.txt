@@ -1,0 +1,47 @@
+checar Aula13-pt2.js
+
+Mostrando o maior número de uma sequencia;
+
+Use Math.max
+
+exemplo:
+
+console.log(Math.max(1,2,3,5,10));
+
+Resultado terminal = 10
+
+Math.min <-- mostra o menor número da sequencia
+
+console.log(Math.min(1,2,3,5,10));
+
+Resultado terminal = 1
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Use Math.random();
+
+para mostrar números aleatorios com casa decimal.
+
+exemplo:
+
+console.log(Math.random());
+
+
+Arredondando um número entre um número e outro.
+
+
+exemplo:
+
+let = random = Math.round(Math.random() * (1-4) + 4); <-- pode ser colocado dentro do Math.round para arredondar o número.
+- o número aleatorio está entra 1 e 4.
+
+console.log(random)
+
+
+
+
+Math.PI <-- Mostra o valor de pi.
+
+
+
+

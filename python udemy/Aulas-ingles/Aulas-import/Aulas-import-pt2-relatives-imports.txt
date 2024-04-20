@@ -1,0 +1,9 @@
+
+
+from ..mylib import*  <--importa coisas do segundo nivel da pasta em questão
+
+mas pode ser feito:
+
+from lib.operations import operator  <-- Assim importa o arquivo operator que estã dentro de operations que está dentro de lib que é a primeira pasta.
+
+

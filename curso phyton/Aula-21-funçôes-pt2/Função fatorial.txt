@@ -1,0 +1,16 @@
+[Checar Pratica20a.py]
+
+def fatorial(num=0):
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c
+    return f
+
+
+f1 = fatorial(5)
+f2 = fatorial(2)
+f3 = fatorial(3)
+print(f'Fatoriais: 5=[{f1}] 2=[{f2}] 3=[{f3}]')
+
+
+Pode ser usado também par ou impar:

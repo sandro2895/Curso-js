@@ -1,0 +1,51 @@
+ANOTAÇOES-MODULO-B-parte4-JS-GUANABARA.txt
+conversõs de number para string
+coloque espaços antes as ''(aspas) para fazer mais espaços entre stings e variavels.
+Utilizando String(n).
+
+para converter algo especifo em string Use n.toString()
+
+exemplo:
+window.alert('Á soma de n1 + n2 resulta em '+ String(soma))
+
+            ou
+
+window.alert('Á soma de n1 + n2 resulta em '+ soma.toString())
+
+Formatação de novas strings dentro de outras.
+
+Use concatenação.
+exemplo :
+var s = 'javascript'
+
+' eu estou estudando ' + s     
+
+Resulta em :
+
+' eu estou estudando javascript'
+
+' eu estou estudando s'  <-- não faz interpolação.
+
+Exemplo de string com variáveis
+> 'O aluno' + nome + ' com ' + idade + ' anos de idade ' + ' tirou nota ' + nota
+'O aluno Sandro com 27 anos de idade  tirou nota 5.5'
+
+Facilitando string maiores e combinação de váriaveis.
+
+Usando template strings.
+
+use `${Variavel}`<-- placeholder ao lado de uma string (tem que ser dentro de crase ``) 
+Exemplo:
+> `O aluno ${nome} com ${idade} anos de idade tirou nota ${nota}`
+'O aluno  Sandro com 27 anos de idade tirou nota 5.5'
+
+Exemplo no <script>
+window.alert(`A soma entre ${n1} e ${n2} resulta em : ${soma}`)
+
+comando ao lado direito das chaves com as variáveis.
+.length <-- diz quantas letras tem uma string.
+.toUpperCase() <-- coloca a string como letras 'MAIÚSCULAS',
+.toLowerCase() <-- coloca a string como letras 'minúsculas',
+
+
+   

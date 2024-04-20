@@ -1,0 +1,42 @@
+ANOTAÇOES-MODULO-B-parte1-JS-GUANABARA
+
+referencias de livros:
+
+-JavaScript O guia definitivo
+-JavaScript Guia do progamador
+-Guia de referencia da Mozilla
+:https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference
+-ECMA:
+https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+
+Font: ; é um shorthand para fonts
+exemplo:
+font: normal 20pt arial;
+
+fazendo script interno no html.
+
+Use a tag <script> dentro da tag <body>. 
+permitindo assim colocar comandos de progamação no javascript.
+<script> é a parte de progamação(interação).
+O ; no final de cada comando não é obrigatório.
+
+Use o comando window.alert('') dentro de <script> para fazer uma janela de mensagem
+de alerta aparecer no navegador. pode ser usado com somente alert('').(alerta) 
+exemplo:
+script>
+    window.alert('Minha primeira mensagem');
+  </script>
+
+Use o comando Windows.confirm('') para fazer um janela de confirmação na 
+pagina do navegador.(confirmação)
+exemplo:
+<script>
+    window.confirm('Está gostando de JS?')
+  </script>
+
+Use window.prompt('') para fazer aparecer uma janela que pede a digitação de um texto
+na pagina do navegador.(pergunta)
+exemplo:
+window.prompt('Qual é o seu nome?')
+
+é necessario variaveis para completar as interações.

@@ -1,0 +1,19 @@
+ANOTAÇOES-MODULO-D-exercicio-16-pt2-JS-GUANABARA.txt
+
+
+para adicionar algo ao resultado de for ou alguma outra coisa
+use += concatenação apos a chaves com (VARIAVEL).innerHTML.
+
+EXEMPLO:
+
+for(let c = i; c <= f; c += p) 
+
+    res.innerHTML += ` ${c} \u{1F449}`
+
+  }
+  res.innerHTML += `\u{1F3C1}`
+}
+
+-= é o sinal para perder concatenação
+
+A tag <br> ao lado de uma string pode quebrar a linha .

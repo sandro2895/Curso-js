@@ -1,0 +1,47 @@
+ANOTAÇOES-MODULO-C-parte3-JS-GUANABARA.txt
+
+Selecionando elemento por ID
+
+-Use o comando getElementById().
+
+Selecionando elemento por Nome
+
+-Use o comando getElementsByName(). use [0] quando tiver mais de um objeto.
+
+Selecionando elemento por Classe
+
+-Use o comando getElementsByClassName(). use [0] quando tiver mais de um objeto. 
+
+Exemplos:
+
+var d = window.document.getElementById('msg')
+window.document.write(d.innerText) 
+
+d.innerText = " esperando aqui.." <-- isto altera  o texto dentro da váriavel. 
+             ou
+window.document.getElementById('msg').innerText = 'Eae!' <-- Isto também altera o texto dentro da váriavel.
+
+__________________________________________________________________________________________________________________
+
+Selecionando por nome:
+
+<div name ="mensagem">Clique aqui por favor</div><br>
+  
+<script>
+let m1 = window.document.getElementsByName('mensagem')[0]
+   window.document.write(m1.innerText)
+
+</script>
+
+____________________________________________________________________________________________________________________
+
+Selecionando por classe :
+
+<div class="leitura">Poderia clicar aqui?</div><br>
+  
+<script>
+let m2 = window.document.getElementsByClassName('leitura')[0]
+   window.document.write(m2.innerText)
+
+</script>
+

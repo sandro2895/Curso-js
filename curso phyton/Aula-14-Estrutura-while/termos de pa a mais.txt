@@ -1,0 +1,17 @@
+
+
+ptermo = int(input('Digite o primeiro termo: '))
+razao = int(input('Razão'))
+termo = ptermo
+cont = 1
+tot = 0
+mais = 10
+while mais != 0:
+    tot = tot + mais   <--Aqui o 'tot' ja vai receber o 10 da variavel 'mais'.
+    while cont <= tot:     <--No começo o 'tot' vai ser 10 e depois pode ser adicionado mais números do 'mais'.
+        print(termo, end=' > ')
+        cont = cont + 1
+        termo = termo + razao
+    print('PAUSE')
+    mais = int(input('Quantos termos você quer mostrar a mais? ')) <--Aqui o 'mai's vai sendo adicionado ao 'tot'.
+print('FIM')

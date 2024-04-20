@@ -1,0 +1,33 @@
+
+
+A funçao .length ao lado de uma variavel mostra quantos caracteres a string tem - conta ainda com o indice começando no 0
+exemplo:
+
+let texto = 'O rato roeu a roupa do rei de roma';
+
+console.log(texto.length)
+
+Resultado terminal = 34
+
+Use o .slice() para pegar somente uma parte da string usando indices. - sempre vá um poco a mais.
+
+exemplo:
+
+console.log(texto.slice(7, 11)) <-- a esquerda é começo e na direita é o fim que você quer pegar da string.
+                             - se for posto negativo o progama vai dar a volta e pegar do outro lado.
+resultado terminal = roeu
+
+
+
+Para dividir uma string entre espaços de array use .split() 
+
+exemplo:
+let texto = 'O rato roeu a roupa do rei de roma';
+
+console.log(texto.split(' '))  assim divide somente os espaços 
+
+console.log(texto.split('o', 3)) <-- assim coloca para dividir a letra 'o' somente 3 vezes 
+
+console.log(texto.split('o')) <-- assim divide somente os o.
+
+resultado terminal =  [ 'O rat', ' r', 'eu a r', 'upa d', ' rei de r', 'ma' ]

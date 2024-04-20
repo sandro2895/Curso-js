@@ -1,0 +1,33 @@
+Aula8- Os comandos a seguir são considerados funções ou metodos que ficam dentro de um objeto.
+-ctrl+l limpa o console no inspecionar.
+
+Alert() <-- é um atalho para chamar uma função que ta dentro do object window.
+
+Use alert() no javascript para fazer uma mensagen alerta aparecer.
+ex:
+alert('Ola mundo')
+ou window.alert('Ola mundo') <-- o dado resultado depois de você pressionar ok fica undefined.
+
+Use especionar na pagina para mexer no console do navegador
+
+Window é um objeto que tem varias funções na pagina do navegador sendo uma front end.
+
+Declare window no console do navegador  e abra a setinha ao lado do nome.para ver varias funções.
+Dentro de window tem o objeto document que dentro tem html com o body.
+
+Pode ser criado um alerta mensagen de confirm no navegador atraves do javascript de confirmar ou cancelar
+
+sendo cancelar o valor boolean falso e o confimar o valor true.
+
+Use no console do inspecionar para verificar.
+
+exemplo:
+window.confirm('Certeza?')
+
+Use window.prompt() para criar  um alerta que você pode digitar alguma coisa e  clicar em ok ou cancel.
+-O que foi digitado no aviso vai ser guardado no javascript.
+exemplo:
+window.prompt('Digite seu nome') <-- o que foi digitado vai ser guardado como uma string.
+
+
+

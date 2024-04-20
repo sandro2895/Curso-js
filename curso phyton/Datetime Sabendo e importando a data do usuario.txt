@@ -1,0 +1,8 @@
+	
+
+Use a bliblioteca import datetime
+
+para pegar o ano atual coloque
+
+
+var = datetime.date.today().yer  è bom botar em uma variavel 

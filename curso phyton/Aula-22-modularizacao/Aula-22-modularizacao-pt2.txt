@@ -1,0 +1,38 @@
+[checar Aula-22.py]
+
+PACOTES - PACKAGES
+
+uma pasta 
+com vários modulos que possuem funções dentro,
+
+Separadas por assuntos.
+
+pode ser importado a pasta como:
+
+import uteis
+
+dentro da pasta pode ser importado somento o arquivo como:
+
+from uteis import datas
+
+Todo arquivo.py <-- pode ser um modulo.
+
+toda pasta <-- pode ser um pacote.
+
+pode colocar um pacote dentro de um pacote. Pasta dentro de pasta.
+
+dentro de cada pasta crie um arquivo __init__.py
+
+dentro do arquivo __init__ coloque as funções para tornar um modulo.
+
+no pycharm crie um python package.
+
+exemplo:
+
+from utilidades import numeros   <-- do pacote import o modulo.
+num = int(input('Digite um número: '))
+fato = numeros.fat(num)   <-- mostre o modulo e a função dentro.
+print(fato)
+help(numeros.fat)
+
+O ARQUIVO PY É O MODULO!

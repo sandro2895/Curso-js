@@ -1,0 +1,19 @@
+
+Selecionado o interpretador para ativar a venv
+
+Selecionando o interpretador:
+
+ctrl + shift + p
+
+e digite interpre:
+
+selecione python interpreter:
+
+e selecione o que tem a versão com o caminho atual.
+
+E em seguida instale o flask com: pip install flask
+
+
+é Bom ativar icones do vs code para diferenciar.
+
+deixe o arquivo com o novo .venv

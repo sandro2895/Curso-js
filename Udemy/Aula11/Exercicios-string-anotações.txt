@@ -1,0 +1,27 @@
+document.write('') <-- Isso digita um texto no html'''
+--checar Aula11 exercicio--
+
+
+fazendo o javascript digitar no body:
+
+
+Use  window.document.body.innerHTML =
+                          | isso digita dentro do html
+
+
+exemplo:
+const nome = prompt('Digite seu nome');
+
+
+window.document.body.innerHTML = (nome) ;  <-- ísso sempre zera oque tem no body e bota algo em seguida substituindo.
+
+o sinal de += em vez do = pode incrementar e adicionar ao body.
+exemplo:
+
+window.document.body.innerHTML += 'doca';
+
+Use o <br /> dentro da string para quebrar a linha
+
+exemplo:
+
+window.document.body.innerHTML += '  doca <br />';

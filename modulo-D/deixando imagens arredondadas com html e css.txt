@@ -1,0 +1,21 @@
+Use:
+<div>
+       <img id="img" style="border-radius: 50%" width="250" height="250" src="manha.png" alt="Foto do Horário">
+</div>
+
+
+ou:
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+selecionando um objeto imagen no javascript:
+
+Use onload ="" para para executar uma função quando terminar de carregar o site.
+
+pode ser colocados IF ,else e outras condições na function.
+
+m

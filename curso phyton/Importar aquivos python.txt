@@ -1,0 +1,61 @@
+[CHECAR ex155b.py]
+
+Crie um package para os arquivos
+
+importe assim em outro arquivo py
+
+from utilidadesCeV.arquivo import *  <-- isso importa tudo de um package selecionado.
+
+arq = 'exemplo.txt' <-- Atribua o arquivo a uma variável.
+
+if arqexist(arq):
+  print('Arquivo encontrado com sucesso!')
+else:
+    print('Arquivo não encontrado!')
+    criararq(arq)    <--crie um arquivo caso ele não exista.
+
+
+crie uma função para abrir o arquivo:
+
+def arqexist(nome):
+    try:
+        a = open(nome, 'rt')       <--open() abre um arquivo, coloque o parametro dentro do open.
+	a.close()  <--fexa o arquivo
+                                   <--'rt'  <--abre o aquivo em modo texto  
+
+   except FileNotFoundError:
+       return False
+    else:
+       return True   <--retorne verdade caso tenha o arquivo
+
+Pode ser criado um arquivo na mesma pasta do arquivo py que estã puxando os arquivo.
+
+def criararq(nome):
+    try:
+        a = open(nome, 'wt+')  <--'wt+' cria um arquivo caso ele não exista.
+	a.close()
+    except:
+        print('Houve um ERRO na criação do arquivo!')
+    else:
+        print(f'Arquivo {nome} criado com sucesso!')
+
+Assim o arquivo na variavel arq = 'exemplo.txt' é criado
+
+pode ser simplificado como 
+
+if not arqexist(arq):
+    criararq(arq)
+
+
+Crie uma função para ler o arquivo
+Para importar uma função para um package faça: from utilidadesCeV.cadastrosB import *
+
+def lerarq(nome):
+    try:
+        a = open(nome, 'rt')
+    except:
+        print('Erro ao ler aquivo!')
+    else:
+        cabecalho('Pessoas Cadastradas')
+        print(a.readlines())   <--var.readline() lê o arquivo no console, e coloca e uma lista especifica.
+

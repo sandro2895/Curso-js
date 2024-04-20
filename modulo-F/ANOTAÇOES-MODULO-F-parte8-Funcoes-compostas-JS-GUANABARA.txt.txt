@@ -1,0 +1,21 @@
+ANOTAÇOES-MODULO-F-parte8-Funcoes-compostas-JS-GUANABARA.txt
+
+segundo exemplo de função:
+par ou impar.
+verificando se o n é par ou impar
+
+function parimp(n) { <-- Não esquecer de colocar uma variavel dentro do parentes para ser retornada depois.
+if(n % 2 == 0) {
+    return 'par'
+}else {
+    return 'impar'
+}
+
+}
+pode ser chamado só com
+console.log(parimpar(4)) <-- coloque o número que será colocado no parametro dentro do parenteses.	 
+
+let res = parimp(11)  <--Isso faz a chamada para a função parimp atribuindo a variavel res.
+ dentro do parenteses() pode ser colocado os parametros para qual a função parimp vai usar.
+
+-fazendo assim a string 'impar' retornando para a variavel res.

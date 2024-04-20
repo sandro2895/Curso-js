@@ -1,0 +1,38 @@
+[Checar Aula09.py]
+-O comando split() divide a string em espaços com indices começando do 0
+
+exemplo: 
+frase.split()  <--Divide as palavras que estão entre espaços. em espaços  começando em 0, 1, 2, 3.
+exemplo:
+divd = frase.split()
+print(frase.split())
+print(divd[0])  <-- assim so vai mostrar o espaço 0 que seria 'C urso'
+print(divd[0][2])  <-- assim mostra somente a letra R pois está selecionando o indice.
+
+o comando ''join() junta  a string entre separadores. Usando o caractere que está entre aspas.
+
+exemplo: 
+'-'.join(frase)
+Resultado: Curso-em-Video-Python
+
+-para colocar um texto longo com varias linhas
+
+Mostre uma string com 3 aspas
+
+(""" """)
+
+-Colocando a string com .count('') pode contar quantos dos indices tem na string
+
+exemplo:
+print (frase.count('o'))  <-- vai mostrar o número de O que tem na string.
+
+e pode conbinar (frase.upper().count('o')) 
+
+para salvar alterações do replace faça a variavel receber(atribuir) o replace
+
+exemplo:
+
+frase = frase.replace('Python', 'Android')
+
+
+o comando ''.join(var) Juntas as palavras separadas pelo var.split()

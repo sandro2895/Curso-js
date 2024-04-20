@@ -1,0 +1,25 @@
+[CHECAR ex112.py]
+
+
+def leiaDinheiro(n):
+    valido = False     <-- crie uma variavel boolean false
+    while not valido:
+        entrada = str(input(n)).replace(',', '.').strip()   <--substitua as ,(virgulas) por .(pontos) e use um strip para tirar espaços.
+        if entrada.isalpha() or entrada == '':  <-- Aqui é se a entrada for alphanumeric ou entrada so tiver espaços.
+            print(f'\033[31mERRO: "{entrada}" Digite um número inteiro válido.\033[m')
+        else:
+            valido = True
+            return float(entrada)  <-- converta para float no return.
+
+
+
+
+progama princip:
+
+
+from utilidadesCeV import dado
+from utilidadesCeV import moeda
+
+dad = dado.leiaDinheiro('Digite o preço: R$')  <-- digite a string do imput aqui.
+a = moeda.resumo(dad, 10, 20)
+print(a)

@@ -1,0 +1,8 @@
+Centralizando texto com java script
+
+
+coloque a variavel com .style.textAllign = 'center'
+
+exemplo:
+
+res.style.textAlign = "center"

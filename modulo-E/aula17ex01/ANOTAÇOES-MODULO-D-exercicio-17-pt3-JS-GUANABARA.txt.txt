@@ -1,0 +1,28 @@
+ANOTAÇOES-MODULO-D-exercicio-17-pt3-JS-GUANABARA.txt
+
+
+Criando o option de forma dinamica no javascript.
+
+deixe o <select> no html
+
+botando o value no option no javascript
+.text se refere a parte de dentro do option.
+
+let item = document.createElement('option')
+      item.text = `${num} x ${c} = ${num*c}` <-- pode ser operado uma variavel com outra dentro de chaves. 
+                           |aqui é onde fica o contador na tabuada.  
+
+em seguida use:  tab.appendChild(item) para fazer o option aparecer atraves do javascript
+
+não esqucer do incremento caso não esteja usando for 
+exemplo : c++
+             
+exemplo total :
+
+let n = Number(num.value)
+    let c = 1
+    while (c <= 10) {
+      let item = document.createElement('option') <-- criando o option no select atribuindo a variavel item.
+      item.text = `${n} x ${c} = ${n*c}` <== atribuindo valor de text a variavel item no option.
+      tab.appendChild(item) fazendo a variavel 'item com 'option aparecer no 'select da variavel 'tab. 
+      c++

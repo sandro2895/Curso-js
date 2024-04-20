@@ -1,0 +1,24 @@
+ANOTAÇOES-MODULO-D-exercicio-17-pt2-JS-GUANABARA.txt
+
+Criando elementos option no select javascript.
+
+atribua a uma variavel document.createElement('option)
+
+   let item = document.createElement('option')
+
+
+ criando opções no select no HTML.
+
+ dentro da tag <select> coloque a tag <option>
+
+exemplo:
+
+<select name="tabuada" id="seltab" size=10> <-- pode ser aumentado o tamanho do select com size= .
+        <option value="v1"> <-- pode ser colocado o  value ="" Podendo mandar o formulario
+          valor1
+        </option>
+        <option>
+          valor2
+        </option>
+
+Podendo ser colocado varios options

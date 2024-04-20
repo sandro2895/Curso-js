@@ -1,0 +1,32 @@
+
+PRIMEIRO INSTALA:
+
+no terminal:
+
+pip install venv
+
+Pode ser necessario fazer um update no pip
+
+criando arquivo venv
+
+python -m venv venv
+
+
+Ativação da venv:
+
+nome_da_venv/Scripts/activate - mac e linux = source nome_da_venv/bin/activate
+
+Saberá que ela foi ativada quando aparecer no começo da linha de comando.
+
+instalando blibliotecas e pacotes:
+
+pip install numpy
+
+pip install pandas
+
+digite : deactivate <-- Para desativar a venv.
+
+
+pip freeze: > requirements.txt  <-- mostra os requerimentos.
+
+fexe o terminal antes de usar flask run.	

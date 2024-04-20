@@ -1,0 +1,5 @@
+for cont in range(10, -1, -1):    <--Assim o python vai contar de 10 a 0 em vez de 10 a 1. pois começa no -1
+    print(cont)
+    time.sleep(1)
+
+

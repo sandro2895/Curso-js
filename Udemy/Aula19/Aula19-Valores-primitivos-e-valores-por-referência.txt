@@ -1,0 +1,34 @@
+Aula19-Valores primitivos e valores por referência.
+
+Valores primitivos como string, number, boolean, undefined e null são imutáveis.(Valores copiados)
+Quando usado A atribuição = em um valor primitivo o valor é copiado.
+
+Array, object e function são tipos de dados por referência e são mutáveis.(Valores passados por referência)
+Quando usado A atribuição = em um dado de referência o valor é somente referido.
+
+Exeplo que o a variavel a' e a variavel b' apontan para o mesmo valor:
+
+let a = [1, 2, 3]
+let b = a;   <-- isso faz a variavel b apontar para o mesmo valor da variavel a
+console.log(a, b);
+
+a.push(4);
+console.log(a,b);
+Resultado terminal = 
+[ 1, 2, 3, 4 ] [ 1, 2, 3, 4 ]
+
+b.pop(); <-- Isso faz a variavel a' e b' perder um valor pois  apontan para o mesmo dado
+console.log(a, b);
+
+Resultado terminal =
+[ 1, 2, 3 ] [ 1, 2, 3 ]
+
+-Para fazer o valor de um array ser copiada para outro use [...variavel]
+(Assim o valor é copiado e não apontado para o mesmo valor)
+
+exemplo:
+
+let a = [1, 2, 3]
+let b = [...a]; <-- aqui os 3 pontos representam os 3 valores que foram colocados na variavel b'.
+
+Essa modificação fuciona com ARRAYs E OBJECTs

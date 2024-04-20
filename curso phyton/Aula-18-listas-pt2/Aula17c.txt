@@ -1,0 +1,10 @@
+
+
+exemplos:
+
+
+for p in galera:
+    if p[1] > 27:  <-- Aqui verifica somente o segundo elemento. que é a idade.
+        print(f'{p[0]} tem mais de 27 anos')
+    else:
+        print(f'{p[0]} tem menos de 27 anos!')

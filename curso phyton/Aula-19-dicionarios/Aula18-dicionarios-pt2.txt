@@ -1,0 +1,36 @@
+python chama esses elementos de chaves ou keys.
+
+exemplo1:
+
+filme ={'titulo': 'Star Wars',
+	'ano': '1977',
+	'diretor': 'George Lucas'
+         }
+
+print(filme.values())  <-- Isso mostra os valores dentro e não os indices.
+
+print(filme.keys())    <-- Isso mostra os indices e não os valores. 
+
+print(filme.items())   <-- Isso mostra os valores e os indices.
+
+Usando com for como o enumerate:
+
+for pos,cont in filme.items():
+
+print(f'{pos}{cont}') nó pos' ficam as chaves e no cont' ficam os values.
+
+resultado terminal:   <-- o laço vai lendos todos os keys e value ate o final.
+titulo Star Wars
+ano 1977
+diretor George Lucas
+
+pode ser colocado dicionarios dentro de lista
+
+exemplo:
+locadora = [{'titulo':'Star Wars', 'ano': '1997', 'diretor': 'George Lucas'}]
+                     0                  1                  2                    <--indices
+
+é possivel:
+print(locadora[0]['ano']  <-- assim vai mostra somento o ano' que é 1997'.
+
+print(locadora[0]['titulo']) -Resultado: 'Star Wars' 

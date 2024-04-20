@@ -1,0 +1,12 @@
+valores = []
+while True:
+    n1 = int(input('Digite um número: '))
+    if n1 not in valores:  <-- Aqui só vai adicionar o n1 na lista valores se o n1 não estiver antes.
+        valores.append(n1)
+
+    quest = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    while quest not in 'SN':
+        quest = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if quest == 'N':
+        break
+print(sorted(valores))

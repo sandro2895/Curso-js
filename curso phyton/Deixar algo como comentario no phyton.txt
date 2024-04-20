@@ -1,0 +1,5 @@
+-Use # no começo da linha
+
+exemplo:
+
+#print(texto)

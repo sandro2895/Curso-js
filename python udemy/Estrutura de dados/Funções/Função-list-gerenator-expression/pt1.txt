@@ -1,0 +1,26 @@
+
+Gerenator expresssion
+
+-Uma forma mais rápida para listas, dicionários e etc.
+-Menos memória alocada
+-Valores em bytes
+
+exemplo:
+importe a função:
+from sys import getsizeof
+
+numeros = [item * 10 for item in range(100)]
+print(type(numeros))
+print(numeros)
+Números de bytes: 920
+
+-Assim vai mostra que é um <class 'generator'> no terminal.
+
+
+numeros = (item * 10 for item in range(100))  <-- pelo fato de não estar em cochetes, e sim em parentes fica em generator expression.
+print(type(numeros))
+print(list(numeros))  <--É preciso converter para lista depois.
+print(f'Números de bytes: {getsizeof(numeros)}'  <--isso mostra o tantos de bytes que está sendo usado
+Números de bytes: 208
+
+vai gerar menos bytes por ser um generator. Pois não fica guardando valores direto

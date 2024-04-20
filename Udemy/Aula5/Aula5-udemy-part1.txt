@@ -1,0 +1,11 @@
+Aula5-udemy-part1
+
+Primeira diferença entre var e let.
+
+let foi incluido no ECMAScipt 2015 (ES6) <-- a padronização do javascript.
+
+let foi feito para a variavel não ficar sendo redeclarada.
+
+var = ; pode redeclarar a variavel varias vezes
+
+não declara uma variavel sem let,const ou var. isso faz uma variavel global.

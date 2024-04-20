@@ -1,0 +1,62 @@
+
+
+baixe o insommia.rest para testar api
+abra o progama
+
+clique em request colleciton e crie o projeto:
+
+no icone de + redondo clique em http Request
+
+
+No get perto de send coloque o endereço do flask para testar
+
+pode ser mostrado outros dados nas abas body e header e outros.
+
+e assim faz um get request,
+
+tambem pode ser feito um post request.
+
+
+criando stores no rest api:
+
+crie um post em vez de get no insommia:
+
+clique em body, e pode ser criador um JSON.
+
+É preciso criar um app.post no arquivo  python do flask.
+
+exemplo:
+
+@app.post("/store")
+def criar_loja():
+  pass  <--deixe como pass.
+
+inicie o app novamente com: flask run.
+
+tem que ser colocado um request_data:
+exemplo:
+
+@app.post("/loja")
+def criar_loja():
+  request_data = request.get_json()  <-- assim vai pegar o json que foi criado no insoomia ou do usuario especifico;
+  nova_loja = {"name": request_data["name"], "items":[]}  <-- dentro da chave "name" vai estar o json criado no insoomia, o request.get_json()
+  lista.append(nova_loja)  <--De um append na lista para entrar a nova_loja;
+  return nova_loja, 201  <--retorne com 201, pois é um codigo pra indiicar tudo ok, também tem o 200.
+
+O 201 aceita os dados e cria a nova_loja.
+
+from flask import Flask, request  <--também coloque o request para se importado junto com Flask,
+
+No GET store do insoomia pode ser visto os dois lojas dicionarios criados.  
+E toda vez que é enviado no POST é criado uma nova lista loja.
+
+Mas se reiniciar o flask com - flask run , as lojas lista somen. pois listas de pyhon não vivem entre iniciações de app, somente em memórias
+Por isso é bom ter um banco de dados.
+.
+
+
+
+
+
+
+

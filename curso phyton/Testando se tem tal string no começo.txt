@@ -1,0 +1,9 @@
+cid = (input('Qual o nome da cidade? '))
+tit = cid.title()                <-- pode ser bom converter para titulo e tirar os espaços.
+tit2 = tit.strip()
+test = tit2[:5] == 'Santo' in tit   <-- o [:5] vai verificar antes do indice 5 e pra esquerda.
+print('-Se sua cidade tem Santo no nome? a resposta é: {}'.format(test))
+
+
+
+Use  ==  para testar se é falto tamben

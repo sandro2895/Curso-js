@@ -1,0 +1,13 @@
+CALCULAR HIPOTENUSA NO PYTHON.
+EXEMPLO:
+
+hipo = catoposto ** 2 + catjacente ** 2
+hipotot1 = hipo ** (1/2)
+
+ou
+
+Use math.hypot()
+
+exemplo:
+
+hipotot2 = math.hypot(catoposto, catjacente)

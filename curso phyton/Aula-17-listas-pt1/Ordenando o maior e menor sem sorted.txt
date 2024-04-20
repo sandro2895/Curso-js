@@ -1,0 +1,17 @@
+
+
+
+
+valores = []
+maior = 0
+for pos, cont in enumerate(range(0, 5)):
+    n1 = (int(input('Digite um valor: ')))
+    if pos == 0 or n1 > valores[-1]:  <--Aqui vai adicionar o valor ao final da lista se estiver na posição 0 ou  for maior que
+        valores.append(n1)                                                             |O ultimo número na posição da lista.
+    else:
+        pos = 0
+        while pos < len(valores):
+            if n1 <= valores[pos]:  <-- Aqui vai testar se o valor n1 atual é menor ou igual ao valores em certa posição.
+                valores.insert(pos, n1)
+                break
+            pos += 1

@@ -1,0 +1,36 @@
+[checar ex60b.py]
+Importe o metodo factorial de math.
+
+exemplo1:
+
+import math
+num1 = int(input('Digite um número para calcular seu fatorial: '))
+fat = math.factorial(num1)
+print(fat)
+
+
+exemplo2:
+import math
+num1 = int(input('Digite um número para calcular seu fatorial: '))
+multi = num1
+fat = math.factorial(num1)
+print('[', num1, end='')
+while multi > 1:
+    multi = multi - 1
+    print(' x {}'.format(multi), end='')
+print(' ] O fatorial de {} é igual a: {}'.format(num1, fat))
+
+
+
+Fatorial com calculo
+
+declare 
+f= 1
+
+e dentro do while coloque
+while c > 0:
+f *= c
+c = c -1
+
+
+Sempre é bom pesquisar a bliblioteca math para saber calculos.

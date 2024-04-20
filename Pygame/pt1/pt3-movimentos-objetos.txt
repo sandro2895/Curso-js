@@ -1,0 +1,49 @@
+
+crie as variaveis:
+x = 0
+y = 0
+
+Essas duas variáveis vão controlar a posição do objeto na tela durante o loop infinito.
+
+coloque dentro do while true
+while True:
+    tela.fill((0, 0, 0))  <-- coloque a tela que vocÊ quer que fique. Isso faz com que a cada interação do loop infinito a tela fique da cor preta.
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            exit()
+    pygame.draw.rect(tela, (255, 0, 0), (x, y, 50, 50))
+    y += 0.5  <--- assim a variavel vai ficar se movendo  
+    if y >= altura:  <-- coloque um if para reiniciar a altura do objeto assim que ele atingir a altura da tela.
+        y = 0
+
+Criando um relogio para controlar a taxa de frame do jogo:
+crie uma var:
+relg = pygame.time.Clock()  <-- faça a variável receber o pygame.time.Clock()
+
+em seguida coloque dentro do while true:
+
+while True:
+    relg.tick(35)  <--Dentro do parenteses coloque a quantos frames irá rodar.
+
+
+
+
+
+
+exemplo:
+
+while True:
+    tela.fill((0, 0, 8))
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            exit()
+    pygame.draw.rect(tela, (255, 0, 0), (x, y, 50, 50))
+    pygame.draw.line(tela, (255, 255, 0), (0, 240), (largura, 240), 20)  <-- criando uma linha
+    x = 200
+    y += 0.1
+    if y >= 198:  <-- assim sempre que o objeto tocar a linha, ele retorna.
+        y = 0
+    pygame.display.update()
+

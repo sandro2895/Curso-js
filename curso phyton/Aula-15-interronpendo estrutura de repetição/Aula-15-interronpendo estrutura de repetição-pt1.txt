@@ -1,0 +1,30 @@
+[checar Aula15.py]
+
+
+exemplo teorico
+
+enquanto true:
+se terra:
+   pesso
+se nada:
+   pula
+se moeda:
+   pega
+se trofeu:
+   pula
+   interronpa
+pega
+
+
+exemplo python:
+while true:
+if terra:
+   passo
+if nada:
+   pula
+if moeda:
+   pega
+if trofeu:
+   pula
+   break   <-- esse comando interrompe o laço. 
+pega

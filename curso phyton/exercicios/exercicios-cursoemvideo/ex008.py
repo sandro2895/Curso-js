@@ -1,0 +1,7 @@
+m1 = float(input('Quantos metro(s)? '))
+print('{} metro(s) é igual a {} quilômetros'.format(m1, m1*0.001))
+print('{} metro(s) é igual a {} hectômetros'.format(m1, m1*0.01))
+print('{} metro(s) é igual a {:.1f} decâmetros '.format(m1, m1*0.1))
+print('{} metro(s) é igual a {} decímetros'.format(m1, m1*10))
+print('{} metro(s) é igual a {:.1f} centímetros'.format(m1, m1*100))
+print('{} metro(s) é igal a {:.1f} milímetros'.format(m1, m1*1000))

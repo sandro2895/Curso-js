@@ -1,0 +1,46 @@
+ANOTAÇOES-MODULO-F-parte10-Funcoes-compostas-JS-GUANABARA.txt
+
+Quarto exemplo de function:
+
+Fazendo uma variavel receber uma function.
+
+let v = function(x) {
+      return x*2
+
+}
+
+console.log(v(5)) <--Assim pode ser chamado a function com a variavel v com o parametro v()
+
+___________________________________________________________________________________________________________________
+
+Meio tradicional
+Quinto exemplo de function:
+Fatorial
+
+function fatorial (n) {
+  let fat = 1 <-- pode ser criado variavel dentro da função
+  for(let c = n; c > 1; c--){
+      fat *= c
+  }
+  return fat
+
+}
+
+console.log(fatorial(5))
+
+
+_____________________________________________________________________________________________________________________
+Recursividade
+Função recursiva com fatorial.
+function fatorial (n) {
+  if (n == 1){
+     return 1
+  }else {
+    return n * fatorial (n-1) <-- Dessa forma a function fatorial tem uma chamada pra ela mesmo dentro dela.
+  }                              -Com parametro n-1 
+
+}
+
+console.log(fatorial(4))
+
+

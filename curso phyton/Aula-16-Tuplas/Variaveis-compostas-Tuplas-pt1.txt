@@ -1,0 +1,37 @@
+Existem 3 tuplas, listas e dicionarios. () [] {}
+As tuplas são imutaveis.  
+Variavel simples so tem um espaço e armazena somento um valor.
+
+Variaveis compostas Tuplas
+
+Variavel composta é uma variavel com varios espaços que pode guardar varios valores. 
+è preciso determina o número de espaços.
+
+Os espaços são indentificados por indices:
+começando por 0 1 2 -> e por ai.
+
+
+-strings já são variáveis compostas. strings são listas.
+
+Pode ser usado para ser lido do mesmo jeito:
+
+exemplo1:
+print (lanche[1])
+len (lanche) Vai mostras quantos indices tem a variavel composta.
+
+exemplo2:
+for c in lanche:
+     print(c)   <-- assim a variavel c vai ficar mostrando o que tem no começo do indice de lanche ate o ultimo indice.
+
+
+Toda Tupla é entre parenteses.
+
+exemplo:
+
+lanche = ('Hamburger', 'Suco', 'Pizza', 'Pudim')
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+fist_number = float(input('Digite o primeiro número: '))
+second_number = float(input('Digite o segundo número: '))
+print(f'{fist_number} + {second_number} = {fist_number+second_number}')
+print(f'{fist_number} - {second_number} = {fist_number-second_number}')
+print(f'{fist_number} x {second_number} = {fist_number*second_number}')
+print(f'{fist_number} ÷ {second_number} = {fist_number/second_number}')
+print(f'{fist_number} ** {second_number} = {fist_number**second_number}')

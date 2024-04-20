@@ -1,0 +1,30 @@
+Aula2-udemy-part2 -Sempre utilize let em vez de var.
+
+È recomendavel sempre fazer varíaveis com nomes significativos.
+
+O nome das variaveis não pode conter traços e espaços.
+
+Não é possivel criar variaveis com numero na frente do nome.
+
+As variaveis são case-sensitive(Letras maiusculas e minusculas fazem diferença).
+
+Não se pode redeclarar uma variavel usando let.
+
+exemplo de erro:
+
+let 1nome = doca
+
+
+Sempre faça começando com letras minusculas no estilo camelCase.
+
+
+as variavels ficam diferentes uma das outras dependendo do camelcase.
+exemplo:
+
+let nomecompleto = 'sandro'
+
+let nomeCompleto = 'augusto'
+
+console.log(nomecompleto, nomeCompleto)
+
+

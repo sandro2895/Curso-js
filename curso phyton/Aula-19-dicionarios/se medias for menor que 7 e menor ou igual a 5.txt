@@ -1,0 +1,12 @@
+notas = {}
+notas['nome'] = str(input('Nome do aluno: '))
+notas['media'] = float(input(f'Média de {notas["nome"]}: '))
+medias = (notas['media'] + notas['media']) / 2
+print(f'Nome: {notas["nome"]}')
+print(f'Média: {medias:.1f}')
+if medias >= 7:
+    print(f'O aluno {notas["nome"]} está aprovado!')
+elif 5 <= medias < 7:      <--aqui é se medias for menor que 7 e menor ou igual a 5. 
+    print(f'O aluno {notas["nome"]} está de recuperação!')
+else:
+    print(f'O aluno {notas["nome"]} está reprovado!')

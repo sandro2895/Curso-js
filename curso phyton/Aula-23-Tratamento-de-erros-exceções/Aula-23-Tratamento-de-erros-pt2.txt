@@ -1,0 +1,35 @@
+[CHECAR Aula23.py]
+
+Aula-23-Tratamento-de-erros-pt1
+
+Resolvendo alguns problemas:
+exemplo1:
+
+try:
+    a = int(input('Numerador: '))
+    d = int(input('Denominador: '))
+    r = a / d 
+except:      <--Caso aconteça um erro vai aparecer oque tem dentro de except.
+    print('ERRO!')
+else:        <--Use o else: para caso não der erro e o try fucionou.
+    print(f'Resultado {r}')
+
+finally:     <--Isso vai aparecer independente se der erro ou se der certo.
+    print('Fim do programa')
+
+
+exemplo2: Mostrando o error.
+
+try:
+    a = int(input('Numerador: '))
+    d = int(input('Denominador: '))
+    r = a / d 
+except Exeception as error:     <--coloque o valor Exception na variavel 'error.   
+    print(f'ERRO!. O problema encontrado foi: {error.__class__}')  <-- mostre na string como var.__class__  <-- para mostrar qual é a classe do erro.
+else:       
+    print(f'Resultado {r}')
+
+finally:    
+    print('Fim do programa')
+
+

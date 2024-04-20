@@ -1,0 +1,13 @@
+    def __init__(self, name):
+        self.name = name
+        self.list = []   <-- faça uma lista
+
+    def add_item(self):
+        item = {'nome': '', 'price': ''}
+        self.item.append(item)  <-- de um append em self item
+
+    def stock_price(self):
+        total = 0
+        for item in self.item:
+            total += item['price']   <-- faça um for para acumualar o total do preço
+        return total

@@ -1,0 +1,33 @@
+VER Aula7.js - curso Udemy
+A mesma variavel pode ser colocado mais de uma vez para ser usado com o operador logico.
+
+Aritmeticos: Existe prioridade por precedencia. colocando parenteses altera a precedencia
+
++ = Adição e concatenação = Se uma das variaveis for string. será concatenado(unindo 2 valores).
+
+- = Subtração
+
+/ = Divisão
+
+* = Multiplicação
+
+** = Potenciação
+
+% = Retorna o resto da divisão.
+
+Ordem de precedencia :
+
+() >> ** >> * >> / >> % >> + >> - 
+
+
+++ = Incremento mais 1.
+-- = Decremento diminui 1.
+exemplo:
+let num4 = 1
+num4++ <-- isso ja faz o incremento ou decremento na variavel.
+num4-- 
+
+console.log(++ num4) <-- coloque o incremento ou decremento ao lado esquerdo isso faz um pre incremento.
+
+Não é possivel usar incremento com constantes.
+Se o console.log(num4++) for posto dessa forma com incremento do lado direito só sera mudado depois.

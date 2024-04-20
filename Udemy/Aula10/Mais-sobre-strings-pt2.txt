@@ -1,0 +1,27 @@
+
+
+Outra maneira de concatenar
+Usando .concat() apos a variavel.
+exemplo:
+
+console.log(texto.concat(' ',  'em', ' ', 'concatenação'))
+
+ou use assim
+
+console.log(texto + ' em um lindo dia') <-- com um sinal de + .
+
+ou assim
+
+console.log(`${texto} em um pessimo dia`) <-- com template string crase. 
+
+
+Sabendo o começo do indice de uma palavra :
+Usando .indexOf()
+
+let texto = 'um texto feliz';
+
+console.log(texto.indexOf('texto')) <-- o numero do indice de texto será mostrado.
+
+resultado terminal = 3
+
+também pode ser usado o .lastIndexOf() para achar o ultimo index  da string

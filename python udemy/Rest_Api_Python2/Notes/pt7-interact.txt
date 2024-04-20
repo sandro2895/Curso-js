@@ -1,0 +1,45 @@
+
+
+Fazendo o URL ser dinamico para interagir e mudar o codigo.
+
+
+Faça desse jeito :
+
+app.post("/store/<string:name>")  <--Para mexer no endpoint da url.
+def create_item(name):   <--Coloque aqui como parametro o mesmo nome que fica emcima depois de <string:. Para mexer no item.
+    pass
+
+Também pode usado uma Query string:
+exemplo:
+
+http://127.0.0.1:5000/loja?name=lista  <--coloque o nome da variavel no final:
+
+Assim o flask pode recuperar o nome da loja.
+
+
+O aplication/json já fica emcima no header.
+
+é adicionado automaticamento por insoomia quando é adicionado JSON no body.
+
+Criando o item:
+
+app.post("/store/<string:name>/item")  <--Coloque o item aqui
+def create_item(name):
+    pass
+
+Crie uma duplicate do Post do insoomia com esse endereço do app.post.
+
+Coloque no endereço do insoomia :
+
+http://127.0.0.1:5000/loja/lista/item  <-- A variavel e o item correspondende que está no codigo.
+
+E em seguida coloque no Json desse post no insoomia, O novo item e preço.
+
+
+
+
+
+
+
+
+Pode ser adicionado header customizados no insoomia no POST na aba Headers e clique em Add.

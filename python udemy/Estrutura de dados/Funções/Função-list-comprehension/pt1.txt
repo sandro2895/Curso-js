@@ -1,0 +1,22 @@
+
+List Comprehension
+
+-Mais simples de se escrever 
+-Utiliza-se quando você precisa criar uma nova lista a partir de uma existente
+-[Expressão for iten in iten]
+
+exemplo:
+
+frutas1 = ['abacate', 'banana', 'morango', 'kiwi', 'abacaxi']   <--Crie uma lista
+
+frutas2 = [item for item in frutas1 if 'b' in item]  <--Use item for item, e coloque o if na mesma expressão.
+
+print(frutas2)   <--if 'b' in item vai fazer retornar somente strings com a letra b. 
+
+Resultado terminal: ['abacate', 'banana', 'abacaxi']
+
+-faz a mesma coisa que:
+
+#for item in frutas1:
+    #if 'b' in item:
+     #   frutas2.append(item)

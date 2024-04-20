@@ -1,0 +1,8 @@
+
+while True:
+    print('___' * 13)
+    qt = int(input('Quer ver a nota de qual aluno? '))
+    if qt == 999:
+        break
+    if qt <= len(notas) - 1:    <--Aqui só vai mostrar o print se o qt input for menor ou igual a len(notas) - 1
+        print(f'Notas de {notas[qt][0]}: [{notas[qt][1]}, {notas[qt][2]}]')

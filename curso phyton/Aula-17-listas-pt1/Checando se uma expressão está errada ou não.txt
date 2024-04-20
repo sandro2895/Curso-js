@@ -1,0 +1,27 @@
+[CHECAR ex83a.py]
+
+O progama analisa se os parenteses estão abertos e fexados na ordem correta e se o número de fexados é o mesmo de abertos.
+
+
+expr = str(input('Digite a expressão: '))
+pilha = []
+for simb in expr:
+    if simb == '(':
+        pilha.append('(')   <-- aqui caso   tenha um parenteses ( em expr o progama vai mandar uma ( para a lista pilha.
+    elif simb == ')':
+        if len(pilha) > 0: <--aqui caso digite ) em expr  e ja tenha ( na pilha o progama vai deletar a expressão da pilha.
+            pilha.pop()
+        else:
+            pilha.append(')')   <--Aqui caso não digite um ')'  em simb o progama manda ')' na pilha
+            break
+
+if len(pilha) == 0:
+    print('Sua expressão é valida!')
+else:    <--Aqui se o progama tiver pelo menos 1 elemento é uma expressão invalida. 
+    print('Sua expressão é invalida')
+
+
+Para cada ')' que não digitar em expr o progama não vai fexar o parentes e não vai dar pop().
+
+
+

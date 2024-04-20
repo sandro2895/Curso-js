@@ -1,0 +1,36 @@
+[CHECAR Aula20g,py]
+
+Parametros opcionais:
+
+exemplo:
+
+def somar(a, b, c=0) <--Assim o c vai receber o valor 0 caso nenhum valor seja digitado.
+    s = a + b + c
+    print(s)
+
+somar (8,4)
+
+
+
+outro exemplo:
+def somador(a=0, b=0, c=0):    <--pode ser colocado parametros opcionais em todos os parametros.
+    soma = a + b + c
+    print(soma)
+
+
+Pode ser bom mostrar que um parametro e opcional na descrição do help da função.
+______________________________________________________________________________________________________________________________
+[CHECAR Aula20h.py]
+Progama principal e escopo:
+
+def test():
+    n = 9    <--Isso é uma var 'n local portanto não vai fucionar fora. Assim fica um n(global) e um n(local)
+    x = 8     <--Dentro da função se torna um escopo local. 
+    print(f'Valor de n {n}')    <--Aqui vai mostrar o 'n local.
+    print(f'Valor de x {x}')
+
+
+n = 7     <--Isso se torna um escopo global e não é modificada pela função e sim copiada para o parametro.
+print(f'n vale {n}')     <--Aqui vai mostrar o 'n global
+test()   <--deixe vazio o paramentro para a função puxar a var 'n.
+

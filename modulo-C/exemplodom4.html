@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo dom 3</title>
+</head>
+<style>
+  body{
+    background-color: cornflowerblue;
+  }
+  div{
+    
+      font-size: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: 900;
+    
+  }
+  .but {
+    width: 150px;
+    width: 50px;
+  }
+
+</style>
+<body>
+  <h1>Somando</h1>
+    
+   
+  </div>
+  <span>
+    <input type="number" class="nb1">
+    <span>+</span>
+    <input type="number" class="nb2">
+  </span><br>
+  <input type="button"  class="but" value="somar" onclick="somar()">
+  <div class="resu">
+    Resultado:
+  
+  <script>
+    function somar(){
+      let sn1 = window.document.querySelector("input.nb1")
+      let sn2 = window.document.querySelector("input.nb2")
+      let res = window.document.querySelector("div.resu")
+      let n1 = Number(sn1.value)
+      let n2 = Number(sn2.value)
+      s = n1 + n2
+      res.innerHTML = `Resultado: ${s}`
+
+    }
+   
+  
+  </script>
+  
+</body>
+</html>

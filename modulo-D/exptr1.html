@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nacionalidade</title>
+  <link rel="shortcut icon" href="./Treetog-Junior-Earth.ico" type="image/x-icon">
+  <style>
+      
+    div {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+    div::before{
+      content: "→";
+      
+    }
+  </style>
+</head>
+<body>
+<h1>Qual sua nacionalidade</h1>
+ Pais de origem :<input type="text" value="" name="txt" id="txt">
+<input type="button" value="verificar" onclick="nacir()">
+<input type="button" value="limpar" onclick="clean()">
+<div id="nc">
+  
+</div>
+<script>
+let txte = window.document.getElementById("txt")
+let res = window.document.getElementById("nc")
+res.innerHTML = "<strong>Nacionalidade</strong>"
+fundo = document.body.style.backgroundColor = 'gray';
+
+function nacir() {
+  let test = (txte.value)
+  if (test == "brasil") {
+    res.innerHTML = "<strong>Brasileiro</strong>"
+    fundo = document.body.style.backgroundColor = 'green';
+  }
+  else if (test == "alemanha") {
+    res.innerHTML = "<strong>Alemão</strong>"
+    fundo = document.body.style.backgroundColor = 'red';
+  }
+  else {
+    res.innerHTML = "<strong>Estrangeiro</strong>"
+    fundo = document.body.style.backgroundColor = 'orange';
+  }
+
+
+
+}
+function clean() {
+   txte.value =""
+  res.innerHTML = "<strong>Nacionalidade</strong>"
+  fundo = document.body.style.backgroundColor = 'gray';
+}
+
+
+</script>
+
+
+
+  
+</body>
+</html>

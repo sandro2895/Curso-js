@@ -1,0 +1,10 @@
+
+Use:
+
+bin(var) <-- para binario
+
+oct(var) <-- para octal
+
+hex(var) <-- para hexadecimal
+
+Coloque a variavel para converter dentro do parenteses.

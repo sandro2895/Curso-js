@@ -1,0 +1,48 @@
+centralizando objeto:
+
+y = largura/2    <--eixo X e Y dividido por 2
+x = altura/2
+
+
+movimentando o objeto com qualquer tecla:
+
+crie um if:
+
+exemplo:
+
+    if event.type == KEYDOWN:  <--Aqui é se uma tecla for clicada
+        if event.key == K_a:  <--se a tecla K for a for clicada
+	    x = x - 20 <-- assim o eixo X se move para a esquerda.
+
+
+coloque o if antes do evento
+
+exemplo:
+
+ if event.type == KEYDOWN:
+            if event.key == K_a or event.key == K_LEFT:
+                x -= 15
+            if event.key == K_d or event.key == K_RIGHT:
+                x += 15
+            if event.key == K_w or event.key == K_UP:  <-- aqui move para cima com o W ou com a tecla UP
+                y -= 15   <-- para ir para cima tem que ser diminuido, pois o eixo Y é invertido no pygame
+            if event.key == K_s or event.key == K_DOWN:
+                y += 15
+
+Fazendo o objeto se movimentar continuamente pressionando a tecla
+coloque fora do for event in pygame.event.get():
+
+if pygame.key.get_pressed()[K_a]: <-- assim o objeto vai se movimentar continuamente para a esquerda caso a tecla A esteja sendo pressionada.
+     x -= 5
+
+
+EXEMPLOS:
+
+  if pygame.key.get_pressed()[K_a] or pygame.key.get_pressed()[K_LEFT]:
+        x -= 5
+    if pygame.key.get_pressed()[K_d] or pygame.key.get_pressed()[K_RIGHT]:
+        x += 5
+    if pygame.key.get_pressed()[K_w] or pygame.key.get_pressed()[K_UP]:
+        y -= 5
+    if pygame.key.get_pressed()[K_s] or pygame.key.get_pressed()[K_DOWN]:
+        y += 5

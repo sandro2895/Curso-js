@@ -1,0 +1,39 @@
+CONDIÇÕES ANINHADAS checar[aula12.py]
+
+Tem mais condições do que verdadeiro ou falso.
+dentro de uma condição pode ter outras condições. Tendo varias possibilidades
+Uma condição aninhada com 3 possibilidades ou mais.
+exemplo teorico:
+se carro.esquerda():
+       carro.siga()
+       carro.esquerda()
+       carro.siga()
+senao se carro.direita():
+       carro.siga()
+       carro.direita()
+       carro.siga()
+senao():
+       carro.siga()
+
+ex:
+if carro.esquerda():
+     bloco1
+elif carro.esquerda():  <-- else if em python é elif
+     bloco2
+elif carro.re():
+     bloco3
+else:
+     bloco4
+
+exemplo:
+nome = str(input('Qual é o seu nome? '))
+nome = nome.title()
+if nome == 'Doca':
+    print('Que nome bonito')
+elif nome == 'Paulo' or nome == 'Pedro' or nome == 'Maria':
+    print('Seu nome é bem popular no brasil')
+elif nome in 'Ana Claudia Jessica Juliana':    <-- use o in para saber se nessa linha vai ter qualquer um desses caractere na string.
+    print('Belo nome feminino')
+else:
+    print('seu nome é bem normal')
+print('Bom dia {}!'.format(nome))

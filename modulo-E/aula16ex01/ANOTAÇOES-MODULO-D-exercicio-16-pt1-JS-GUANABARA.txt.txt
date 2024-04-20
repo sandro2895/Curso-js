@@ -1,0 +1,28 @@
+A tag <input> pode ser colocada dentro de outras tags
+não esquecer de colocar um name = "" dentro de uma tag <input>.
+
+name = "" é mais usado na linguagem PHP.
+
+o elemento length do lado de value que está representando um número
+significa comprimento. para assim considerar o comprimento.
+ou quantos numeros tem dentro.
+
+length as vezes pode causar travadas no progama.
+
+exemplo:
+if(ini.value.length >= 0)
+
+transformando strings na variáveis em number.
+
+Use Number atribuindo a uma nova variável.
+
+exemplo : let i = Number(ini.value) <-- Antes ini erá uma string.
+
+O sinal += representa concatenção. não adição.
+
+for(let c = i; c <= f; c += p) <-- Isso faz a variável c receber ela mesmo + variável P 
+quando for fazer um for em um if ou else atribua o inicio da 
+contagem a uma nova variavel.
+
+Use o site https://unicode.org/emoji/charts/emoji-list.html
+para achar emojis para usar no javascript.

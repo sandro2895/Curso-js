@@ -1,0 +1,36 @@
+Pode ser usado a função assim print(somar(10)) ja com print
+
+Função lambda
+
+-Uma função lambda não tem nome e é pequena
+-Varios argumentos mas somente 1 expressão!
+-Utilizado dentro de outras funções   <---É mais util para se utilizar dentro de outras funções
+-deixa o codigo mais limpo
+
+exemplo:
+
+soma10 = lambda x: x + 10  <-- atribua a uma variável e coloque o nome lambda e em seguida o argumento, doispontos(:) e a expressão que vai acontecer.
+
+o nome da variável vai ser o nome da função
+
+exemplo: print(soma10(20))
+
+
+ex2:
+soma10 = lambda x, y, z=1: x + y - z  <--Pode ter vários argumentos porém somente uma expressão
+print(soma10(10, 50, 5))
+
+exemplo:
+
+def somar(x):
+    sm = lambda y: y * 1  <--Função lambda criada dentro da função.
+    return sm(5) + x     <--A lambda Pode ser retornada junto com o parametro da função em questão.
+
+
+print(somar(4))
+
+
+if e else na função lambda:
+
+par_impar = lambda n: print('par') if n % 2 == 0 else print('impar')  <-- coloque primeiro oque virar no if no caso e depois coloque o else.
+par_impar(5)

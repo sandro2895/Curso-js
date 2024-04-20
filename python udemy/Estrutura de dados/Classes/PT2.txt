@@ -1,0 +1,26 @@
+
+
+#-Classe Criada:
+class Funcionarios:
+    pass
+#-Objeto Criado:
+usuario1 = Funcionarios()
+usuario2 = Funcionarios()  <--Caso faça outro parametro não esquecer de criar outro objeto na classe.
+ 
+#-Criando Parametro:
+usuario1.nome = 'Aline'     <--Pode ser criado os parametros  para o objeto mesmo com a classe vazia.
+usuario1.sobrenome = 'Souza'
+usuario1.idade = 28
+
+
+print(usuario2.nome, usuario2.sobrenome, usuario2.idade)  <--Pode ser colocado todo em um print
+
+A diferença nisso tudo é que os dados não vão para classe e ficam somente associados aos parametros.
+
+
+
+
+
+
+
+

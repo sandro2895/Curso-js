@@ -1,0 +1,45 @@
+Padrao dos numeros IEEE 754-2008.
+
+Fazendo um número com varias casas decimais exibir menos casas decimais.
+
+Use .toFixed(2) <-- dentro parenteses coloque quantas casa decimais sera mostrada. (Isso não altera o valor real)
+
+exemplo:
+
+let num1 = 10.502123166
+
+console.log(num1.toFixed(2))
+
+Resultado terminal = 
+
+10.50
+
+Mostrando se o valor de um número é inteiro ou não.
+
+Use Number.isInteger(num1)):  <-- dentro do parenteses coloque a variavel.
+
+
+exemplo:
+
+let num1 = 10.502123166
+
+console.log(Number.isInteger(num1))
+
+Resultado terminal:
+
+False
+
+Fazer o progama verificar se um número é NaN:
+
+coloque:
+
+Number.isNaN(n1)) <-- coloque a variavel dentro do parenteses.
+
+exemplo :
+
+let num1 = 10.502123166
+
+console.log(Number.isNaN(num1))  <-- se for invalido irá retornar false.
+
+resultado terminal = NaN
+

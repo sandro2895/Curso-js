@@ -1,0 +1,3 @@
+(grau × 9/5) + 32  
+
+grau multiplicado por 9 e em seguida divida o resultado por 5 e adicione 32.

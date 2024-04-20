@@ -1,0 +1,34 @@
+é uma serie de dados que pode ter dicionarios e listas, strings, objects, boolean.
+
+exemplo:
+
+def index():
+    return json.dumps({'name': 'alice',  <--No topo sempre fica uma list ou obeject, string
+                       'email': 'alice@outlook.com'})
+app.run()
+
+depois se bota o número.
+
+e tudo dentro de uma lista
+
+pode ser sómente uma lista números ou lista de números.
+
+exemplo:
+
+import json
+from flask import Flask, jsonify
+app = Flask(__name__)
+@app.route('/')
+def index():
+    return jsonify({'name': 'alice',
+                    'email': 'alice@outlook.com'})
+
+app.run()
+
+quando se declara um dicionario ou lista em python no flask, o python sempre retorna como json.
+
+a diferença de json é que é uma string.
+
+o flask sempre manda como uma string, texto.
+
+em json o False e True, podem ficar minusculos como false, true.

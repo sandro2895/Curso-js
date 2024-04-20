@@ -1,0 +1,16 @@
+checar [ex55.py]
+é necessario guardar  o valor em 2 variaveis. e depois compare o valor guardado com o valor do input.
+
+
+maior = 0
+menor = 0
+for cont in range(1, 5+1):
+    peso = float(input('O peso da {}ª pessoa: '.format(cont)))
+    if cont == 1:  <-- na primeira instancia o maior e o menos número sempre vai ser o mesmo.
+        maior = peso
+        menor = peso
+    else:
+        if peso > maior:  <-- aqui está testando se a variavel 'peso' é maior que a anterior que é 'maior' 
+            maior = peso
+        if peso < menor:  <-- aqui está testando se a variavel 'peso' é menor que a anteiror que é 'menor'
+            menor = peso

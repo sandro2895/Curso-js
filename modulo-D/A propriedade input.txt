@@ -1,0 +1,43 @@
+
+A propriedade input pode fazer um formulario do type="" number , string, radio, button e outros.
+
+exemplos
+<input type="number" name="txtidade" id="txtidade">
+  <input type="button" value="verificar" onclick="calcular()">  
+
+value ="" <-- escreve um valor para o imput.
+
+Pode ser colocado name, id , e classes no input.
+
+Pode ser colocador ações nos input.
+exemplo: onclick= ""
+
+no caso de input radio pode ser colocado checked para deixar marcado antes.
+
+Não esquecer de deixar um label no caso de input radio.
+
+exemplo de inputs:
+
+<p>Sexo
+          <input type="radio" name="radsex" id="mas">
+          <label for="mas">Masculino</label>
+          <input type="radio" name="radsex" id="fem">
+
+          <label for="fem">Feminino</label>
+        </p>
+        <p>
+          <input type="button" value="verificar" onclick="verificar()">
+        </p>
+
+
+Com 2 ou mais input radio deixe todos com o mesmo name="".
+- para assim somente um pode ser marcado por vez. 
+
+Podendo assim selecionar mais de um input de uma vez no javascript.
+exemplo:
+<input type="radio" name="radsex" id="mas">
+<input type="radio" name="radsex" id="fem">
+let fsex = document.getElementsByName("radsex") <--  pode ser colocado [0] e [1] por ai para selecionar os inputs seguintes
+                                                      que usam o mesmo name.
+
+

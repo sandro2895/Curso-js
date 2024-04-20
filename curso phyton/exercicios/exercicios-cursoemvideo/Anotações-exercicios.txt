@@ -1,0 +1,18 @@
+
+
+-Sempre crie uma linha abaixo dos codigo para indicar o fim do progama.
+
+-Clque como botão direito no arquivo e clique em run para executar e o arquivo ja ficar no topo do progama selecionado.
+
+-Não é necessario parenteses em alguns codigos.
+
+-Para deletar um arquivo em no pycharm clique com botão direito no arquivo e clique em Refactor e em seguida Safe Delete.
+
+-Nunca esqueça de formatar bem o codigo clicando na lampada.
+
+-Para incluir uma variavel dentro de uma string use'{}' e no final da linha .format{variavel})
+
+exemplo:
+nome1 = input('Digite seu nome: ')
+
+print('É um prazer te conhecer {}!'.format(nome1))

@@ -1,0 +1,21 @@
+Tipos primitivos de dados javacript -Tamben existe o dado symbol mas só será falado depois.
+checar pastar Udemy Aula6.js
+
+'doca'; // string
+
+27; // number
+
+1.80;  // number com ponto flutuante(flot)
+
+let futuro; // Undefined = não aponta para local nenhum na memória.é automatico
+
+let sobreNome = null; // Nulo --> Não aponta para local nenhum na memória. usado quando você quer explicitamente que 
+a variavel não aponte para nenhum lugar na memória. <-- é considerado um tipo object.
+
+let aprovado = true; //boolean só poder ser true ou false (logico).pode ser usado para mudar o fluxo da aplicação.
+
+console.log(typeof()) pode ser usado para ver o tipo primitivo de dado.
+
+console.log(typeof(nome1), nome1) pode ser usado junto com a variavel ao lado.
+
+existe também o tipo de dado passado por referencia.

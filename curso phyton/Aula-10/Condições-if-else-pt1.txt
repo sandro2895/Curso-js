@@ -1,0 +1,45 @@
+CONDIÇÕES DE IF E ELSE ou SE E SENAO  TRUE OR FALSE (BLOCOS)
+
+
+existem comandos - a sequencia e passo a passo devem ser seguidos.
+
+carro.siga()
+
+carro.esquerda()
+
+carro.siga()
+
+-e assim por diante.
+
+por fim carro.pare()
+ 
+e pode ter outras opções para seguir
+
+sempre tem um var.siga() no começo.
+
+
+exemplo teorico de condição:
+if carro.esquerda():
+
+    bloco true
+
+else:
+    bloco false
+
+
+exemplo: 
+tempo = int(input('Quantos anos tem seu carro? '))
+if tempo <= 3:   <--Isso significa menor ou igual a 3
+    print('Seu carro ainda é novo')
+else:
+    print('Seu carro ja ta velho')
+	
+
+Todo comando identado ou para dentro pode ser executado ou não.
+
+Condição simplificada: com print
+exemplo:
+print('Carro novo' if tempo <= 3 else 'Carro velho')  <-- if e else feito em uma só linha bom para pequenos comandos.
+
+
+

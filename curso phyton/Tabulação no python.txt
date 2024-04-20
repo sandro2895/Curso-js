@@ -1,0 +1,9 @@
+
+
+Use: \t
+
+exemplo:
+
+print ('preço: \t{moeda}')
+
+pode ser colocado mais de um \t\t 

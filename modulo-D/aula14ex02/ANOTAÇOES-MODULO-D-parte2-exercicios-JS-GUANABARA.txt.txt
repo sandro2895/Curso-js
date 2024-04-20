@@ -1,0 +1,5 @@
+ANOTAÇOES-MODULO-D-parte2-exercicios-JS-GUANABARA.txt
+pode ser selecionado o value e length nas variaveis com o if
+
+exemplo: if (fano.value.length == 0 || fano.value > ano)
+

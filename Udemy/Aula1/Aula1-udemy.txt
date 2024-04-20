@@ -1,0 +1,30 @@
+Aula1-udemy
+
+Abra o terminal na aba 'View'
+
+Executando um comando a mão no terminal.
+
+aperta setinha para baixo para ver a pasta atual
+-e em seguida ao lado do texto da pasta atual coloque cd e o nome da pasta para onde você quer ir.
+-e em seguida coloque node e ao lado o arquivo que você quer executar o console.log()
+
+exemplo:
+
+console.log('oi')
+
+
+___________________________________________________________________________________________________________________________
+                                   -Terminal-            
+
+
+S D:\Games\GitHub\Curso-js> cd
+PS D:\Games\GitHub\Curso-js> cd Udemy
+PS D:\Games\GitHub\Curso-js\Udemy> node Aula1.js
+oi
+PS D:\Games\GitHub\Curso-js\Udemy> 
+
+Tamben pode ser executado como:
+Usando node e em seguida a pastar / arquivo que deseja executar.
+
+PS D:\Games\GitHub\Curso-js>  node Udemy/Aula1.js
+

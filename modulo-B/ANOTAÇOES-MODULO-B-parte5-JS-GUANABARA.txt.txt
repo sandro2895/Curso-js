@@ -1,0 +1,59 @@
+ANOTAÇOES-MODULO-B-parte5-JS-GUANABARA.txt
+no <script>
+
+O comando document.write (``) faz aparecer strings e números na pagina
+Exemplo:
+<script>
+let nome = window.prompt('Qual é o seu nome?')
+document.write(`Seu nome tem ${nome.length} letras.`)
+  </script>
+Pode ser alterado as letras criadas com documento.write(``)
+
+Exemplo:
+body {
+      background-color: darkcyan;
+      font-size: 4em;
+    }
+
+ou 
+document.write(`<h2>Seu nome tem ${nome.length} letras.</h2>`)
+
+document.writeln <-- faz ter uma barra.
+Pode ser colocado <br> para fazer mais barras dentro do document.write()
+</br> faz uma barra e manda para baixo o proximo comando.
+
+outros exemplo:
+document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`) 
+document.write(`Seu nome em minúsculas é ${nome.toLocaleLowerCase()}`)
+
+
+formatação de numbers 
+Fazer numeros com casas decimais
+
+Use depois da váriavel .toFixed() <-- coloque o número de casas decimais.
+Exemplo:
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+
+Trocando o ponto por vigurla.
+Use replace('.', ',')
+Exemplo:
+n1.toFixed(2).replace('.', ',')
+
+.toLocalestring() <-- localiza uma string em outra linguagem
+
+Mostrando uma variavel como crifrao real:
+Use depois da variável 
+.toLocaleString('pt-BR', {style: 'currency', currency : 'BRL'})
+Exemplo:
+
+>n1.toLocaleString('pt-BR', {style: 'currency', currency : 'BRL'})
+'R$ 1.545,50'
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency : 'USD'}) <-- fica em DOLA.
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency : 'EUR'}) <-- fica em EURO.
+
+

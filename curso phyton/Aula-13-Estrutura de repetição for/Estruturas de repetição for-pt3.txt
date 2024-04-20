@@ -1,0 +1,26 @@
+
+
+Exemplo7:
+
+inicio = int(input('Digite o número inicial: '))  <-- você pode fazer uma variável para começo, fim e quantos passos.
+fim = int(input('Digite o número final: '))
+passo = int(input('Digite o número de passos: '))
+
+for cont in range(inicio, fim+1, passo):  coloque +1 na variável fim para não precisar colocar o número mais na frente.
+    print(cont)
+print('fim')
+
+
+exemplo8:
+
+for cont in range(1, 3 + 1):
+    n = int(input('Digite um valor: '))  <-- assim o input da variavel 'n' será repetido 3 vezes.
+   
+print('fim')
+
+exemplo9: somando valores.
+soma = 0
+for cont in range(1, 3 + 1):
+    n = int(input('Digite um valor: '))
+    soma = soma + n     <--Assim a soma vai receber o valor do input 'n'  +  o valor da variável soma que é 0
+print(soma)

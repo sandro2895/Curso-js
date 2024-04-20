@@ -1,0 +1,45 @@
+ANOTAÇOES-MODULO-B-parte9-JS-GUANABARA.txt
+
+Operadores ternarios(operadores ternario sempre são os ultimos na precedencia)
+
+?
+
+:
+
+teste ? true : false
+
+exemplo : 
+> let media = 5.5
+undefined
+> media
+5.5
+> media >7? 'APROVADO' : 'REPROVADO'
+'REPROVADO'
+> media <7? 'APROVADO' : 'REPROVADO'
+'APROVADO'
+>
+
+_________________________________________________________
+Anatomia
+> media <7?         'APROVADO'         :      'REPROVADO'
+       pergunta.  caso seja verdadeiro.    caso seja falso
+
+_______________________________________________________________________________________
+
+exemplos:
+> var x = 8
+> var  res = x * 2 == 16? 16:'errado'
+> res
+16
+> var  res = x * 2 == 15? 16:'errado'
+> res
+'errado'
+
+________________________________________________________________________________________
+> let idade = 27
+> let resp = idade >= 28? 'maior': 'menor'
+> resp
+'menor'
+> resp = idade >= 27? 'maior': 'menor'
+> resp
+'maior'

@@ -1,0 +1,15 @@
+[CHECAR ex72a]
+
+
+num = ('Um', 'Dois', 'Três', 'Quatro', 'Cinco',
+       'Seis', 'Sete', 'Oito', 'Nove', 'Dez',
+       'Onze', 'Doze', 'Treze', 'Catorze', 'Quinze'
+       'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
+
+while True:
+    quest = int(input('Digite um número entre 0 e 20: '))
+    if quest >= 0 and quest <= 20:    <--Aqui é se a variável quest for maior ou igual a 0 e menor ou igual a 20.
+        break
+    print('Tente novamente', end=' ')   <--esse print vai ser puxado com o que está digitado no quest.
+
+print(f'Você digitou o número {num[quest]}')  <-- aqui o progama vai usar o número da variavel quest para ler na variavel num.

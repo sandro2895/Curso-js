@@ -1,0 +1,51 @@
+class Device:
+    def __init__(self, name, conected_by):
+        self.name = name
+        self.conected_by = conected_by
+        self.conected_by = True  <-- quando se crie em boleano assim não precisa de parametro
+
+
+    def __str__(self):
+        return f'Device {self.name!r} ({self.conected_by})'   <-- o !r chama o rep metodo sem precisar de citação.
+
+   def disconect(self):   <--Aqui pode mostrar desconectado.
+        self.conected = False
+        print('Disconnected')
+
+
+
+printer = Device('PRINTER', 'USB')
+print(printer)
+printer.disconect()
+
+class Printer(Device):  <-- colocando a classe Device dentro do parentes, tudo que é dele vai ser herdada para a classe Printer.
+
+     super().__init__(name, conected_by)  <--Isso pega o metodo init da classe pai herdada Device.
+     self.capacity = capacity     <--Isso é representa o maximo que a impressora pode imprimir se tiver tinta cheia.
+     self.remaining_pages = capacity    <--Esse é o quanto resta depois de imprimir certo numero de paginas.
+
+    def __str__(self):
+        return f'{super().__str__()} ({self.remaining_pages}) pages remaining.'   <--Também coloque o super para herdar, com o __str__ da classe pai.
+
+    def printing(self, pages):
+        if not self.conected:
+            print('Your printer is not conected')
+            return        <--Aqui vai retornar logo se não estiver conectado.
+        print(f'Printing {pages} pages.')
+
+        self.remaining_pages -= pages  <--Aqui subtrai as remaining pages com o parametro pages
+
+
+printer = Printer("Printer", 'USB', 20)  <-- coloca quantas paginas tem
+printer.printing(15)   <--Quantas paginas vao imprimir.
+print(printer)        <--Quantas paginas restam.
+
+printer.disconect()  <-- Aqui vai desconectar, Vai achar A função na classe pai Device.  (Tambem investiga no objeto s         e a função está la)
+printer.printing(2)  <-- Vai mostrar que está desconectado.
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+Operadores aritmeticos , de atribuiçao e incremento part3
+
+Se você tentar concatenar com qualquer sinal que não seja o + (adição).
+
+irá gerar um erro NaN(Not a Number).
+
+Exemplo :
+
+let num1 = 2
+
+let num2 = 'doca'
+
+console.log(num1 * num2)
+
+Resultado terminal = NaN
+
+Caso a string seja um número o javascript tenta resolver o problema para você.
+
+exemplo:
+
+let num1 = 2
+
+let num2 = '5'
+
+console.log(num1 * num2)
+
+Resultado terminal = 10
+
+Maneiras de convertar uma string para um numero.
+Usando parseInt() <-- são serve para números de ponto float 0.0 :
+
+let num2 = parseInt('5') <-- converte a string para um número inteiro.
+
+Usando parseFloat:
+
+let num2 = parseFloat('5.5') <-- assim a string é convertida para um número flutuante(float number).
+
+Usando Number:
+
+let num2 = Number('5.5') <-- assim o javascript se vira para entender o numero que tem dentro do parenteses.

@@ -1,0 +1,16 @@
+
+
+
+def find_index(to_find, item):
+    for pos, valor in enumerate(to_find):  <--Enumere o to_find que vira uma lista a ser lida.
+        if valor == item:   <--Assim se valor for = ao parametro item, retorna a posição do valor dele.
+            return pos
+    return print('Item não localizado')  Isso vai ser retornado caso o valor não seja = ao parametro item. Funciona como um break.
+
+
+from Calculadora.Cadastros import find_index
+
+list1 = ['a', 'b', 'c', 'd', 'e']
+
+achar = find_index(list1, 'd')   <--coloque a lista e em seguida o valor a ser achado.
+print(achar)

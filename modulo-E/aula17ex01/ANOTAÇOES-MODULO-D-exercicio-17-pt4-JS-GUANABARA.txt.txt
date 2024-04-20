@@ -1,0 +1,15 @@
+ANOTAÇOES-MODULO-D-exercicio-17-pt4-JS-GUANABARA.txt
+
+Fazendo as tabs ou options serem selecionadas(importante para linguagens como php).
+
+no javascript
+
+atribua .value =`` junto a variavel que está com o option e junte com o contador.
+
+exemplo:
+
+item.value = `tab${c}`
+
+Podendo assim selecionar os options que estão como váriavel tab.
+-e podendo saber qual foi o item selecionado. 
+

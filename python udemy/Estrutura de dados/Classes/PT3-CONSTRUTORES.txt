@@ -1,0 +1,30 @@
+
+CONSTRUTORES:
+Facilitam a criação de parametros.
+
+Façã um def __init__()
+
+class Funcionarios:
+    def __init__(self, nome, sobrenome, idade):  <--Sempre comece com self e depois coloque os parametros. O self é o objeto e depois o argumento.
+	self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
+
+usuario1 = Funcionarios('doca', 'Augusto', 28)  <--Assim pode ser colocado no parametro da classe-objeto os valores de cada usuario. 
+
+
+o self vai ser o objeto.argumento, não importa quantos objetos tenha sempre vai ser trocado pelo self.
+
+
+fazendo print no nome, idade, sobrenome de uma vez.
+
+crie outra função dentro da classe Funcionarios:
+
+    def nome_completo(self):   <--Só precisa do self, quando ja tem uma função encima que pode ser puxado os argumentos.
+        return f'{self.nome} {self.sobrenome} {self.idade}'  <--Assim pode ser retornado o nome, sobrenome, idade da função de cima com .self
+
+usuario2 = Funcionarios('Sandro', 'Augusto', 58)
+print(usuario2.nome_completo())  <--Agora pode ser chamado com o objeto criado e puxando o metodo com ponto. nome_completo().
+
+print(Funcionarios.nome_completo(usuario1)) <--Também pode ser chamado dessa forma,a classe Funcionarios, o metodo nome_completo() e dentro do parentes O usuario.
+Dessa forma é mais claro o nome da classe.                                                                                                                                          

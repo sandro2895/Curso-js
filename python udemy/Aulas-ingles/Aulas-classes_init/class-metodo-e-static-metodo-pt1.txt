@@ -1,0 +1,36 @@
+class Classtest:
+    def instance_method(self):   <--fazendo um instance method
+
+        print(f'called instance_method of {self}')
+
+
+test = Classtest()
+test.instance_method()  <--Assim chama o instance method desse objeto
+Classtest.instance_method(test) <--Também da pra chamar desse jeito
+
+
+
+class Classtest:
+    def instance_method(self):  <--Instance objeto recebe como parametro o objeto proprio
+        print(f'Called instance_method of {self}')
+
+    @classmethod <--O python entende que está usando isso como parametro para o  cls.
+    def class_method(cls):
+        print(f'Called class_method of {cls}')
+
+
+
+Classtest.class_method()  <--pode ser chamado assim
+
+
+
+ @staticmethod
+    def static_method():  <-- Não precisa ser colocado parametro.
+        print(f'Chamando static_method.')
+
+
+São uteis quando quer produzir ação com os objetos dentro da class.
+
+
+
+cls.  <-- pega oque tiver dentro da CLASSE assim como self.

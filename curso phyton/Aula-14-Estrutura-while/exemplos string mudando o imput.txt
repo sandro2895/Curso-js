@@ -1,0 +1,11 @@
+
+
+sexo = str(input('Diga qual é o seu sexo? M/F: ')).strip().upper()[0]  <-- Assim só vai pegar a primeira letra e em maiusculos.
+                                                                            Por causa do .strip() e do .upper() de [0]
+
+while sexo not in 'MmFf':  <-- Aqui enquanto na variável 'sexo' não tiver M ,m, F ou f o progama vai continuar.
+      sexo = str(input('Dados inválidos por favor diga qual é o seu sexo: '))  <--O progama vai mudar para esse input caso não pare no anterior  
+print('Sexo {} registrado com sucesso.'.format(sexo))
+
+
+Não esquecer de usar .strip() .upper()  e [] entre outros. Para formatar as string para o usuario.

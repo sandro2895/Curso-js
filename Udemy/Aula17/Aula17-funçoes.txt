@@ -1,0 +1,125 @@
+Aula17-funções <-- checar Aula17.js
+
+-para declarar uma função use function() {
+                                          } 
+exemplo:
+
+function saudacao() {
+console.log('bom dia')		
+
+};
+
+-para chamar uma função use  nomefunçao();
+
+exemplo :
+
+saudacao();
+
+Resultado terminal = bom dia
+
+-para colocar parametro dentro de uma função coloque dentro do parenteses ()
+
+exemplo:
+
+function saudacao(nome) {
+console.log(`bom dia ${nome}`) <-- Assim o parametro é chamado
+};
+
+saudacao('Luiz'); <-- Aqui o parametro é declarado.
+
+Resultado terminal = bom dia Luiz
+
+-A função pode ser chamada mais de uma vez com um parametro diferente
+
+exemplo :
+saudacao('Luiz');
+saudacao('Maria');
+
+Resultado terminal =
+bom dia Luiz
+bom dia Maria
+
+
+-Salvando funçoes de outras maneiras :
+
+Use return para fazer a função voltar com valores.
+
+exemplo1:
+function saudacao(nome) {
+console.log(`bom dia ${nome}`)
+return 123456
+};
+
+let variavel = saudacao('Luiz');
+console.log(variavel); <-- Isso mostra a função como variavel
+
+resultado terminal = 
+bom dia Luiz
+123456
+
+exemplo2:
+
+function saudacao(nome) {
+
+return `bom dia ${nome}!` <-- Assim a função retorna com a string e o parametro como valor.
+};
+
+-pode ser colocado uma variavel dentro de uma função
+
+exemplo:
+
+function soma(x, y) {
+  let resultado = x + y <-- essa função faz uma soma.
+                                                  <-- Oque está dentro da função está protegido como a variavel e return
+  return resultado                                        
+}                                              <-- uma variavel com o mesmo nome da variavel que está dentro da função pode ser criada
+
+console.log(soma(4, 2)) <-- assim o parametro da função recebe 4 e 2 e soma.
+
+Resultado terminal = 6
+
+-O return fexa a função impedindo que qualquer coisa nova seja feita abaixo dele
+
+-Se os valores colocados nos parametros da função acima for string o javascript irá concatenar  os valores.
+
+exemplo:
+
+console.log(soma('doca', ' augusto'))
+
+Resultado terminal = doca augusto
+
+-Pode ser deixado um valor ja feito nos parametros
+
+exemplo:
+
+function soma(x = 1, y = 2) <-- assim caso nenhum falor seja colocado x e y vão assumir o valor 1 e 2 .
+
+caso somento um valor seja declarado no parametro o valor sera colocado no x ou o  mais proximo a esquerda
+
+console.log(soma(5))
+
+Resultado terminal = 7
+
+
+Fazendo uma função retornar subtração.
+
+exemplo :
+ 
+let subtração = function(sub) {
+  return sub - 2      <-- assim a função subtrair em 2 qualquer numero colocado no parametro
+}
+
+sub = subtração(6)      
+
+console.log(sub)
+
+Resultado terminal = 4
+
+
+Fazendo uma função arrow function use => antes das chaves e removendo a palavra functio
+
+exemplo:
+
+let subtração = sub => sub - 2    <-- não precisa de return e nem chaves .
+
+E bom com função que são pequenas e so tem uma linha.

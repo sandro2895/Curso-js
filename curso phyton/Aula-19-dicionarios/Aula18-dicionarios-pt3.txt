@@ -1,0 +1,40 @@
+[checar Aula18.py]
+pessoas = {'nome': 'Doca', 'idade': '28'}
+pessoas['sexo'] = 'M'  <--assim acontece um append colocando no final do dicionario.
+
+
+pessoas = {'nome': 'Doca', 'idade': '28', 'sexo': 'M'}
+print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos') <-- dentro de fstring coloque com aspas duplas  ex:{var[""]}.
+
+for cont in pessoas.items():  <-- pode ser chamado com .keys e .values mas não pode ser chamado somento pessoas.
+    print(cont)
+
+exemplos:
+for pos, cont in pessoas.items():
+    print(f'{pos} {cont}')
+Resultado:
+nome Doca
+idade 28
+sexo M
+
+exemplo de dicionario em lista:
+
+brasil = []
+estado = {'uf': 'Ceara', 'município': 'Fortaleza'}
+brasil.append(estado)    <-- pode ser usado estado.items, .values e .keys
+print(brasil)
+resultado: [{'uf': 'Ceara', 'município': 'Fortaleza'}]
+
+ex:
+print(brasil[0]['municipio']) <-- assim mostra somente 'Fortaleza'
+
+
+Fazendo uma copia no dicionaio:
+estado = {}
+brasil = []
+for c in range(0, 3):
+    estado['uf'] = str(input('Unidade federativa: '))
+    estado['sigla'] = str(input('Sigla do estado: '))
+    brasil.append(estado.copy())   <-- use var.copy() para fazer a copia no .append.
+
+print(brasil)

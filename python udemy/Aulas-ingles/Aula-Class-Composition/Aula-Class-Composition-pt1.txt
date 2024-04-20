@@ -1,0 +1,25 @@
+class BookShelf:
+    def __init__(self, *books):  <--coloque em asteriscos para poder colocar quantos livros poder. e aqui está colocando a classe de baixo books
+        self.books = books
+
+    def __str__(self):
+        return f"Bookshelf with {len(self.books)} books"  Aqui vai retornar o número de livros
+
+
+
+class Books():
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return f'Book name: {self.name}'
+
+
+book1 = Books("Harry potter")   <--Crie os livros objetos.
+book2 = Books("Python 101")
+shelf = BookShelf(book1, book2)  <--Aqui coloque os objetos na classe BookShelf.
+print(shelf)
+
+
+
+    self.page_read = 0  <-- pode ser declarado como zero se não ficar no (self).

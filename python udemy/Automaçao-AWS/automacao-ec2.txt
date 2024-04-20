@@ -1,0 +1,18 @@
+
+T2 MICRO IAM
+
+primeiro passo é uma key-SSH e função lambda --> Vai rodar um script em python.
+
+E com isso automaticamente cria um  I AM ROLE.
+
+THE ROLE  vem  com um 'CLOUDWATCH
+
+vai ter que ser modificado para adicionar EC2
+
+depois coloca as variaveis no python script
+
+sempre cria sua time line a ser seguida.
+
+
+	
+

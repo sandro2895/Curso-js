@@ -1,0 +1,13 @@
+ANOTAÇOES-MODULO-F-exercicio-aula21-ex18-JS-GUANABARA.txt
+
+
+Pode ser feito uma função simplismente voltar verdadeiro ou faço (true or false) para 
+ajudar em outra função.
+
+exemplo:
+
+if(Number(n) >= 1 && Number(n)  <= 100){
+      return true
+  }else {
+    return false
+  }

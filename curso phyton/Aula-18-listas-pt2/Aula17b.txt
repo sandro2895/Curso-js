@@ -1,0 +1,39 @@
+
+
+
+
+test = []
+test.append('Doca')
+test.append(28)
+galera = []
+galera.append(test)
+test[0] = 'Maria'
+test[1] = '22'
+galera.append(test)
+print(galera)
+Resultado: [['Maria', '22'], ['Maria', '22']] <-- acontece isso pois está fazendo uma ligação e não uma copia.
+
+para fazer uma copia deixe galera.append(test[:]). 
+
+exemplo:
+galera = [['João', 32], ['Ana', 33], ['Joaquim', 13], ['Maria', 45]]
+for p in galera:
+    print(p)  <-- assim vai mostrar um elemento por vez.
+resultado:
+['João', 32]
+['Ana', 33]
+['Joaquim', 13]
+['Maria', 45]
+
+for p in galera:
+    print(p[0])  <-- vai mostrar somente o nome de cada um.
+
+
+exemplo2:
+galera = []
+dados = []
+for c in range(0, 3):
+    dados.append(str(input('Qual é o seu nome? ')))
+    dados.append(int(input('Qual é sua idade? ')))
+    galera.append(dados[:])  <-- assim galera vai copiar oque tem em dados sempre quando acabar. Um de cada vez.
+    dados.clear()   <-- não esquecer de colocar o clear para os elementos não ficarem  juntos no final. 

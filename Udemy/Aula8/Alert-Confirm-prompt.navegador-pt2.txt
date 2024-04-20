@@ -1,0 +1,33 @@
+Alert-Confirm-prompt.navegador-pt2
+
+Capturando um valor do confirm
+
+crie uma variável atribuindo o confirm.
+
+exemplo:
+
+const confirmar = confirm('Realmente deseja apagar?')
+- Assim o valor da variavel confirmar' vai ser o valor true ou false do confirm
+
+capturando com o prompt
+
+let n1 = prompt('Digite um número')
+- Assim o valor da variavel n1 fica com o numero ou string que for digitado dentro da mensagem.
+
+pode ser necessario converter a string para Number(). 
+
+exemplo:
+
+let n1 = prompt('Digite um número')
+let n2 = prompt('Digite outro número')
+let soma = Number(n1) + Number(n2)
+
+alert(`O valor total dos números deu ${soma}`)
+
+O valor retornado da variavel soma das string convertida para number n1 + n2 fica dentro do alert.
+
+ou pode ser atribuido o mesmo valor com Number() para converter para number.
+
+exemplo:
+
+n1 = Number(n1)

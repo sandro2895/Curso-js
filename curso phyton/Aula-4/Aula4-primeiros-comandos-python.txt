@@ -1,0 +1,26 @@
+Primeiros comandos em phyton
+ -da pra fazer sem print e sem parenteses no IDLE SHELL
+
+os demilitadores do phyton para fazer mensagens são '' ou "", dentro de parenteses com print no lado esquerdo
+
+exemplo : print('Ola, mundo')
+
+numeros para fazer calculos em phyton nao precisan de demilitadores
+
+se colocado dessa forma sem aspas : print(7 + 1)
+
+ somente irá mostra o resultado : 8
+
+feito dessa forma o phyton simplismente vai juntar os numeros
+
+print ('7' + '8')
+
+Resultado : 78
+ da pra fazer sem print e sem parenteses no IDLE SHELL
+
+para mostra uma string com numero use ,
+
+exemplo : print ('ola', 5)
+Resultado : ola 5
+
+Em phyton toda variavel é um objeto.

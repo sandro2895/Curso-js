@@ -1,0 +1,24 @@
+[CHECAR Aula017pt2a]
+
+dados = [1, 2]
+
+pessoas.append(dados[:])  <-- Isso faz uma copia completa de dados para a lista pessoas.
+
+Assim dentro da lista de pessoas vai ter 2 elementos dentro do elemento 0.
+
+
+pessoas[0] == 1 2
+
+
+exemplo de lista dentro de lista:
+
+pessoas = [['Pedro, 25']. ['Maria, 19'], [João 32]]   <--os cochetes ficam dentro de um grande cochete.
+pessaos[1] == Maria 19
+
+exemplos:
+
+print(pessoas[0][0]) Resultado: Pedro
+
+print(pessoas[1][1]) Resultado: 19
+
+print(pessoas[2][0]) Resultado: João 

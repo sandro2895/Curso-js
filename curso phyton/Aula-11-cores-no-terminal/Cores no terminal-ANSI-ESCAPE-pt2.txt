@@ -1,0 +1,29 @@
+[Checar Aula11.py]
+EXEMPLOS PRATICOS:
+exemplo1:
+test = '\033[4:31:44m Ola mundo!\033[m'  <-- coloque outro \033[m no final para fechar a linha da cor.
+
+exemplo2:
+test = '\033[7:34:41m Ola mundo!\033[m'  <-- o 7 no começo sempre inverte o background com o text mundando as cores.
+
+exemplo3:
+n1 = 5
+n2 = 7
+print('Os valores são: \033[4:31m{}\033[m e \033[4:36m{}\033[m'.format(n1, n2))
+
+
+exemplo4:
+nome = input('Qual é o seu nome? ')
+print('Seu nome é {}{}{}!!'.format('\033[34m', nome, '\033[m')) <-- assim oque ta em chave pode ser substituido por \033[m
+
+
+É POSSIVEL CRIAR UMA LISTA DE CORES NO PROGAMA.
+
+cores = {'limpa': '\033[30m',   <-- coloque em uma variavel dentro de chaves. coloque a string e depois de : a cor.
+         'azul': '\033[34m'}
+
+exemplo:
+nome = input('Qual é o seu nome? ')
+cores = {'limpa': '\033[30m',
+         'azul': '\033[34m'}
+print('Seu nome é {}{}{}'.format(cores['azul'], nome, cores['limpa']))  <-- para chamar coloque var['string da cor']

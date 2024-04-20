@@ -1,0 +1,3 @@
+
+
+selecionado tudo em um texto e clicando parenteses, chaves ou cochetes no teclado preenche os lado esquerdo e direto.

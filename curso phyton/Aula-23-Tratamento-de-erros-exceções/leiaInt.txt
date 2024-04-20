@@ -1,0 +1,12 @@
+def leiaInt(num):
+    while True:
+        try:
+            msg = int(input(num))
+        except(ValueError, TypeError):
+            print('Número INTEIRO invalido!')
+            continue              <-- coloque o continue
+        except KeyboardInterrupt:
+            print('Usuário interrompeu o progama!')
+            return 0    <--Retorne o 0
+        else:
+            return msg  <--Retorne um número para não causar problemas se for usado a função em outros modulos.

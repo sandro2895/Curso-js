@@ -1,0 +1,24 @@
+ANOTAÇOES-MODULO-D-exercicio-17-pt1-JS-GUANABARA.txt
+
+exemplo de <input>:
+
+ <input type="number" name="num" id="txtn">
+
+  <input type="button" value="Gerar Tabuada"></p>
+
+criando um select.
+Use a tag <select> e coloque o name ="" e o id="".
+
+<select name="tabuada" id="seltab"></select>
+
+chamar uma função onclick
+
+digite onclick e coloque o nome da função.
+exemplo:
+onlick = "clicar()" pode ser colocado na tag <input> type="buttom". entre outras tags.
+
+sempre costume coloque dentro do if.
+let n = Number(num.value)  <-- isso pega a variavel 'num e converte a 'string em 'Number e 
+atribui a variavel 'n.
+
+.legth as vezes pode causar problemas.

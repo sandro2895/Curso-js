@@ -1,0 +1,47 @@
+ANOTAÇOES-MODULO-F-parte3-Variaves-compostas-JS-GUANABARA.txt
+
+Colocando um elemento com valor automaticamente no final de um vetor.(Metodo interno)
+
+Digite a variavel com .push() dentro dos parenteses coloque o valor.
+
+exemplo:
+
+num.push(12)
+
+console.log(`Mostrando o ver mais uma vez ${num}`)
+
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\ambient.js"
+Mostrando vetor 2,4,6,8
+Mostrando vetor novamente 2,4,6,8,10
+Mostrando o vetor mais uma vez 2,4,6,8,10,12
+
+Sabendo o comprimento de um array.
+
+coloque a váriavel com .length <-- não tem paretenses na linguagem javascript.
+length é um metodo e não um atributo.
+
+exemplo:
+num.length
+
+console.log(`O vetor tem ${num.length} posiçoes`)
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\ambient.js"
+O vetor tem 4 posiçoes
+__________________________________________________________________________________________________________
+colocando todos os elementos e valores do array em ordem crecente 
+coloque a váriavel com .sort()
+
+exemplo:
+num.sort()
+
+__________________________________________________________________________________________________________
+
+
+Mostrando valores dos vetores
+
+exemplo:
+let num = [2, 4, 6, 8]
+console.log(num[3])
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\ambient.js"
+8
+
+

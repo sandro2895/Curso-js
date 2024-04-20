@@ -1,0 +1,14 @@
+try:
+    a = open(arq, 'a+')  <-- use o open(var, a+) para acrecentar algo ao arquivo
+except:
+    print('Erro ao ler o arquivo! ')
+else:
+    while True:
+        try:
+          b = str(input('Digite o nome de uma pessoa! ')).title()   <-- texto que será acrecentado ao arquivo
+        except:
+            print('Nome digitado incorreto')
+        else:
+            break
+    a.write(f'\n{b}')  <-- carregue o var.write(f'\n{}') para acrencentar ao arquivo
+    a.close()

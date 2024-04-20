@@ -1,0 +1,37 @@
+CHECAR [pygame1.py]
+
+Instalar o pygame colome no cmd : C:\Users\sandr>pip install pygame
+
+e em seguidade chame o python e import o pygame:
+
+C:\Users\sandr>python
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pygame
+pygame 2.5.0 (SDL 2.28.0, Python 3.11.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+>>>
+
+import pygame e importe o submodulo
+
+import tudo de locals pygame com from pygame.locals import *
+
+from sys import exit <-- para poder fexar a janela
+
+pygame.init() <-- inicia todas as funções de pygame
+
+Para criar a tela crie numa variável:
+
+ex:
+tela = pygame.display.set_mode()  <-- esse set mode recebe uma tupla que contem a largura e altura respectivamento.
+
+e em seguida crie um loop que se passa o jogo.
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:  <--Aqui se o jogador clicar em quit o exit é executado e o jogo fexa.
+            pygame.quit()
+            exit()
+    pygame.display.update()  <-- essa linha atualiza o jogo para não travar
+
+Use esse comando: pygame.display.set_caption('ExemploJogo') <-- para colocar o nome da janela!
+ 

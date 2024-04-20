@@ -1,0 +1,15 @@
+Use o modulo math e não se esqueça de converter para radiantes
+
+import math
+
+sen = math.sin <--para seno
+cos = math.cos <--para cosseno
+tan = math.tan <--para tangente
+
+não esquecer de converter para math.radians(var)
+exemplo:
+sen = math.sin(math.radians(ang))
+cos = math.cos(math.radians(ang))
+tan = math.tan(math.radians(ang))
+
+

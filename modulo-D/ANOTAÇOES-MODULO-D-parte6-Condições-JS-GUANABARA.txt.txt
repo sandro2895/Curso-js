@@ -1,0 +1,61 @@
+ANOTAÇOES-MODULO-D-parte6-Condições-JS-GUANABARA.txt
+para puxar a data do sistema e atribuir a uma variavel.
+use new Date() e em seguida atribua a variavel logo abaixo .getDay().
+
+   0 = Domingo
+   1 = Segunda
+   2 = Terça
+   3 = Quarta
+   4 = Quinta
+   5 = Sexta
+   6 = Sábado
+
+pode ser colocado o dia da semana forçadamente atribuido a variavel.]
+exemplo:
+diasm = 2
+
+Pode ser usado If e switch  para especificar dias da semana com string.
+  
+exemplo:
+let agora = new Date()
+let diasm = agora.getDay()
+
+Exemplo de switch no Vscode:
+
+let agora = new Date()
+let diasm = agora.getDay()
+diasm = 2
+console.log(diasm)
+
+ switch (diasm) {
+    case 0:
+      console.log('Domingo')
+      break       
+    case 1:
+      console.log('Segunda')
+      break       
+    case 2:
+      console.log('Terça')
+      break       
+    case 3:
+      console.log('Quarta')
+      break       
+    case 4:
+      console.log('Quinta')
+      break       
+    case 5:
+      console.log('Sexta')
+      break
+    case 6:
+      console.log('Sabado')
+      break
+    default:
+      console.log('-ERRO- dia invalido')
+      break         
+ }
+
+-No switch não da pre se usar operçoes logicas ,intevalos  e outros na expressão.
+-O switch é bom para dados pontuais e fixos.
+-Fucioana somente com números inteiros e caracteres(string).
+
+

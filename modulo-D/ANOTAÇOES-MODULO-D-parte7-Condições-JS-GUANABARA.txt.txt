@@ -1,0 +1,32 @@
+ANOTAÇOES-MODULO-D-parte7-Condições-JS-GUANABARA.txt
+
+
+Selecionando input radio no if:
+
+Coloque o nome da variavel entre parenteses junto com o numero da orden da variavel "[]")
+e em seguida coloque .checked.
+
+
+exemplo:
+
+if (fsex[0].checked)
+
+
+exemplo de if
+
+if (fano.value == 0 || fano.value > ano) {
+  window.alert ("[ERRO] Verifique os dados e tente novamente.")
+  } else {
+    let fsex = document.getElementsByName("radsex")
+    let idade = ano - fano.value
+    res.innerHTML = `idade calculada ${idade}`
+    let genero = ""
+    if (fsex[0].checked){
+    genero = "Homen"
+    } else if (fsex[1].checked){
+      genero = "Feminino"
+    }
+    res.innerHTML = `Detectamos ${genero} com ${idade} anos.`<-- pode ser colodade isso depois do else if.
+  }
+}
+

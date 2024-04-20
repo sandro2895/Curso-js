@@ -1,0 +1,23 @@
+ANOTAÇOES-MODULO-F-parte9-Funcoes-compostas-JS-GUANABARA.txt
+
+Terceiro exemplo de function:
+
+function soma(n1,n2) { <-- pode ser colocado mais de uma variavel como parametros para ser somado.
+      return n1 + n2
+
+}
+
+console.log(soma(4,2)) <-- se não for colocado pelo menos um dos parametros o javascript conta como undefined.
+                           -e fica como NaN (Not a Number).
+
+
+____________________________________________________________________________________________________________________
+function soma(n1=0, n2=0) { <-- pode ser deixado as varivels como =0 para impedir que resulte em NaN.
+      return n1 + n2
+
+}
+
+console.log(soma(4)) <-- assim o parametro que faltar ser declarado vai sempre ficar como 0 
+
+[Running] node "c:\Users\sandr\OneDrive\Documents\Curso-js\modulo-F\aula18.js"
+4

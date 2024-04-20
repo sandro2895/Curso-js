@@ -1,0 +1,43 @@
+def divide(dividend, divisor=1):
+    if divisor == 0:
+        raise ZeroDivisionError("divisor cannot be 0")   <--Error usando raise, Assim caso tenha o erro ZeroDivisionError vai aparecer ("divisor cannot be 0")
+
+    return dividend / divisor
+
+
+grades = []
+
+print("Welcome to the avarage grade program")
+avarage = divide(sum(grades), len(grades))
+print(f'The avarage grade is {avarage}')
+
+
+
+exemplo try:
+
+try:
+    avarage = divide(sum(grades), len(grades))
+    print(f'A nota media é {avarage}')  <--Esse print só vai aparecer caso o Avarage de cima der certo. 
+except ZeroDivisionError:   <--caso tenha o erro de zero division vai acontecer oque está abaixo de except.
+    print(e)   <--ISso chama o raise de zero division error
+    print('There is no grades yet on your list')
+else:
+    print(avarage)
+
+
+
+exemplo2:
+
+try:
+    for student in students:   <--pode ser colocado um for
+        name = student["name"]
+        grades = student["grades"]
+        average = divide(sum(grades), len(grades))
+        print(f'Name: {name} Grade {average}')
+except ZeroDivisionError:    <-- O erro vai aparecer no momento que chegar nesse name do for.
+    print(f'There is no grade for {name} yet')
+else:  <--O else só aparece se não tiver nenhum erro.
+    print('Grades Calculated')
+finally:
+    print('End of grades calculation')
+

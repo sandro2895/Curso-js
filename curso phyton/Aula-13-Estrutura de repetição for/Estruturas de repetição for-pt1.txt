@@ -1,0 +1,39 @@
+
+Teoria:
+
+pode se colocar varios passos ate a estrutura chegar ao fim.
+como exemplo uma contagem de 1 ate 10 no laço.
+
+é chamado de laço de variavel de controle.
+
+exemplo teorico:
+
+laço var no intervalo(1, 10)   <--vai fazer a variavel se repetir no intervalo de 1 a 10
+     passo
+
+pega <-- final da estrutura
+
+exemplo python:
+
+for var in range(1,10):
+   passo
+
+pega
+
+exemplo:
+
+for var in range (0, 3)
+    passo     <-- assim o passo e pular sera repetido 3 vezes
+    pula
+passo
+pega
+
+exemplo aninhamento:
+
+for var in range (0, 2)
+    if a == moeda          <--- o if está dentro do for.
+          pega moeda
+    passo
+    pula
+passo
+pega

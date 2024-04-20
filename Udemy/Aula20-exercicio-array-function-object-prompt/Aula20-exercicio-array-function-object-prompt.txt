@@ -1,0 +1,69 @@
+Aula20-exercicio-array-function-object-prompt
+
+
+
+-Para fazer um formulario em html use:
+
+<form action="" method="get"></form> <-- esse é o metodo para pegar algo
+ 
+ou 
+
+Use <p>Nome: <input type="text"></p> type='text'<-- faz um formulario de texto e tem varios outros como button e check box e etc.
+
+-Uma variavel criada fora da função está no escopo global.
+
+-Se quiser que uma variavel seja mudada coloque dentro de uma função
+
+-Para fazer uma função fucionar no navegador pode ser necessario digitar ela no console do inspecionar
+
+exemplo :
+
+function meuEscopo() {
+  alert(1)
+
+}
+
+no console coloque  meuEscopo()
+
+
+-Colocando meuEscopo() no javascript ele ja vai executar sempre pois a função está sendo chamada.
+
+
+-Para puxar uma tag html para o javascript Use class ou id e Utilize dentro da function let form = document.querySelector('')
+Dentro do parenteses pode ser chamado como:
+.
+let form = document.querySelector('.form') <-- . Chamando como class.
+
+let form = document.querySelector('#form') <-- # Chamando como id.
+
+let form = document.querySelector('form') <-- Chamando pelo nome da tag.
+
+
+-Para prevenir que um button enviar fique atualizando a pagina coloque dentro da function
+
+  form.onsubmit = function (evento) { <-- Isso se refere ao evento button onsubmit
+    evento.preventDefault(); <-- Isso previne de atualizar ao ser clicado.
+    alert(1);
+
+  };
+
+-Outro jeito de previnir que a pagina atualize ao clicar o button enviar
+
+Coloque dentro da função :
+
+ function eventoForm (evento) {
+    evento.preventDefault();
+    console.log('Form não foi enviado');
+  };
+
+  form.addEventListener('submit', eventoForm); <-- Assim quando o addEventListener ouvir submit ele vai chamar a função eventoform
+
+-Fazendo os formularios.
+
+Checar vscode do exericicio
+
+
+
+
+
+

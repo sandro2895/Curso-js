@@ -1,0 +1,54 @@
+ANOTAÇOES-MODULO-B-parte7-JS-GUANABARA.txt
+
+Operadores relacionais : não diferencia de string e number.
+
+> <--Maior
+< <-- Menor
+>= <-- Maior e igual
+<= <-- Menor e igual
+== <-- Igual
+!= <-- Diferente(não-igual)
+
+Toda expressão que tenha um operador relacional ligada a ela sempre vai
+resultar em um valor booleano.
+exemplos:
+5 > 2 = true
+7 < 4 = false
+8 >= 8 = true
+9 <= 7 = false
+5 == 5 = true
+4 != 4 = false
+
+Pode ser feito com variáveis
+exemplo: 
+> let curso = 'javascript'
+> curso
+'javascript'
+> curso == "java"
+false
+> curso == "javascript"
+true
+> n1 != n2
+true
+> n1
+5
+> n2
+3
+>
+
+Operadores relacionais de identidade(operador de igualdade restrita) :
+Identifica se é o mesmo valor e do mesmo tipo. diferenciando de string e number.
+
+=== <-- Identidade restrita
+!== <-- Diferente restrito
+
+exemplos: 
+let n1 = 5
+            
+> n1 === 5          > n1 !== '5'
+-true                -true
+
+> n1 === '5'         > n1 !== 5
+-false                -false
+
+

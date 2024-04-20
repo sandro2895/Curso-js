@@ -1,0 +1,45 @@
+def divide(dividend, divisor):
+    if divisor == 0:
+        raise ZeroDivisionError("Divisor cannot be 0.")
+
+    return dividend / divisor
+
+
+def calculator(*values, operator):
+    return operator(*values)   <--Assim usa uma função mesmo sendo um parametro, Assim os parametros tem os mesmo valores.
+
+
+result = calculator(20, 4, operator=divide)  <--Aqui está fazendo o operator receber a função divide depois de abrigar values.
+
+
+outro exemplo:
+
+def search(sequence, expected, finder):
+    for elem in sequence:
+        if finder(elem) == expected:
+            return elem
+    raise RuntimeError(f'Could not find an element with {expected}.')
+
+
+friends = [
+    {"name": "Rolf Smith", "age": 24},
+    {"name": "Adam Wool", "age": 30},
+    {"name": "Anne Pun", "age": 27}
+]
+
+
+def get_friend(friend):
+    return friend["name"]  <--Assim já vai pegar a chave de "name" em algum dicionario.
+
+
+print(search(friends, "Rolf Smith", get_friend)) Assim vai voltar sem erro caso o elemento get friend for o correto.
+
+print(search(friends, "Rolf Smith", lambda friend: friend["name"]))  <--Também pode ser usada com lambda.
+
+
+ou pode ser usado o itemgetter:
+
+from operator import itemgetter
+
+print(search(friends, "Rolf Smith", Lambda friend: itemgetter("name")))
+

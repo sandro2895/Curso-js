@@ -1,0 +1,29 @@
+Importando modulos de site [checar aula08b.py]
+import  ctr + space Mostra varios outros Modulos disponiveis.
+
+Vá no site de https://www.python.org
+
+clique na aba em cima DOCS
+
+clique em Library Reference.
+
+é assim da pra ver todos os modulos disponiveis
+
+como exemplo:
+
+Numeric and Mathematical Modules.
+=em math- Mathematical functions
+
+exemplo2:
+import random
+
+fazer o computar mostra um número aleatorio
+
+import random
+num = random.random()  <-- esse metodo random do modulo random gera um número entre 0 e 1  -[não esquecer os parenteses]
+print(num)
+
+-Pode ser usado o random.randint(1, 10) para gerar um número aleatorio entre 1 e 10 por exemplo:
+______________________________________________________________________________________________________________________________________________________
+
+Checando o index de pacotes extras do python -- va no site python.org na aba PyPI

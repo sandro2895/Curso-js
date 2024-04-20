@@ -1,0 +1,31 @@
+Operadores Aritiméticos-2
+
+-Pode ser somados os números inteiros no .format{n1+n2}
+
+exemplos: 
+print('A soma vale {}'.format(n1+n2))
+print('A multiplicação vale {}'.format(n1*n2)) <--outras operações podem ser feitas
+
+-Pode ser diminuido as casa decimais flutuantes fazendo {:.3f}
+exemplo:
+print('A Soma vale : {}, A Multiplicação vale : {}, A Divisão vale : {:.3f} '.format(s, m, d))
+
+-Use , end=' ') Para fazer o print não quebrar a linha.
+exemplo:
+print('A Soma vale : {}, A Multiplicação vale : {}, A Divisão vale : {:.3f} '.format(s, m, d), end=' ') <-- também pode ser colocado 
+                                                                                                             algum sinal no meio de end='>'
+-Use \n  no meio do print para quebrar a linha no meio da string.
+exemplo: print('A Soma vale : {}, \n A Multiplicação vale : {}, A Divisão vale : {:.3f} '.format(s, m, d))
+
+-Mostrando somente uma casa flutuante {:.1f} o progama arredonda pro valor mais proximo.
+
+A variaveis em python podem ter acentos.
+
+
+
+
+
+
+
+
+

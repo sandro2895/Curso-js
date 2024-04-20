@@ -1,0 +1,40 @@
+ANOTAÇOES-MODULO-C-parte7-Funçoes-JS-GUANABARA.txt
+
+Fazer os eventos e ligação do html e javascript usando a.addEventListener().
+exemplo:
+
+<div id="area">
+    interaja...
+  </div>
+ <script>
+     let a = window.document.querySelector('div#area')
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrou)
+a.addEventListener('mouseout', saiu)
+
+ function clicar() { 
+      a.innerHTML = 'clicou'
+      a.style.background = 'red'
+      
+    }
+    function entrou() {
+      a.innerHTML = 'entrou'
+      
+    }
+    function saiu() { 
+      a.innerHTML = 'saiu'
+      a.style.background = 'aqua'
+   
+</script>
+
+
+______________________________________________________________________________________________________________
+
+detectando erros no javascript.
+
+abrindo o inspecionar e veficando abaixo no consola.
+
+
+
+
+

@@ -1,0 +1,40 @@
+pegando elemento pro id no javascript
+
+Use document.getElementById(''); <-- dentro do parenteses coloque o nome do id.
+
+exemplo :
+
+
+const numeroTitulo = document.getElementById('numero-titulo'); <-- assim a variavel numeroTitulo recebe o id.
+
+
+
+Use numeroTitulo.innerHTML <-- digite o nome da variavel antes do .innerHTML para colocar a varial como texto no html
+
+exemplo:
+
+numeroTitulo.innerHTML = numero;
+
+exemplo:
+
+nomeTexto.innerHTML = `<p> Seu numero -2 é ${numero -2}</p>` ;; <-- o innerHTML do javascript sobrepoe a tag do HTML.
+
+
+Use Number para converter string em number
+
+exemplo:
+
+numero = Number(numero);
+
+coloque os innerHTML com += para adicionar assim não substituindo os innerHTML seguintes.
+
+exemplo:
+
+nomeTexto.innerHTML += `<p>Raiz quadrada : ${numero ** 0.5}</p>`;
+
+nomeTexto.innerHTML += `<p>${numero} é inteiro : ${Number.isInteger(numero)}</p>`;
+
+nomeTexto.innerHTML += `<p>${numero} é NaN : ${Number.isNaN(numero)}</p>`;
+
+
+--pode ser limpado antes com nomeTexto.innerHTML = ``;

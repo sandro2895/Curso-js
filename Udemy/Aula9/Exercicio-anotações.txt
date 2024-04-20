@@ -1,0 +1,32 @@
+Pode ser guardado um valor de uma variavel antes de ser modificada
+
+
+exemplo:
+
+let varA = 'A'  // B
+let varB = 'B'  // C
+let varC = 'C'  // A
+let varA2 = varA  <-- valor guardado em uma variavel temporaria.
+
+
+varA = varB
+varB = varC
+varC = varA2
+
+Resultado terminal:
+
+B C A
+
+Nova solução para esse tipo de problema:
+
+let varA = 'A';  
+let varB = 'B';  
+let varC = 'C';
+
+[varA, varB, varC] = [varB, varC, varA]   <-- não esquecer de usar ; no fim das variaveis para funcionar.
+
+console.log(varA, varB, varC,)
+
+Resultado terminal:
+
+B C A

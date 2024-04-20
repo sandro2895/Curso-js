@@ -1,0 +1,10 @@
+import urllib       <--Importe a bliblioteca urllib
+import urllib.request     <--E importe request de urllib
+
+try:
+    site = urllib.request.urlopen('http://pudim.com.br/')   <--Para tentar use urllib.request.urlopen('') insira o url do site dentro do parenteses. 
+except urllib.error.URLError:    <--Esse é o nome do erro quando se não é possível acessar o site.
+    print('Não foi possível acessar')
+else:
+    print('Foi possível acessar o site')
+    print(site.read())   <-- esse comando site.read() consegue acessar o conteudo HTML do site.

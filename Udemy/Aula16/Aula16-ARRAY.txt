@@ -1,0 +1,119 @@
+Aula16-ARRAY (CHECAR Aula16.js)
+ARRAY é considerado um objeto.
+
+-Para fazer um ARRAY use cochete em uma variavel ou const.
+
+exemplo:
+
+const alunos = ['Luiz', 'Maria', 'Joâo', 1, true]; <-- pode-se colocar string,number, e outros tipos de dados.
+
+-Os ARRAY são indexados por elementos.
+
+exemplo:
+
+console.log(alunos[2], alunos[0])
+
+Resultado terminal = Joâo Luiz
+
+-Mudando o valor de um array
+
+EXEMPLO:
+
+const alunos = ['Luiz', 'Maria', 'Joâo', true];
+
+alunos[0] = 'Rogerio' <-- Isso muda o elemento 'Luiz'.
+
+console.log(alunos)
+
+Resultado terminal =  [ 'Rogerio', 'Maria', 'Joâo',]
+
+-Pode também ser adicionados indices
+
+Exemplo:
+
+alunos[4] = 'Carlos'
+
+-Para saber o tamanho do ARRAY use .length no console.log.
+
+
+-Pode ser adicionado um elemento no fim do ARRAY usando : [variavel.length] =
+
+exemplo:
+
+alunos[alunos.length] = 'Ricardo'
+
+Resultado terminal : [ 'Rogerio', 'Maria', 'Joâo', true, 'Carlos', 'Ricardo' ]
+
+-Para adicionar no fim do ARRAY pode ser usado também .push
+
+Exemplo: 
+
+alunos.push('Otavio');
+
+-Para adicionar no começo de um ARRAY use variavel.unshift()
+
+exemplo:
+const alunos = ['Luiz', 'Maria', 'Joâo',];
+
+alunos.unshift('Luiza')
+
+Resultado terminal =
+['Luiza', Maria, João]
+
+-Para retirar um elemento do ARRAY use variavel.pop
+
+Exemplo:
+
+alunos.pop() <-- desse jeito retira o ultimo elemento
+
+-O elemento removido pode ser guardado em um array
+
+exemplo:
+
+let removido1 = alunos.pop()
+
+-Para remover o primeiro elemento de um ARRAY  use .shift
+
+exemplo:
+
+alunos.shift()
+
+-Também pode ser guardado
+
+let = removido2 = alunos.shift()
+
+-lembrar que em tudo isso os indices estão sendo mudados.
+
+-Para deletar um elemento do array use delete variavel[];.
+
+exemplo:
+
+delete aluno[2]; <-- dentro do cochete coloque o indice que quer deletar.
+
+Exemplo:
+
+const alunos = ['Luiz', 'Maria', 'Joâo',];
+
+delete alunos[2]
+
+console.log(alunos)
+
+Resultado terminal:
+
+[ 'Luiz', 'Maria', <1 empty item> ] 
+
+-Para incluir mais de um elemento use .slice().
+pode ser feito com negativos -
+exemplo:
+
+console.log(alunos.slice(0, 2));
+
+Resultado terminal = [ 'Luiz', 'Maria' ]
+ 
+Para saber se uma variavel é um array usse instaceof Array.
+
+Exemplo:
+
+console.log(alunos instanceof Array); 
+
+

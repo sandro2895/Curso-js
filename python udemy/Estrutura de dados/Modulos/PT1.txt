@@ -1,0 +1,24 @@
+
+
+Importar modulos usando o import Gasta mais memória, pois está importando todas as funções;
+
+From calc import multi  <--Assim somente uma função será importada.
+
+
+from Funções import somar, multi   <--Pode ser chamado mais de uma função de uma vez.
+
+packages também pode ser importados dessa forma.
+
+Pode ser colocado varios arquivos python com funções em uma pasta
+
+ou um arquivo pythom com funções em um package.
+
+
+- Quando se torna um pacote pode ser chamado se não tiver nada no __init__.py
+
+
+from Calculadora.Funções import somar, multi   <--Pode ser chamado dessa forma o packages. em seguida o arquivo.py  e no import as funções.
+from Calculadora.Cadastros import clientes
+
+
+Os arquivos que contém as funções são chamados de modulos.

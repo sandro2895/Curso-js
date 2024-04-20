@@ -1,0 +1,25 @@
+import functools
+
+user = {"username": 'jose', "access_level": "admin"}
+
+
+def make_secure(func):
+    @functools.wraps(func)
+     def secure_function(*args, **kwargs):   <--É necessario colocar o parametro que seja, no caso panel dentro da função que sera chamada no decorator. 
+        if user["access_level"] == "admin":
+            return func(*args, **kwargs)   <--coloque o parametro no return também. Use dessa forma em cima e em baixo, para não limitar o número de parametros.
+        else:
+            print(f'No admin access. for {user["username"]}')
+    return secure_function
+
+
+@make_secure
+def get_password(panel):  <--coloque o parametro na funçã0o
+    if panel == "admin":
+        return '123'
+    elif panel == 'billing':
+        return 'super secure password'
+
+
+print(get_password('billing'))
+

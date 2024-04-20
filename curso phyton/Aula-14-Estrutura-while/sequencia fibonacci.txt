@@ -1,0 +1,31 @@
+[checar ex63b]
+exemplo1:
+n = int(input('Quantos termos quer mostrar? '))
+t1 = 0                  <--os dois primeiros termos sempre são 0 e 1 respectivamente.
+t2 = 1
+print('{} -> {}'.format(t1, t2))
+t3 = t1 + t2        <--Agora vá somando sempre os 2 anteriores
+print('-> {} '.format(t3))
+t4 = t2 + t3
+print('{}'.format(t4))
+t5 = t3 + t4
+print(t5)           <-- essa sequencia foi ate o quinto termo.
+
+
+exemplo2 no while:
+n = int(input('Quantos termos quer mostrar? '))
+t1 = 0
+t2 = 1
+print('{} -> {}'.format(t1, t2), end=' ')
+cont = 3
+while cont <= n:
+    t3 = t1 + t2     <-- vocÊ tem que fazer o t1 e o t2 andar pra frente para serem somados.
+    print('-> {}'.format(t3), end=' ')
+    t1 = t2    <--Assim o t1 vai ficar passando a ser o t2
+    t2 = t3    <--O t2 vai ficar ficar passandor a ser o t3  .E vao ficar sendo somados
+    cont = cont + 1
+print('Fim')
+
+
+0 - 1 - 1 - 2 - 3 - 5
+                t1  t2 t3     <-- assim vão se movendo para o lado somando com o t3 sucessivamente.

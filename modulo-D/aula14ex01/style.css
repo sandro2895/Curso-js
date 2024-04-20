@@ -1,0 +1,42 @@
+body {
+  background-color: aquamarine;
+  font: normal 10pt arial;
+}
+
+header {
+  color: cadetblue;
+  text-align: center;
+  font-weight: 900;
+  color: rgb(201, 201, 0);
+}
+
+#text {
+
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: auto;
+  width: 500px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.39);
+}
+div{
+ text-align: center;
+ padding: 10px;
+ 
+}
+
+img {
+  margin: auto;
+}
+
+.id {
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+}

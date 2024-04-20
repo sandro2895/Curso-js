@@ -1,0 +1,9 @@
+
+
+Use random.suffle()
+
+exemplo:
+
+alunos = [al1, al2, al3, al4]
+random.shuffle(alunos)   <-- não coloque numa variavel
+print(alunos) <-- pode mostrar direto a variavel

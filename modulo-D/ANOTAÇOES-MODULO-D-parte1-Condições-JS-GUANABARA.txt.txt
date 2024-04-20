@@ -1,0 +1,33 @@
+ANOTAÇOES-MODULO-D-parte1-Condições-JS-GUANABARA.txt
+Condições são desvios condicionais no meio do codigo.
+
+Bloco é uma abertura e fexamento de chaves
+
+Use o if e else para criar condições.
+-else é oposto de if.
+-o if sendo como verdadeiro.
+-o else sendo como falso.
+exemplo:
+if (condição) {
+    
+      true
+
+} else {
+
+     false
+
+}
+
+_______________________________________________________________________________________________________
+
+Tipos de Condição:
+
+Condição simples 
+-possui somente o if
+
+exemplo:
+if(condição) {
+     true
+}
+
+

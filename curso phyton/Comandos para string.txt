@@ -1,0 +1,44 @@
+
+-Use {:1} para adicionar espaço apos o valor
+ 
+exemplo: print('Prazer em te conhecer {:20}'.format(nome))
+
+-Use {:>1} Mover o alinhamento do valor em espaço
+
+exemplo:
+
+-Use {:^} para alinha no meio dos espaços   <-- alinha no mei de espaços.
+
+exemplo: print('Prazer em te conhecer {:^20}'.format(nome))
+
+Tambem pode ser colocar {:-^20} para ter - ou outros sinais em volta de 20 espaços.
+
+print('Prazer em te conhecer {:!^20}'.format(nome))  ---Tambem é possivel {:!<20} <-- coloca o caractere ! em volta da variavel
+
+
+no python pode ser repitido uma string varias vezes com *
+
+exemplo: 'oi' *5
+
+
+use  ,end='' para puxar um print abaixo  de outro print
+
+exemplo:
+print('Doca'.format end='')
+print('Augusto')
+
+Resultado : Doca Augusto
+
+exemplo:
+for count in range(0, 50+1, 2):
+    print('{}'.format(count), end=' ')  <--Assim com end=' ' todos os números ficam na mesma linha
+print('Fim de contagem de número pares.')
+
+para parar um comando end = ''
+Use:
+print(end='\n') 
+
+
+Coloque o .2f depois de a colocar uma formatação no f string para mostrar mais casas decimais.
+
+ex num = (f'{var:^5.2f}')

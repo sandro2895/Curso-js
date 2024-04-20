@@ -1,0 +1,8 @@
+
+exemplo1:
+while True:  <-- o progama vai ficar rodando infinitamente.
+    n = int(input('Digite um número: '))
+        if n == 999:      <-- assim caso a variável 'n' chegue a ser 999 o progama vai parar. mas não vai colocar esse valor no soma.
+             break
+ 	soma = soma + n
+print(f'A soma vale {soma}')	<-- coloque o f antes da string'' para simplesmente poder colocar o nome da variavel nas chaves.

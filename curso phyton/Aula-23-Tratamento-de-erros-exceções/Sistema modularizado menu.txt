@@ -1,0 +1,25 @@
+def linha(tam=42):
+    return '-' * tam
+
+def cabecalho(txt):
+    print(linha())
+    print(txt.center(42))   <-- use o .center(2) com algum número no parenteses para centralizar um texto
+    print(linha())
+
+def menu(lista):
+    cabecalho('MENU PRINCIPAL')
+    cont = 0
+    for item in lista:   <-- crie um for para mostrar os item da lista
+        cont += 1
+        print(f'{cont} - {item}')
+    print(linha())
+    op = leiaInt('Digite sua opção: ')  
+    Return op   <--Retorne o número para fazer um while depois.
+
+copia a função def leiaInt(num): do packages validadores para dentro desse modulo
+
+
+programa principal:
+
+cadastrosB.menu(['Ver pessoas cadastradas', 'Cadastrar novas pessoas', 'Sair do sistema'])    <--crie uma lista com as opções.
+

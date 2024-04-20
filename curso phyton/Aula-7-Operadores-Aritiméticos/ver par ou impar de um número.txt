@@ -1,0 +1,16 @@
+Par ou impar
+È só ver se o resto da divisão de um número por 2
+-Use Var % 2
+exemplo:
+num1 = float(input('Digite um número. '))
+num2 = num1 % 2    <-- aqui está dividindo por 2 e mostrando o resto da divisão.
+print(num2)
+
+Se o resto da divisão for for 1 é IMPAR
+
+Se o resto da divisão for 0 é PAR.
+
+
+Quando o número é grande é so considerar o ultimo número para saber se é par ou impar.
+
+ex números grandes. 50 , 501 5501.

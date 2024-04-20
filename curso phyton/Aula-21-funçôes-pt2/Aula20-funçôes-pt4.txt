@@ -1,0 +1,50 @@
+[CHECAR Aula20e.py)
+
+Interactive Help (Ajuda Interativa)
+
+docstrings    <-documentação de strings.
+
+Argumentos opcionais.
+
+Escopo de variáveis.
+
+Retorno de resultado nas funções.
+
+Para usar a interactive Help
+Use a função help()
+
+coloque no python console help()
+
+coloque o nome de qualquer função e será mostrado o valor e os parametros.
+quit <-- para sair do help()
+exit()
+
+
+também poder usado como 
+
+help(print)  <-- qualquer função pode ser colocado dentro do parenteses.
+
+também existe o:
+
+print(input.__doc__) colocando qualquer função com .__doc__
+
+usando a ajuda interativa em funções def.
+exemplo:
+
+faça um manual nas função
+coloque embaixo da função algum testo para mostra:
+
+ def contador(i, f, p):
+    """        <-- use uma aspas tripla.
+    — > Faz uma contagem e mostra na tela.
+    :para i: início da contagem
+    :para f: final da contagem
+    :para p: passo da contagem
+    :return: sem retorno       <-- mostre sem retorne se não tiver retorno.
+    """
+    c = i
+    while c <= f:
+        print(f'{c}', end=' ')
+        c += p
+
+help(contador)  <-- chame o texto de ajuda com help() coloque a função dentro do parenteses.

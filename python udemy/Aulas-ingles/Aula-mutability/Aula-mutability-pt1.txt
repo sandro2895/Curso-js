@@ -1,0 +1,16 @@
+
+
+a = []
+b = []
+print(id(a))  <--Aqui dá pra ver que é o nome para o mesmo objeto.
+print(id(b))
+
+
+exemplo2:
+
+a = []
+b = []   <--deixando os 2 como lista fica diferente. e mostra que pode ser mutavel. use a função id() para verificar.
+a.append(22)
+
+print(id(a))   
+print(id(b))

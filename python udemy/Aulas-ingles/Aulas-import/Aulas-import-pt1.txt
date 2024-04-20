@@ -1,0 +1,12 @@
+import sys  <-- Assim python vai procurar arquivos para importar. É mostra todos os possiveis caminhos para importar.
+
+print(sys.path)
+
+
+exemplo para ser importado:
+
+print("mymodule.py: ", __name__)  Vai dar um print no que é o modulo depois.
+import lib.mylib  <-- vai ser importador se existir o modulo lib
+
+
+Esses são importações absolutas.

@@ -1,0 +1,39 @@
+ANOTAÇOES-MODULO-C-parte6-Funçoes-JS-GUANABARA.txt
+
+Outros exemplos de funções.
+
+<div id="area" onmouseenter="passou()">
+    interaja...
+  </div>
+
+
+function passou(){
+      let b = window.document.querySelector('div#area')
+      b.innerHTML = 'entrou'
+    }
+
+Assim o objeto "b mudou o elemento <div> para 'entrou' quando o mouse entrou na <div>.
+
+______________________________________________________________________________________________
+
+Pode ser feito um objeto de escopo global. para servir para todas as function abaixo. criando o objeto fora das
+function.
+
+exemplo:
+
+ let a = window.document.querySelector('div#area')
+    
+    function clicar() { 
+      a.innerHTML = 'clicou'
+      
+    }
+    function entrou() {
+      a.innerHTML = 'entrou'
+      
+    }
+
+_______________________________________________________________________________________________________
+
+Pode ser adicionado mudanças de css na function
+exemplo:
+

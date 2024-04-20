@@ -1,0 +1,39 @@
+phyton Começou em 1982 com a linguagem abc
+
+-Para entender progamas em c.
+-foi nomeada phyton por causa de mont phyton
+-depois foi feito o progama cp4e para ensinar todos.
+
+Em 2001 foi criada a phyton software foundation.
+
+microsoft google e globo.com usam phyton.
+
+Windows é o unico sistema que não vem com a linguagem phyton como padrão.
+
+Raspberrypy é usado para ensinar phyton.
+
+é uma linguagem de proprosito geral
+
+é multiplataforma
+
+batteries included
+
+organizada
+
+orientada a objeto.
+
+phyton se aplica a :
+
+inteligência artificial
+Biotecnologia
+computação 3D
+
+oque usa phyton.
+
+zope, air canada, bittorrent, google, youtube, nasa, industrial light e magic.
+
+Arduino
+
+Jogos feito em phyton
+
+frets on fire, civilization 4, battlefield 2.

@@ -1,0 +1,47 @@
+
+
+O comando no <script> window.document.write("") faz aparecer um texto na pagina.
+
+é possivel buscar configurações da sua pagina puxando comandos com DOM.
+exemplo :
+
+window.document.write(window.document.title)
+
+window.document.write(window.navigator.appName) mostra que o google chrome está
+se comportando como navegador netscape.
+
+window.document.write(window.document.URL) Mostra a url da sua pagina.
+
+5 metodos para selecionar elementos da árvore DOM.
+
+-Por Marca(tag) O comando dentro de document getElementsByTagName()
+pode selecionar mais de um objeto.
+
+-Por ID
+
+-Por Nome
+
+-Por Classe
+
+-Por Seletor
+
+
+Exemplo de getElementsByTagName():
+
+let p1 = window.document.getElementsByTagName('p')[0] <-- Seleciona qual a tag sequencial que vai ser mostrada sendo 0 a primeira.
+    window.document.write(p1.innerText) <-- Mostra o texto dentro da variável.
+    	
+    window.document.write(p1.innerHTML) <-- faz o texto aparecer formatado de acordo com o html.
+     
+exemplos: 
+window.document.write(' assim está escrito  '+  p2.innerHTML)
+window.alert(' assim está escrito  '+  p2.innerHTML) <-- pode ser usado com alert.
+
+pode ser personalizado com css no dentro de script
+exemplos : 
+p1.style.color = 'blue'
+
+let corpo = window.document.body
+corpo.style.background = 'black'
+
+

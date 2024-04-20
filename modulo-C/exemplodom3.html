@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo dom 3</title>
+</head>
+<style>
+  body{
+    background-color: cornflowerblue;
+  }
+  div{
+      background-color: darkgoldenrod;
+      margin: auto;
+      width: 300px;
+      height: 300px;
+      line-height: 250px;
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: 900;
+    
+  }
+
+</style>
+<body>
+  <div id="cx1" class="cx2">
+    caixa
+  </div>
+  <script>
+    let a = window.document.getElementById("cx1")
+    let b = window.document.querySelector("div.cx2")
+    let c = window.document.getElementsByTagName("div")[0]
+    
+   a.addEventListener('mouseenter', entrar)
+   b.addEventListener('mouseout', sair)
+   c.addEventListener('click', clicar)
+    function entrar(){
+     a.innerHTML = 'entrou' 
+     a.style.color = "green" 
+    }
+    function sair(){
+      b.innerHTML = 'sair'
+      b.style.color = "red"  
+    }
+    function clicar(){
+     c.innerHTML = 'clicou'
+     c.style.color = "blue" 
+     
+    }
+
+  
+  </script>
+  
+</body>
+</html>

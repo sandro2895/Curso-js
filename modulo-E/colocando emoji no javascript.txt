@@ -1,0 +1,11 @@
+
+Colocando emojis no javascript.
+
+coloque \u em vez de U+ e o resto entre chaves{}
+tire o u se estiver junto com o F E NUMEROS.
+
+exemplo:
+
+U+1F600 --> \u{1F600} 
+
+Só fuciona entre crases.

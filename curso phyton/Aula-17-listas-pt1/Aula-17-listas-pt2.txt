@@ -1,0 +1,34 @@
+
+
+Pode ser criado uma lista com range.
+
+exemplo:
+valores = list(range(4, 11))
+
+Assim ele vai criar uma lista com valores de 4 ate 10.
+colocando indices começando de 0 no valor 4.
+
+.sort() Ordena os valores de uma lista
+
+exemplo:
+
+valores = [4, 1, 2, 3]
+valores.sort()
+valores = [1, 2, 3, 4]
+
+Para ordernar na orden reversa digite:
+valores.sort(reverse = true)
+valores = [4, 3, 2, 1]
+
+e pode ser usado len(valores)
+
+
+exemplo1:
+valores = list()  <-- se for usar o .append() coloque var = list()
+valores.append(2)
+valores.append(3)
+valores.append(1)
+print(valores)
+for cont, v in enumerate(valores):
+    print(f'{v} tem o índice {cont}')
+print('Fim da lista')

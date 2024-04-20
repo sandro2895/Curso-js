@@ -1,0 +1,11 @@
+[CHECAR classes-PT5]
+
+Import a bliblioteca time
+
+import datetime
+faça uma função dentro da classe.
+
+    def idade_func(self):
+        return f'O Funcionario {self.nome} Tem {datetime.date.today().year - self.ano_nasc} Anos.'   <--Subtraia ano atual por ano de nascimento.
+
+print(Funcionarios.idade_func(usuario1))

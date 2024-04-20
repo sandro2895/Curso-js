@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exemplo arvore dom</title>
+  <style>
+    body {
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <h1>Um exemplo de DOM</h1>
+  <div id='cb1'>outro exemplo</div>
+  <p class='cb2'>mais um exemplo</p>
+  <p name='cb3'>another example</p>
+  <p class="cb4">last example</p>
+
+  <script>
+ let cab1 = window.document.getElementsByTagName('h1')[0]
+ window.document.write(cab1.innerText)
+ let cab2 = window.document.getElementById('cb1')
+ window.document.write(cab2.innerText)
+ let cab3 = window.document.getElementsByClassName('cb2')[0]
+ window.document.write(cab3.innerText)
+ let cab4 = window.document.getElementsByName('cb3')[0]
+ window.document.write(cab4.innerText)
+ let cab5 = window.document.querySelector('p.cb4')
+ window.document.write(cab5.innerHTML)
+
+  </script>
+  
+</body>
+</html>

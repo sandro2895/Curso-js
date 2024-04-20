@@ -1,0 +1,19 @@
+[Checar ex032a.py]
+é so saber se o número do ano e divisivel por 4 , por 100 e por 400 . 
+mas se ele não for divisivel por 400 ou 100 ja não é ano bissexto
+exemplo:
+
+ano = int(input('Digite um o número de ano para eu saber se é bissexto: '))
+
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:   <-- aqui é se o ano % 4 = 0 e ano % 100 diferente de 0 ou ano % 400 == 0
+    print('O ano de: {} é bissexto'.format(ano))
+
+else:
+    print('O ano de: {} não é bissexto'.format(ano))
+
+
+
+
+O sinal de diferença é !=
+
+and <-- adiciona não é igual ao 'or'

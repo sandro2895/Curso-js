@@ -1,0 +1,16 @@
+
+
+valores = [x * 10    for x in range(6)]  <--Aqui vai ser dado um append multiplicado por 10 de 0 a 6
+
+print(valores)
+Resultado terminal: [0, 10, 20, 30, 40, 50]
+
+
+é o mesmo que:
+
+#valores = []
+
+#for x in range(6):
+   # valores.append(x * 10)   <--Aqui o x multiplicado pelo item por 10 vai ser append em valores.
+
+#print(valores)

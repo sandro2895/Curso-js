@@ -1,0 +1,43 @@
+[CHECAR Aula20a.py]
+
+O comando def
+
+exemplo de função prin(), len(), input(), int() float()
+
+criando funções:
+
+exemplo uma função que mostra linha:
+
+mostralinha() Com def.
+
+para criar a função:
+
+def mostralinha():
+     print('--------------------------')   <-- o progama não executa a função ainda.
+
+depois é so mostrar a função
+exemplo:
+
+mostralinha()    <-- agora a função vai ser mostrada.
+print(    SISTEMA DE ALUNOS   )
+mostralinha()
+
+O progama principal tem que estar 2 linha longe da função.
+
+outro exemplo:
+
+def mensag(msg):   <--Aqui pode ser colocado a mensagem que vai estar no print do meio. 
+    print('-' * 30)
+    print(msg)
+    print('-' * 30)
+
+Pode ser feito assim agora: mensag('SISTEMA DE ALUNOS')
+
+exemplo:
+def tit(m):   <--coloque o parametro que pode ser alterado.
+    print('-' * 20)
+    print(m)    <-- em algum lugar pode ser colocado o parametro.
+    print('-' * 20)
+
+
+tit('      PYTHON')

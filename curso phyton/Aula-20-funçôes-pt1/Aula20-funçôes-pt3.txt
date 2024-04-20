@@ -1,0 +1,33 @@
+O python empacota funções:
+empacotando tuplas:
+
+Use exemplo:
+def cont(*num) <-- o asterisco é um simbolo de desempacotar. o python vai pegar todos os parametros que um usuario digitar
+                     e colocar em um só parametro.
+
+exemplo:
+def contador(* n):
+    print(n)
+
+
+
+contador(2 + 1, 7 * 2)  <-- pode ate fazer somas e multiplicações
+contador(8, 0)
+contador(4, 4, 7, 6, 2)
+Resultado terminal:
+(3, 14)  <--Isso é uma tupla!
+(8, 0)
+(4, 4, 7, 6, 2
+
+
+pode ate ser feito com for ja que é uma tupla:
+
+def contador(* n):
+    for valor in n:
+        print(valor)
+
+exemplo com len():
+
+def contador(* n):
+    ler = len(n)
+    print(f'Recebi os valores {n} é são {ler} números.')

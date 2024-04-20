@@ -1,0 +1,10 @@
+
+
+
+Use .innerHTML = '' com a variável que deseja limpar.
+
+exemplo:
+
+tab.innerHTML = ''
+
+tamben limpa algumas outras funções.

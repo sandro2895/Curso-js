@@ -1,0 +1,28 @@
+[Checar ex88b.py]
+
+import random
+lista = []     <--Crie uma lista temporada e uma lista que vai transferir.
+jogos = []
+print('=-=' * 25)
+print('                              MEGA SENA')
+print('=-=' * 25)
+jg = int(input('Quantos jogos da mega sena? '))
+tot = 0
+while tot < jg:
+    cont = 0
+    while True:
+        num = random.randint(1, 60)
+        if num not in lista:
+            lista.append(num)
+            cont += 1
+        if cont >= 6:
+            break
+    jogos.append(lista[:])   <-- aqui faça uma copia de lista pra dentro da lista jogos.
+    lista.clear()
+    tot += 1
+print('-=-' * 8, f'Sorteando {jg} Jogo(s)', '-=-' * 10)
+for pos, cont in enumerate(jogos):   <-- aqui mostra a posição  e a sublista elemento dentro de jogos.
+    print(f' Jogo {pos +1}:{cont}')
+
+
+use a bliblioteca time

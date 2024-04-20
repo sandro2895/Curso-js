@@ -1,0 +1,22 @@
+
+
+Fazendo um set:
+
+ex:
+
+
+funcionarios = ['Ana', 'Marcos', 'Alice', 'Pedro', 'Sophia', 'Bruno', 'Melissa']
+turno_dia1 = ['Ana', 'Marcos', 'Alice', 'Melissa']
+
+turno_noite = ['Pedro', 'Sophia', 'Bruno']
+tem_carro = ['Marcos', 'Alice', 'Bruno', 'Melissa']
+
+lista1 = set(tem_carro).intersection(turno_noite)   <--com set e .intersection no mei. O progama vai checar se essas pessoas estão nessa duas lista.
+print(lista1)
+
+
+lista3 = set(funcionarios).difference(tem_carro)  <--O .diferrence checa as pessoas que não estão dentro da suas lista comparada a lista funcionarios.
+print(lista3)
+A pessoa que não estiver na lista carros serão mostradas.
+
+lista2 = set(amigos2).union(amigos1) <--.union une as listas sem duplicar valores.

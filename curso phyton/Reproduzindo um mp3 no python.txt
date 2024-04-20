@@ -1,0 +1,24 @@
+instale o package playsound. <--escolha a versão certa se for necessário.
+em seguida use:
+
+import playsound
+
+playsound.playsound('') <-- coloque o mp3 aqui dentro
+
+exemplo:
+
+import playsound
+playsound.playsound('my0.mp3')
+
+ou
+
+instale o package pygame
+-o pygame tem blibliotecas para carregar imagens, videos, audios e etc.
+
+-então para iniciar o pygame
+import pygame
+pygame.init()    <--esse comando inicia o pygame.
+pygame.mixer.music.load('my0.mp3') <-- esse comando carrega um mp3.
+pygame.mixer.music.play() < -- esse comando iniciar a musica.
+pygame.event.wait()  <-- esse comando faz o progama esperar a music terminar para encerrar o progama.
+input() <-- é necessario para iniciar.

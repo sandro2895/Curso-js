@@ -1,0 +1,10 @@
+[CHECAR ex73a.py]
+
+
+
+tabela = ('Botafogo', 'Flamengo', 'Palmeiras', 'Grêmio', 'Fluminense',
+          'Bragantino', 'Athletico-PR', 'São Paulo', 'Cuiabá', 'Cruzeiro',
+          'Fortaleza', 'Internacional', 'Atlético-MG', 'Corinthians', 'Santos',
+          'Goiás', 'Bahia', 'Coritiba', 'America-MG', 'Vasco da gama')
+
+print(f'O Fortaleza está em {tabela.index("Fortaleza")+1}') <--Use o .index("") Dentro coloque aspas duplas. e a string.

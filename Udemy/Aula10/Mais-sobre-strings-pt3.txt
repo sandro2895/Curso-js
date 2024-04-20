@@ -1,0 +1,42 @@
+
+
+Retornando somente as letrar minusculas:
+Usando .match(/[a-z]/g) <-- é uma expressão regular.
+
+
+let texto = 'Um Texto Feliz';
+
+console.log(texto.match(/[a-z]/g))
+
+resultado terminal:
+
+  'm', 'e', 'x',
+  't', 'o', 'e',
+  'l', 'i', 'z'
+
+O .search() Diz qual é o indice da string
+exemplo:
+let texto = 'Um Texto Feliz';
+
+console.log(texto.search('T')) 
+
+Resultado terminal = 3
+
+È possivel mudar uma string com .replace()
+-exemplo:
+
+let texto = 'Um Texto Feliz';
+
+console.log(texto.replace(/Texto/, 'Taxta'))
+                         [coloque aqui na esquerda a parte que será mudada pela a parte na direita.
+
+Resultado terminal = 'Um Taxta Feliz
+
+outro exemplo de .replace() :
+
+let texto = 'O rato roeu a roupa do rei de roma';
+
+console.log(texto.replace(/r/g, 'ch')) <-- colocando um g ao lado da barra todos os r da string seráo mudados.
+
+resultado terminal = O chato choeu a choupa do chei de choma
+

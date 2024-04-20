@@ -1,0 +1,25 @@
+
+
+
+valores = list()
+posimax = list()
+posimin = list()
+maior = menor = 0
+for quest in range(0, 5):
+    valores.append(int(input(f'Digite o número para a posição {quest}: ')))
+    if quest == 0:
+        maior = menor = valores[quest]  <-- aqui vai atribuir o valor da lista na posição 0 em que a variavel quest esta no momento.
+    else:
+        if valores[quest] > maior:  <-- aqui é se valores na posição do momento for maior que a var maior.
+            maior = valores[quest]
+        if valores[quest] < menor:
+            menor = valores[quest]  <-- aqui é se valores na posição do momento for menor que a var menor.
+
+print(f'Maior valor: {maior} Nas posições: ', end=' ')
+for pos1, cont1 in enumerate(valores):
+    if cont1 == maior:   <--Aqui vai checar se a var cont1 é igual a var maior que ja foi declarada.
+        print(pos1, end='... ')
+print(f'\nMenor valor: {menor} Nas posições: ', end=' ')
+for pos2, cont2 in enumerate(valores):
+    if cont2 == menor:    <--Aqui vai checar se a var cont2 é igual a var menor que ja foi declarada.
+        print(pos2, end='... ')

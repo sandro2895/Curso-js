@@ -1,0 +1,44 @@
+user = {"username": 'jose', "access_level": "admin"}
+
+
+def make_secure(func):
+    def secure_function():
+        if user["access_level"] == "admin":
+            return func()    <--não esquecer de botar o parenteses aqui se tiver retornando função
+        else:
+            print('No admin access.')
+    return secure_function    <--Aqui tira o parenteses.
+
+
+@make_secure  <--Assim já faz ser atribuido a função a outra. é assim funciona o if no get_admin_password.
+def get_admin_password():
+    return '123'
+
+
+print(get_admin_password())
+
+
+O problema com isso é  que secure_function é como uma função interna. e get admin não fica mais sendo uma função interna.
+Pode também perder documentação.
+
+
+print(get_admin_password.__name__)  <--.__name__ pode checar a qual a função interna.
+
+
+
+Consertando o problema:
+
+import functools
+
+def make_secure(func):   <--Só isso é chamado de decorator.
+    @functools.wraps(func)  <-- Assim vai manter o nome get_admin_password.  Sempre coloque emcima da segunda função.
+    def secure_function():
+        if user["access_level"] == "admin":
+            return func()
+        else:
+            print(f'No admin access. for {user["username"]}')
+    return secure_function
+
+
+
+

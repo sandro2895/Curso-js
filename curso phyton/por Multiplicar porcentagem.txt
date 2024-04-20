@@ -1,0 +1,19 @@
+
+
+1 * 0.01 desse jeito
+numero * 0.02
+numero * 0.03
+numero * 0.04
+numero * 0.05
+numero * 0.06
+numero * 0.07
+numero * 0.08
+numero * 0.09
+numero * 0.10
+
+
+ou
+
+1*5/100
+
+isso representar tirar 5 porcento de 1

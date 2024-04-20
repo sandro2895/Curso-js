@@ -1,0 +1,26 @@
+Use o Quant para guardar valores no while.
+checar [ex65b]
+
+resp = 'S'
+media = 0
+soma = 0
+quant = 0
+maior = 0
+menor = 0
+while resp == 'S':
+    num = int(input('Digite um número: '))
+    soma = soma + num
+    quant = quant + 1
+    if quant == 1:       <-- pode ser guardado os valores quando o quant for igual a 1.
+        maior = num
+        menor = num
+    else:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+    resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+media = soma / quant
+print('Foram digitados {} número(s). Então a media dos números é: {:.2f}'.format(quant, media))
+print('O maior número é: {}. E o menor número e: {}'.format(maior, menor))
+print('Fim')

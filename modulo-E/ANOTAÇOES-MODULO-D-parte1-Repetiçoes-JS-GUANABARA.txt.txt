@@ -1,0 +1,27 @@
+ANOTAÇOES-MODULO-D-parte1-Repetiçoes-JS-GUANABARA.txt
+
+Tipos de repetições.
+
+-Repetição com teste lógico no inicio (while).
+
+-Repetição com teste lógico no final (do while).
+
+-Repetição com variável de controle (for).
+
+
+laços ou interações feito em sequências. while = equanto
+
+Se a condição ou teste logico for verdade ele vai executar o bloco o progama vai voltar
+e fazer uma repetição(looping) e vai continuar assim enquanto essa condição for verdade.
+
+quando a condição ser tornar falso  a repetição vai ser quebrada e o progama vai rodar
+ate o final.
+
+exemplo desenhado:
+      function () {
+       while (condição) {
+
+     } <-- se a condição for verdadeira volta para a condição while e faz um teste se ainda é vardadeiro.
+           -o fluxo segue quando a condição while for falsa.
+
+}

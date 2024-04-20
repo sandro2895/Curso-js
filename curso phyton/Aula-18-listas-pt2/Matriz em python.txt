@@ -1,0 +1,27 @@
+
+
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]  <-- não esquecer de ja deixar os 0 para fazer o for c in range.
+
+for l in range(0, 3):    <--aqui no caso é a linha e cada sublista elemento.
+    for c in range(0, 3):   <--aqui é cada elemento que esta dentro da sublista.
+        matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
+
+print(matriz)
+
+for l in range(0, 3):  <-- esse outro range é para mostrar a matriz e não ler
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end=' ')
+    print()  <-- deixe um print vazio em baixo para o python pular a linha sempre no final de uma sublista.
+
+
+
+for l in range(0, 3):
+    scol += matriz[l][2]  <--Aqui sem o for c. ja vai somar o elemento 2 de cada sublista.
+
+
+for c in range(0, 3):
+    if c == 0:
+        mai += matriz[1][c]  <-- aqui está se referindo ao elemendo de indice 1 sublista e o c é o indice dentro da sublista.
+    else:
+        if matriz[1][c] > mai:
+            mai = matriz[1][c]

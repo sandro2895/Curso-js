@@ -1,0 +1,24 @@
+ANOTAÇOES-MODULO-F-parte5-Variaves-compostas-JS-GUANABARA.txt
+Mostrando os vetores usando o In no For.
+Maneira mais simplificada e recente da ECMASCRIPT
+
+O in agente se ler como dentro.
+A sintaxe do for in serve somente para array e objetos.
+exemplo:
+                |variavel composta|   
+for (let pos in num { <-- para cada numero de posição dentro de 'num(variavel composta) eu vou mostrar o num[pos].
+
+   console.log(num[pos]) <-- Isso mostra no terminal.
+     
+}
+
+exemplo pratico:
+
+ let valor = [1, 3, 5 , 7]
+ 
+ console.log(valor)
+
+ for (let pos in valor){
+  
+  console.log(valor[pos])
+ }

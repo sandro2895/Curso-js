@@ -1,0 +1,24 @@
+ANOTAÇOES-MODULO-F-parte7-Funcoes-compostas-JS-GUANABARA.txt
+
+Toda função tem uma ordem
+
+Chamada > Conjunto de parâmetro > Ação > Retorno.
+
+-nem todas as funções tem parâmetro e nem todas as funções tem retorno.
+
+-Funções são ações que são executadas quando são chamadas ou 
+em decorrência de algum evento(automatico).
+
+Chamando uma função
+
+exemplo:
+
+function açao(param) {
+
+  return res <-- esse é o resultado que pode ser retornado.
+             -o res vai ser voltado para quem vez a chamada, no caso açao(5).
+             -isso é a ação que vai ser realizada.
+}
+
+açao(5) <-- colocando esse comando a função é executada por chamada.
+-dentro do parenteses são os parametros com o qual a função vai ser chamada.

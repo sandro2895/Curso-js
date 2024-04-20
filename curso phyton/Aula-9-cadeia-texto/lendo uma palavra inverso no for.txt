@@ -1,0 +1,9 @@
+fras1 = input('Digite uma frase: ')
+palavrs = fras1.split()
+juntar = ''.join(palavrs)
+inverso = ''
+for letras in range(len(juntar)-1, -1, -1):  <-- aqui ele vai ler a palavra ao inverso dela
+    inverso = inverso + (juntar[letras])     <-- aqui a variavel inverso recebe a palavra ao contrario
+
+
+ 

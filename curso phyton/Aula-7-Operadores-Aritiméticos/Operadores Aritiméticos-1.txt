@@ -1,0 +1,38 @@
+Operadores Aritméticos [checar Aula007a.py]
+
++ <-adição
+- <-subtração
+* <-Multiplicação
+/ <-Divisão
+% <- Resto da Divisão
+// <-Divisão Inteira
+** <-potência ou elevação ao quadrado x²
+== <-Igualdade
+A funçao interna de potencia é pow()
+exemplo: pow(4,3)
+64
+
+Orden de precedencia
+
+1 lugar--> ()
+2 lugar--> **
+3 lugar--> *, /, //, %
+4 lugar--> +, -
+
+Exemplos:
+
+5 + 3 * 2 == 11
+3 * 2 + 4 ** 2 == 31
+3 * (5 + 4) ** 2 == 243
+
+Raiz quadrada 
+
+**(1/2) <-- !! para mostrar a raiz quadrada abaixo do número e não a potencia
+
+exemplo
+
+81**(1/2) 
+
+no python pode ser repitido uma string varias vezes com *
+
+exemplo: 'oi' *5

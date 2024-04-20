@@ -1,0 +1,6 @@
+altura elevado a potencia 2 
+e depois pega oque sobrou dessa altura e usa para dividir o peso da pessoa
+
+
+exemplo:
+imc = peso / (altura ** 2)

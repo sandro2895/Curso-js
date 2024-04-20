@@ -1,0 +1,35 @@
+def list_avg(sequence: list) -> float:   <--- o list vai transforma em uma lista e o -> float: transforma em um numero real(flutuante)
+    return sum(sequence) / len(sequence)
+
+
+list_avg(123)
+
+
+outra maneiro de chamar como lista é:
+from typing import list
+
+
+outro exemplo:
+class Book:
+    pass
+
+class Bookshelf:
+    def __init__(self, book: list[book]):  <-- Aqui está transformando book em uma lista com o self Book da classe acima.
+        self.book = book
+
+    def __str__(self) -> str:
+        return f"BookShelf with {len(self.book)} books"
+
+
+Assimm da clareza do que são as coisas.
+
+outro exemplo:
+
+  def __init__(self, name: str, book_type : str, weight: int):  <--Aqui fica claro oque deve ser string e integer
+        self.name = name
+        self.book_type = book_type
+        self.weight = weight
+
+exemplo3:
+
+ef paperback(cls, name, page_weigth) -> "Book":  <-- se for sinalizar que é o mesmo tipo de outra classe ou metodo, tem que sinalizar com ""(aspas duplas)

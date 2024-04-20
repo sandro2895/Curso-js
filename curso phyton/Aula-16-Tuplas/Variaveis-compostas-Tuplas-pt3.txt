@@ -1,0 +1,46 @@
+
+
+
+exemplo5:
+
+lanche = 'Hamburger', 'Suco', 'Pizza', 'Pudim'
+for pos, com in enumerate(lanche):    <-- enumerate() coloca numero na posição mas não esquecer de colocar o pos antes.
+    print('Vou comer {}, Na posição {}'.format(com, pos))
+
+
+exemplo6:
+
+lanche = ('Hamburger', 'Suco', 'Pizza', 'Pudim')
+print(sorted(lanche))   <--O comando Sorted() Mostra a tupla em ordem.
+
+
+exemplo7:
+
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b   <-- assim o comando vai concatenar.
+print(c)
+Resultado termina: (2, 5, 4, 5, 8, 1, 2) 
+
+exemplo8:
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b
+print(c.count(5))  <--O comando .count() Mostra quantas vezes vai aparecer certo caractere. 
+
+print(c.index(8)) <--O comando .index() Vai mostrar onde está o indice de certo caractere.
+
+print(c.index(5, 2))  <--Aqui motra onde está o 5 em outra posição. no caso na posição 2. 
+
+
+exemplo9:
+
+pessoa = ('Doca', 39, 'M')  <-- pode ter dados de tipo diferente em uma tupla.
+
+
+
+O comando deleta algo no python del()
+
+
+exemplo:
+del(pessoas)

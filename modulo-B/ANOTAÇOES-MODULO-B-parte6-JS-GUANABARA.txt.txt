@@ -1,0 +1,60 @@
+ANOTAÇOES-MODULO-B-parte6-JS-GUANABARA.txt
+
+Operadores
+-aritméticos
+-atribuição
+-relacionais
+-lógicos
+-ternário
+
+sinais aritméticos 
++ <-- Adição
+- <-- Subtração
+* <-- Multiplicação
+/ <-- Divisão
+% <-- Divisão inteira(resto da divisão)
+** <-- Potência 
+Divisão e Multiplicação sempre vem primeiro.
+Use Parênteses se quiser fazer as contas de adição e subtração separadas das outras primeiro.
+exemplo: (5+3)/2
+
+Se uma conta estiver errada pode ter erros sintaticos.
+
+Ordem de Precedência dos operadores aritméticos.
+Parênteses > Potência > Multiplicação > Divisão > Divisão inteira > Adição > Subtração.
+
+podem ser feito atribuiçoes aritmeticas nas variaveis
+exemplo:
+> var n = 4
+> n
+4
+> n = n+4
+8
+> n
+8
+
+pode ser feito uma atribuição simplificada somente a proprio variável
+exemplo:
+> n +=4
+20
+Operador de incremento.
+pode ser feito simplificadamente 
+
+n++ <-- Adiciona +1  coloque: ++n   <-- dessa forma já adiciona antes.
+n-- <-- Subtrai -1            --n   <-- dessa forma já subtrai  antes.
+exemplo
+> var n = 3
+> n
+3
+> n++
+3
+> n
+4
+> n--
+4
+> n
+3
+>=
+
+
+

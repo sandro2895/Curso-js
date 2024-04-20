@@ -1,0 +1,23 @@
+ANOTAÇOES-MODULO-D-parte1-exercicios-JS-GUANABARA.txt
+
+fazendo um site
+
+
+      body
+
+      header
+   
+      title(h1)
+
+      section
+
+
+      footer
+
+Use &copy; dentro de alguma tag html para criar um simbolo de copyright.
+
+carregando uma cor para o body no javascript:
+-Use a arvore DOM para selecionar.
+exemplo:
+
+document.body.style.background ="#ffeb73" 
